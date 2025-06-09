@@ -6,15 +6,15 @@ export const contributors = [
     github: "8harath",
   },
   {
-    name: "Yogesh K",
-    specialization: "BCA-AI",
-    contributions: ["Semester 1 C Programming Notes", "Digital Design Materials"],
-    github: "8harat",
+    name: "U Can be One",
+    specialization: "NA",
+    contributions: ["NA"],
+    github: "github",
   },
   {
-    name: "Amulaya",
-    specialization: "BCA-CS",
-    contributions: ["Computer Networks Materials", "Operating System Notes"],
-    github: "8harath",
+    name: "U Can be One",
+    specialization: "NA",
+    contributions: ["NA"],
+    github: "github",
   },
 ]

@@ -92,7 +92,7 @@ export function SemesterGrid() {
 
                       <div className="flex flex-col gap-2">
                         <a
-                          href="https://github.com"
+                          href="https://github.com/8harath/JGI-002"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="keyboard-button text-sm w-full"

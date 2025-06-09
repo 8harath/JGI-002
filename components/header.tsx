@@ -31,7 +31,7 @@ export function Header() {
               Contact
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/8harath/JGI-002"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-colors"
@@ -72,7 +72,7 @@ export function Header() {
                 <span>Contact</span>
               </Link>
               <a
-                href="https://github.com"
+                href="https://github.com/8harath/JGI-002"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"

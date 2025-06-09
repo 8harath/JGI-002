@@ -151,7 +151,7 @@ export function ContributorsModal({ isOpen, onClose }: ContributorsModalProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-2 md:gap-3 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/8harath/JGI-002"
               target="_blank"
               rel="noopener noreferrer"
               className="keyboard-button text-sm py-1.5"

@@ -24,7 +24,7 @@ export function Footer() {
               Contact
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/8harath/JGI-002"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
