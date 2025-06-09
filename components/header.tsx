@@ -16,9 +16,16 @@ export function Header() {
     <header className="bg-card border-b-2 border-foreground sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform">
-            <div className="relative w-8 h-8">
-              <Image src="/favicon.ico" alt="Jain University Logo" width={32} height={32} className="object-contain" />
+          <Link href="/" className="flex items-center hover:scale-105 transition-transform">
+            <div className="relative w-14 h-14">
+              <Image 
+                src="/Logo/android-chrome-512x512.png" 
+                alt="Jain University Logo" 
+                width={56} 
+                height={56} 
+                className="object-contain"
+                priority
+              />
             </div>
           </Link>
 
