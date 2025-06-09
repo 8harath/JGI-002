@@ -168,7 +168,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 👥 Contributors
 
 - Bharath K (BCA-DA) - All materials
-- [Your Name] - Add your contributions here
 
 ## 🔗 Links
 
