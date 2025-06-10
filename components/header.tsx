@@ -4,8 +4,14 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Github, Menu, X, Home, Mail } from "lucide-react"
+import { Search } from "./search"
+import { Resource } from "@/types/resource"
 
-export function Header() {
+interface HeaderProps {
+  resources: Resource[];
+}
+
+export function Header({ resources }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
@@ -31,6 +37,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
+            <Search resources={resources} className="hidden lg:flex" />
             <Link href="/" className="text-foreground hover:text-primary transition-colors font-medium">
               Home
             </Link>
@@ -61,6 +68,9 @@ export function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t-2 border-accent/30 mt-3 animate-fade-in">
+            <div className="px-2 mb-4">
+              <Search resources={resources} />
+            </div>
             <nav className="flex flex-col space-y-3">
               <Link
                 href="/"

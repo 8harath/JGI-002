@@ -4,6 +4,8 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { PageLoading } from "@/components/loading"
+import { getAllResources } from "@/lib/resources"
+import { SearchProvider } from "@/lib/search-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -55,11 +57,13 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const resources = await getAllResources();
+
   return (
     <html lang="en">
       <head>
@@ -72,13 +76,15 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <div className="flex-grow">
-            <PageLoading>{children}</PageLoading>
+        <SearchProvider resources={resources}>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <div className="flex-grow">
+              <PageLoading>{children}</PageLoading>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        </SearchProvider>
       </body>
     </html>
   )
