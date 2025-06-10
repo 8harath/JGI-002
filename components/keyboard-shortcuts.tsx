@@ -25,27 +25,27 @@ export function KeyboardShortcuts() {
       description: "Open search" 
     },
     { 
-      key: isMac ? "⌘⇧1" : "Ctrl + Shift + 1", 
+      key: isMac ? "⌥1" : "Alt + 1", 
       description: "Go to Semester 1" 
     },
     { 
-      key: isMac ? "⌘⇧2" : "Ctrl + Shift + 2", 
+      key: isMac ? "⌥2" : "Alt + 2", 
       description: "Go to Semester 2" 
     },
     { 
-      key: isMac ? "⌘⇧3" : "Ctrl + Shift + 3", 
+      key: isMac ? "⌥3" : "Alt + 3", 
       description: "Go to Semester 3" 
     },
     { 
-      key: isMac ? "⌘⇧4" : "Ctrl + Shift + 4", 
+      key: isMac ? "⌥4" : "Alt + 4", 
       description: "Go to Semester 4" 
     },
     { 
-      key: isMac ? "⌘⇧5" : "Ctrl + Shift + 5", 
+      key: isMac ? "⌥5" : "Alt + 5", 
       description: "Go to Semester 5" 
     },
     { 
-      key: isMac ? "⌘⇧6" : "Ctrl + Shift + 6", 
+      key: isMac ? "⌥6" : "Alt + 6", 
       description: "Go to Semester 6" 
     },
   ];

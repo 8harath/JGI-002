@@ -11,13 +11,14 @@ export function useKeyboardShortcuts() {
       // Debug log
       console.log('Key pressed:', {
         key: e.key,
+        altKey: e.altKey,
         ctrlKey: e.ctrlKey,
         shiftKey: e.shiftKey,
         metaKey: e.metaKey
       });
 
-      // Check if Ctrl + Shift is pressed
-      if ((e.ctrlKey || e.metaKey) && e.shiftKey) {
+      // Check if Alt/Option key is pressed
+      if (e.altKey) {
         // Check for number keys 1-6
         const semesterNumber = parseInt(e.key);
         if (!isNaN(semesterNumber) && semesterNumber >= 1 && semesterNumber <= 6) {
