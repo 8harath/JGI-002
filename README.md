@@ -1,6 +1,102 @@
 # Resource Management System
 
-A modern web application built with Next.js 15 and TypeScript for managing educational resources and materials. This project provides a comprehensive platform for organizing and accessing academic resources across different semesters.
+A modern web application built with Next.js 15 and TypeScript for managing educational resources. This system helps students and educators organize, share, and access learning materials efficiently.
+
+## Features
+
+- **Modern Tech Stack**: Built with Next.js 15, TypeScript, and Tailwind CSS
+- **Responsive Design**: Works seamlessly on all devices
+- **Dark Mode Support**: Built-in dark mode with system preference detection
+- **Semester-based Organization**: Resources organized by academic semesters
+- **Resource Categories**: Support for different types of resources (PDFs, Links, Videos)
+- **Advanced Search**: Global search with filters and keyboard shortcuts
+- **Keyboard Navigation**: Quick access to resources using keyboard shortcuts
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom components with Radix UI primitives
+- **Icons**: Lucide React
+- **State Management**: React Context
+- **Search**: Client-side search with filters
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Keyboard Shortcuts
+
+The application supports the following keyboard shortcuts:
+
+### Search
+- `⌘K` (Mac) or `Ctrl + K` (Windows/Linux): Open global search
+
+### Semester Navigation
+- `⌥1` (Mac) or `Alt + 1` (Windows/Linux): Go to Semester 1
+- `⌥2` (Mac) or `Alt + 2` (Windows/Linux): Go to Semester 2
+- `⌥3` (Mac) or `Alt + 3` (Windows/Linux): Go to Semester 3
+- `⌥4` (Mac) or `Alt + 4` (Windows/Linux): Go to Semester 4
+- `⌥5` (Mac) or `Alt + 5` (Windows/Linux): Go to Semester 5
+- `⌥6` (Mac) or `Alt + 6` (Windows/Linux): Go to Semester 6
+
+## Search Features
+
+The global search functionality includes:
+
+- **Quick Access**: Press `⌘K` (Mac) or `Ctrl + K` (Windows/Linux) to open search
+- **Advanced Filtering**: Filter resources by semester and type
+- **Search History**: View and access recent searches
+- **Rich Results**: Display resource details including title, subject, semester, and type
+- **Quick Navigation**: Direct links to semester resources
+- **Keyboard Navigation**: Navigate search results using arrow keys
+
+## Project Structure
+
+```
+├── app/                 # Next.js app directory
+│   ├── semester/       # Semester-specific pages
+│   └── layout.tsx      # Root layout
+├── components/         # React components
+│   ├── ui/            # UI components
+│   ├── header.tsx     # Header component
+│   ├── footer.tsx     # Footer component
+│   └── search.tsx     # Search component
+├── lib/               # Utility functions
+│   ├── resources.ts   # Resource management
+│   └── search.ts      # Search functionality
+├── public/            # Static assets
+└── styles/            # Global styles
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first CSS framework
+- Radix UI for accessible components
+- Lucide for beautiful icons
 
 ## 🌟 Project Philosophy
 
