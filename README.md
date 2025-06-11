@@ -1,275 +1,171 @@
-# Resource Management System
+# JGI-002: TypeScript React Project
 
-A modern web application built with Next.js 15 and TypeScript for managing educational resources. This system helps students and educators organize, share, and access learning materials efficiently.
+![GitHub repository size](https://img.shields.io/github/repo-size/8harath/JGI-002)
+![GitHub language count](https://img.shields.io/github/languages/count/8harath/JGI-002)
+![GitHub top language](https://img.shields.io/github/languages/top/8harath/JGI-002)
 
-## Features
+## 📖 Overview
 
-- **Modern Tech Stack**: Built with Next.js 15, TypeScript, and Tailwind CSS
-- **Responsive Design**: Works seamlessly on all devices
-- **Dark Mode Support**: Built-in dark mode with system preference detection
-- **Semester-based Organization**: Resources organized by academic semesters
-- **Resource Categories**: Support for different types of resources (PDFs, Links, Videos)
-- **Advanced Search**: Global search with filters and keyboard shortcuts
-- **Keyboard Navigation**: Quick access to resources using keyboard shortcuts
-
-## Tech Stack
-
-- **Framework**: Next.js 15
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Custom components with Radix UI primitives
-- **Icons**: Lucide React
-- **State Management**: React Context
-- **Search**: Client-side search with filters
-
-## Getting Started
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Keyboard Shortcuts
-
-The application supports the following keyboard shortcuts:
-
-### Search
-- `⌘K` (Mac) or `Ctrl + K` (Windows/Linux): Open global search
-
-### Semester Navigation
-- `⌥1` (Mac) or `Alt + 1` (Windows/Linux): Go to Semester 1
-- `⌥2` (Mac) or `Alt + 2` (Windows/Linux): Go to Semester 2
-- `⌥3` (Mac) or `Alt + 3` (Windows/Linux): Go to Semester 3
-- `⌥4` (Mac) or `Alt + 4` (Windows/Linux): Go to Semester 4
-- `⌥5` (Mac) or `Alt + 5` (Windows/Linux): Go to Semester 5
-- `⌥6` (Mac) or `Alt + 6` (Windows/Linux): Go to Semester 6
-
-## Search Features
-
-The global search functionality includes:
-
-- **Quick Access**: Press `⌘K` (Mac) or `Ctrl + K` (Windows/Linux) to open search
-- **Advanced Filtering**: Filter resources by semester and type
-- **Search History**: View and access recent searches
-- **Rich Results**: Display resource details including title, subject, semester, and type
-- **Quick Navigation**: Direct links to semester resources
-- **Keyboard Navigation**: Navigate search results using arrow keys
-
-## Project Structure
-
-```
-├── app/                 # Next.js app directory
-│   ├── semester/       # Semester-specific pages
-│   └── layout.tsx      # Root layout
-├── components/         # React components
-│   ├── ui/            # UI components
-│   ├── header.tsx     # Header component
-│   ├── footer.tsx     # Footer component
-│   └── search.tsx     # Search component
-├── lib/               # Utility functions
-│   ├── resources.ts   # Resource management
-│   └── search.ts      # Search functionality
-├── public/            # Static assets
-└── styles/            # Global styles
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first CSS framework
-- Radix UI for accessible components
-- Lucide for beautiful icons
-
-## 🌟 Project Philosophy
-
-At its core, this project is a response to disorganization in academic resource sharing. In most colleges—including Jain University—study materials are often shared through informal or fragmented channels: WhatsApp groups, scattered Google Drive links, or inconsistent folder structures. As a result, students waste time hunting for files, miss out on important documents, or struggle to prepare effectively during crucial periods like exams or assignments.
-
-### Core Principles
-
-#### 🧩 Structured Organization
-- Students can navigate by semester, subject, and type of resource
-- No more digging through messages or repeatedly asking seniors
-- Clear, intuitive categorization of all materials
-
-#### 🚪 Open & Collaborative
-- Starting with BCA (Data Analytics), but built to expand to other departments
-- Anyone with access to verified documents can contribute
-- Community-driven through GitHub or contact form submissions
-- Living, crowd-powered archive of academic resources
-
-#### 🌐 Static, Fast, and Accessible
-- Completely static architecture for reliability
-- Mobile-optimized for on-the-go access
-- Deployed on free, fast platforms (Vercel)
-- Sustainable without recurring costs
-
-#### 💡 Minimal, Not Feature-Heavy
-- Not trying to be the next Google Classroom
-- Focus on essential features only
-- Intuitive and frictionless user experience
-- Purpose-built for student needs
+JGI-002 is a modern web application built with TypeScript and React. This project demonstrates best practices for creating scalable, maintainable web applications using current technologies and development patterns.
 
 ## 🚀 Features
 
-- Modern UI with Tailwind CSS and Radix UI components
-- Responsive design for all devices
-- Dark/Light mode support
-- Semester-wise resource organization
-- Contact management system
-- Type-safe development with TypeScript
-- SEO optimized
+- TypeScript for type safety and improved developer experience
+- React for building interactive user interfaces
+- Vite for fast development and optimized production builds
+- ESLint and Prettier for code quality and consistent formatting
+- Responsive design for various device sizes
+- Component-based architecture for reusability and maintainability
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- **Framework:** Next.js 15
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **UI Components:** Radix UI
-- **Form Handling:** React Hook Form with Zod validation
-- **State Management:** React Hooks
-- **Date Handling:** date-fns
-- **Charts:** Recharts
-- **Animations:** tailwindcss-animate
+- **Frontend Framework**: React
+- **Language**: TypeScript (96.8%), CSS (3.1%), JavaScript (0.1%)
+- **Build Tool**: Vite
+- **Package Manager**: npm
+- **CSS Preprocessor**: Sass
+- **Code Quality**: ESLint, Prettier
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) (v8 or higher)
+
+## 🔧 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/8harath/JGI-002.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd JGI-002
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## 🚀 Usage
+
+### Development Server
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+### Build for Production
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+JGI-002/
+├── public/            # Static assets
+├── src/               # Source code
+│   ├── assets/        # Images, fonts, etc.
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Page components
+│   ├── styles/        # Global styles and themes
+│   ├── types/         # TypeScript type definitions
+│   ├── utils/         # Utility functions
+│   ├── App.tsx        # Main application component
+│   ├── main.tsx       # Application entry point
+│   └── vite-env.d.ts  # Vite environment type definitions
+├── .eslintrc.cjs      # ESLint configuration
+├── .gitignore         # Git ignore rules
+├── index.html         # HTML entry point
+├── package.json       # Project dependencies and scripts
+├── tsconfig.json      # TypeScript configuration
+├── tsconfig.node.json # Node-specific TypeScript configuration
+└── vite.config.ts     # Vite configuration
+```
+
+## 🧪 Testing
+
+Run tests:
+
+```bash
+npm test
+```
+
+## 📝 Code Quality
+
+Check for linting issues:
+
+```bash
+npm run lint
+```
+
+Fix linting issues automatically:
+
+```bash
+npm run lint:fix
+```
+
+Format code with Prettier:
+
+```bash
+npm run format
+```
+
+## 🔄 Continuous Integration/Continuous Deployment
+
+This project is set up with GitHub Actions for CI/CD. Every push to the main branch triggers:
+- Code linting
+- Running tests
+- Building the application
+
+## 🛣️ Roadmap
+
+- [ ] Add unit tests
+- [ ] Implement authentication
+- [ ] Create mobile-responsive views
+- [ ] Add internationalization support
+- [ ] Implement dark mode
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Ways to Contribute
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-1. **Add Resources**
-   - Submit verified study materials
-   - Organize existing resources
-   - Update outdated content
-
-2. **Improve Documentation**
-   - Enhance README files
-   - Add inline code comments
-   - Create usage examples
-
-3. **Code Contributions**
-   - Fix bugs
-   - Add new features
-   - Improve performance
-   - Enhance accessibility
-
-### Contribution Process
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some feature'`)
-5. Push to the branch (`git push origin feature/your-feature`)
-6. Open a Pull Request
-
-### Pull Request Guidelines
-
-- Ensure your code follows the project's style guide
-- Add tests for new features
-- Update documentation as needed
-- Provide clear commit messages
-- Reference any related issues
-
-### Code of Conduct
-
-- Be respectful and inclusive
-- Give constructive feedback
-- Help others learn
-- Be patient with new contributors
-
-## 📦 Installation
-
-1. Clone the repository:
-```bash
-git clone [your-repository-url]
-cd resource-management
-```
-
-2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
-
-3. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 🏗️ Project Structure
-
-```
-├── app/                 # Next.js app directory
-│   ├── semester/       # Semester-specific pages
-│   ├── contact/        # Contact management
-│   └── layout.tsx      # Root layout
-├── components/         # Reusable UI components
-├── data/              # Static data and configurations
-├── hooks/             # Custom React hooks
-├── lib/               # Utility functions and configurations
-├── public/            # Static assets
-└── styles/            # Global styles
-```
-
-## 🎨 UI Components
-
-The project uses a comprehensive set of UI components from Radix UI, including:
-- Accordion
-- Alert Dialog
-- Avatar
-- Dialog
-- Dropdown Menu
-- Navigation Menu
-- Toast notifications
-- And many more...
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## 📝 License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Contributors
+## 📞 Contact
 
-- Bharath K (BCA-DA) - All materials
+Bharath - [@8harath](https://github.com/8harath)
 
-## 🔗 Links
+Project Link: [https://github.com/8harath/JGI-002](https://github.com/8harath/JGI-002)
 
-- [GitHub Repository](https://github.com/8harath/JGI-002)
-- [Live Demo](https://www.jainuniversity.live/)
+## 🙏 Acknowledgments
 
----
-
-Made with ❤️ using Next.js and TypeScript 
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Vite Documentation](https://vitejs.dev/guide/)
