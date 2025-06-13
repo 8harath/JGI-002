@@ -16,7 +16,10 @@ export function generateStaticParams() {
 export default function LanguagesPage({ params }: { params: { id: string } }) {
   const semesterId = Number.parseInt(params.id)
   const semester = semesters.find((s) => s.id === semesterId)
-  const subject = subjects.find((s) => s.semesterId === semesterId && s.slug === "languages")
+  const subject = subjects.find((s) => 
+    s.semesterId === semesterId && 
+    (s.slug === "languages" || s.slug === "languages-2")
+  )
 
   if (!semester || !semester.isActive || !subject) {
     notFound()

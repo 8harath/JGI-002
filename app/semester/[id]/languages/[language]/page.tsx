@@ -31,7 +31,10 @@ export default function LanguagePage({
 }) {
   const semesterId = Number.parseInt(params.id)
   const semester = semesters.find((s) => s.id === semesterId)
-  const subject = subjects.find((s) => s.semesterId === semesterId && s.slug === "languages")
+  const subject = subjects.find((s) => 
+    s.semesterId === semesterId && 
+    (s.slug === "languages" || s.slug === "languages-2")
+  )
   const languageName = languageNames[params.language]
 
   if (!semester || !semester.isActive || !subject || !languageName) {
