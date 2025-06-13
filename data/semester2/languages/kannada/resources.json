@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "kannada-201",
+      "title": "Advanced Kannada Grammar",
+      "description": "Advanced grammar concepts and complex sentence structures",
+      "type": "Notes",
+      "url": "/resources/kannada/advanced-grammar.pdf"
+    },
+    {
+      "id": "kannada-202",
+      "title": "Kannada Literature",
+      "description": "Introduction to Kannada literature and famous works",
+      "type": "Books",
+      "url": "/resources/kannada/literature.pdf"
+    },
+    {
+      "id": "kannada-203",
+      "title": "Kannada Composition",
+      "description": "Advanced writing exercises and composition practice",
+      "type": "Assignments",
+      "url": "/resources/kannada/composition.pdf"
+    }
+  ]
+} 

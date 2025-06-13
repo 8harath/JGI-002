@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "hindi-101",
+      "title": "Hindi Basic Grammar",
+      "description": "Introduction to Hindi grammar and basic sentence structure",
+      "type": "Notes",
+      "url": "/resources/hindi/basic-grammar.pdf"
+    },
+    {
+      "id": "hindi-102",
+      "title": "Hindi Vocabulary Book",
+      "description": "Essential Hindi vocabulary and common phrases",
+      "type": "Books",
+      "url": "/resources/hindi/vocabulary.pdf"
+    },
+    {
+      "id": "hindi-103",
+      "title": "Hindi Writing Practice",
+      "description": "Worksheets for practicing Hindi writing",
+      "type": "Assignments",
+      "url": "/resources/hindi/writing-practice.pdf"
+    }
+  ]
+} 
