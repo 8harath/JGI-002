@@ -20,3 +20,26 @@ export interface Contributor {
   contributions: string[]
   github: string
 }
+
+export interface Resource {
+  id: string
+  name: string
+  type: 'file' | 'folder'
+  path: string
+  description?: string
+  children?: Resource[]
+  fileType?: 'pdf' | 'doc' | 'ppt' | 'code' | 'certification' | 'documentation' | 'file'
+  moduleNumber?: number
+}
+
+export interface ResourceFolder {
+  name: string
+  description: string
+  type: 'tlep' | 'notes' | 'presentations' | 'activity' | 'papers'
+  resources: Resource[]
+}
+
+export interface SubjectResources {
+  subjectId: number
+  folders: ResourceFolder[]
+}

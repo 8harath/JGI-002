@@ -1,8 +1,9 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { FileExplorer } from "@/components/file-explorer"
+import { ResourceExplorer } from "@/components/resource-explorer"
 import { semesters } from "@/data/semesters"
 import { subjects } from "@/data/subjects"
+import { getSubjectResources } from "@/lib/resources"
 import { ArrowLeft } from "lucide-react"
 
 export function generateStaticParams() {
@@ -39,14 +40,8 @@ export default function SubjectPage({
     notFound()
   }
 
-  const folders = [
-    { name: "TLEP", description: "Teaching Learning Evaluation Plans" },
-    { name: "Notes", description: "Lecture notes and study materials" },
-    { name: "Presentations", description: "PPT slides and visual content" },
-    { name: "Activity 1", description: "First activity/assignment materials" },
-    { name: "Activity 2", description: "Second activity/assignment materials" },
-    { name: "Previous Year Papers", description: "Exam papers and solutions" },
-  ]
+  const folders = getSubjectResources(semesterId, subject.id)
+  console.log("Folders passed to ResourceExplorer:", JSON.stringify(folders, null, 2))
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -61,7 +56,7 @@ export default function SubjectPage({
 
       <div className="mb-8">
         <h2 className="section-header">Materials</h2>
-        <FileExplorer folders={folders} subject={subject} />
+        <ResourceExplorer folders={folders} subjectId={subject.id} />
       </div>
     </div>
   )
