@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "kannada-101",
+      "title": "Kannada Basic Grammar",
+      "description": "Introduction to Kannada grammar and basic sentence structure",
+      "type": "Notes",
+      "url": "/resources/kannada/basic-grammar.pdf"
+    },
+    {
+      "id": "kannada-102",
+      "title": "Kannada Vocabulary Book",
+      "description": "Essential Kannada vocabulary and common phrases",
+      "type": "Books",
+      "url": "/resources/kannada/vocabulary.pdf"
+    },
+    {
+      "id": "kannada-103",
+      "title": "Kannada Writing Practice",
+      "description": "Worksheets for practicing Kannada writing",
+      "type": "Assignments",
+      "url": "/resources/kannada/writing-practice.pdf"
+    }
+  ]
+} 

@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "sanskrit-101",
+      "title": "Sanskrit Basic Grammar",
+      "description": "Introduction to Sanskrit grammar and basic sentence structure",
+      "type": "Notes",
+      "url": "/resources/sanskrit/basic-grammar.pdf"
+    },
+    {
+      "id": "sanskrit-102",
+      "title": "Sanskrit Vocabulary Book",
+      "description": "Essential Sanskrit vocabulary and common phrases",
+      "type": "Books",
+      "url": "/resources/sanskrit/vocabulary.pdf"
+    },
+    {
+      "id": "sanskrit-103",
+      "title": "Sanskrit Writing Practice",
+      "description": "Worksheets for practicing Sanskrit writing",
+      "type": "Assignments",
+      "url": "/resources/sanskrit/writing-practice.pdf"
+    }
+  ]
+} 

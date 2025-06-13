@@ -26,7 +26,7 @@ export const subjects = [
     semesterId: 1,
     name: "Languages",
     slug: "languages",
-    description: "Kannada, Hindi, Sanskrit language courses",
+    description: "Choose from Kannada, Hindi, or Sanskrit language courses",
   },
   {
     id: 105,
@@ -84,7 +84,7 @@ export const subjects = [
     semesterId: 2,
     name: "Languages",
     slug: "languages-2",
-    description: "Continued language studies in Kannada, Hindi, Sanskrit",
+    description: "Choose from Kannada, Hindi, or Sanskrit language courses",
   },
   {
     id: 205,

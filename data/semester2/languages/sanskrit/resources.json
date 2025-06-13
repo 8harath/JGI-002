@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "sanskrit-201",
+      "title": "Advanced Sanskrit Grammar",
+      "description": "Advanced grammar concepts and complex sentence structures",
+      "type": "Notes",
+      "url": "/resources/sanskrit/advanced-grammar.pdf"
+    },
+    {
+      "id": "sanskrit-202",
+      "title": "Sanskrit Literature",
+      "description": "Introduction to Sanskrit literature and famous works",
+      "type": "Books",
+      "url": "/resources/sanskrit/literature.pdf"
+    },
+    {
+      "id": "sanskrit-203",
+      "title": "Sanskrit Composition",
+      "description": "Advanced writing exercises and composition practice",
+      "type": "Assignments",
+      "url": "/resources/sanskrit/composition.pdf"
+    }
+  ]
+} 
