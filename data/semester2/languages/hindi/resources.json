@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "id": "hindi-201",
+      "title": "Advanced Hindi Grammar",
+      "description": "Advanced grammar concepts and complex sentence structures",
+      "type": "Notes",
+      "url": "/resources/hindi/advanced-grammar.pdf"
+    },
+    {
+      "id": "hindi-202",
+      "title": "Hindi Literature",
+      "description": "Introduction to Hindi literature and famous works",
+      "type": "Books",
+      "url": "/resources/hindi/literature.pdf"
+    },
+    {
+      "id": "hindi-203",
+      "title": "Hindi Composition",
+      "description": "Advanced writing exercises and composition practice",
+      "type": "Assignments",
+      "url": "/resources/hindi/composition.pdf"
+    }
+  ]
+} 

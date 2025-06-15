@@ -41,6 +41,10 @@ export function SubjectList({ subjects, semesterId, specializationPath }: Subjec
     if (specializationPath) {
       return `/semester/${semesterId}/${specializationPath}/${subject.slug}`
     }
+    // Special handling for language subjects
+    if (subject.slug === "languages" || subject.slug === "languages-2") {
+      return `/semester/${semesterId}/languages`
+    }
     return `/semester/${semesterId}/${subject.slug}`
   }
 
