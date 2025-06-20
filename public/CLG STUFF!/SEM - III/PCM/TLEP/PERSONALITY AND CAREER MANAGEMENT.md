@@ -1,0 +1,7 @@
+| **Module** |     | **Contents**                                                                                                                                                                      |     |
+| ---------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| 1          |     | **Definition & concept of Personality**Attitude and behavior, Types of Personality, Values- Moral, social and personal, Self-Analysis, Self Confidence and Self Esteem.           |     |
+| 2          |     | **Emotional Intelligence:** Meaning & definition, Significance, Need for emotional Intelligence, Components of EI, Skills to develop EI & Etiquette – Manner’s array declaration. |     |
+| 3          |     | **Goals:** Concept, type, Motivation, concept, types, Diagnosing Time-management, Effective time planning, Goal Setting Sheet, Time management matrix                             |     |
+| 4          |     | **Introduction to career planning**Self-assessment, Identifying professional talents.                                                                                             |     |
+| 5          |     | **Preparing for Employment:**  Internships, Interviews & resume, Preparing resume, Reviewing resume, Different patterns of resume building.                                       |     |

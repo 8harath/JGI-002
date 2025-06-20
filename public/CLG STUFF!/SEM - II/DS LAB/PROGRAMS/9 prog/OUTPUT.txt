@@ -1,0 +1,30 @@
+/tmp/HiOURHxAnU.o
+
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter data to insert: 3
+Element inserted successfully.
+
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 1
+Enter data to insert: 33
+Element inserted successfully.
+
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 3
+33 -> 3 -> NULL
+
+1. Insert
+2. Delete
+3. Display
+4. Exit
+Enter your choice: 

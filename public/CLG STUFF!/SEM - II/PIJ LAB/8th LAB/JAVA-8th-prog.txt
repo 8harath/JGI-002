@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+// Custom exception class for insufficient funds
+class InsufficientFundException extends Exception {
+    public InsufficientFundException(String message) {
+        super(message);
+    }
+}
+
+// Bank account class
+class BankAccount {
+    private double balance;
+    private final double minBalance;
+
+    public BankAccount(double initialBalance, double minBalance) {
+        this.balance = initialBalance;
+        this.minBalance = minBalance;
+    }
+
+    public void deposit(double amount) throws IllegalArgumentException {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Invalid deposit amount. Amount must be greater than zero.");
+        }
+        balance += amount;
+        System.out.println("Deposit successful. Current balance: " + balance);
+    }
+
+    public void withdraw(double amount) throws InsufficientFundException, IllegalArgumentException {
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Invalid withdrawal amount. Amount must be greater than zero.");
+        }
+        if (balance - amount < minBalance) {
+            throw new InsufficientFundException("Insufficient funds. Withdrawal not allowed.");
+        }
+        balance -= amount;
+        System.out.println("Withdrawal successful. Current balance: " + balance);
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+// Main class to test bank account operations
+public class BankAccountDemo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter initial balance: ");
+        double initialBalance = scanner.nextDouble();
+        System.out.print("Enter minimum balance: ");
+        double minBalance = scanner.nextDouble();
+
+        BankAccount account = new BankAccount(initialBalance, minBalance);
+
+        try {
+            System.out.print("Enter deposit amount: ");
+            double depositAmount = scanner.nextDouble();
+            account.deposit(depositAmount);
+
+            System.out.print("Enter withdrawal amount: ");
+            double withdrawalAmount = scanner.nextDouble();
+            account.withdraw(withdrawalAmount);
+
+            System.out.print("Enter another withdrawal amount: ");
+            double withdrawalAmount2 = scanner.nextDouble();
+            account.withdraw(withdrawalAmount2); // This may raise InsufficientFundException
+        } catch (InsufficientFundException | IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            scanner.close();
+        }
+
+        System.out.println("Final balance: " + account.getBalance());
+    }
+}

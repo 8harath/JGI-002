@@ -1,0 +1,36 @@
+class Box {
+    int width, height, length;
+
+    Box() {
+        width = 10;
+        height = 10;
+        length = 10;
+    }
+
+    Box(int w, int h, int l) {
+        width = w;
+        height = h;
+        length = l;
+    }
+
+    Box(Box c) {
+        width = c.width;
+        height = c.height;
+        length = c.length;
+    }
+
+    float volume() {
+        return (width * height * length);
+    }
+}
+
+class Constructor_overload {
+    public static void main(String args[]) {
+        Box c1 = new Box();
+        Box c2 = new Box(20, 30, 40);
+        Box c3 = new Box(c1); // Creates a new Box object using the copy constructor and passing c1 as an argument
+        System.out.println(c1.volume());
+        System.out.println(c2.volume());
+        System.out.println(c3.volume());
+    }
+}
