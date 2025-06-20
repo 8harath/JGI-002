@@ -1,0 +1,6 @@
+Enter a line of text: my name is bharath
+Input Text: my name is bharath
+Number of Words: 4
+Enter a string to search in the text: bharath
+Search for 'bharath': true
+Is Palindrome? false

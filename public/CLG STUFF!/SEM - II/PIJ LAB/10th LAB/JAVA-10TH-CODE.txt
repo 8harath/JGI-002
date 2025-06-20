@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class TextOperations {
+    private String text;
+
+    public TextOperations(String text) {
+        this.text = text;
+    }
+
+    public int countWords() {
+        if (text == null || text.trim().isEmpty()) {
+            return 0;
+        }
+
+        String[] words = text.trim().split("\\s+");
+        return words.length;
+    }
+
+    public boolean searchString(String search) {
+        if (text == null || search == null || text.isEmpty() || search.isEmpty()) {
+            return false;
+        }
+
+        return text.contains(search);
+    }
+
+    public boolean isPalindrome() {
+        if (text == null || text.trim().isEmpty()) {
+            return false;
+        }
+
+        String cleanText = text.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        int left = 0;
+        int right = cleanText.length() - 1;
+
+        while (left < right) {
+            if (cleanText.charAt(left) != cleanText.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a line of text: ");
+        String inputText = scanner.nextLine();
+        TextOperations textOps = new TextOperations(inputText);
+
+        System.out.println("Input Text: " + inputText);
+        System.out.println("Number of Words: " + textOps.countWords());
+
+        System.out.print("Enter a string to search in the text: ");
+        String searchWord = scanner.nextLine();
+        System.out.println("Search for '" + searchWord + "': " + textOps.searchString(searchWord));
+
+        System.out.println("Is Palindrome? " + textOps.isPalindrome());
+
+        scanner.close();
+    }
+}

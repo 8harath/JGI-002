@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+void insertAtBeginning(struct Node** head_ref, int new_data) {
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+
+    new_node->data = new_data;
+    new_node->next = *head_ref;
+    *head_ref = new_node;
+}
+
+void deleteNode(struct Node** head_ref, int key) {
+    struct Node* temp = *head_ref, *prev = NULL;
+
+    if (temp != NULL && temp->data == key) {
+        *head_ref = temp->next; // Change head
+        free(temp); // Free old head
+        return;
+    }
+
+    while (temp != NULL && temp->data != key) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL) {
+        printf("Element not found in the list.\n");
+        return;
+    }
+
+    prev->next = temp->next;
+
+    free(temp); // Free memory
+    printf("Element deleted successfully.\n");
+}
+
+void displayList(struct Node* node) {
+    while (node != NULL) {
+        printf("%d -> ", node->data);
+        node = node->next;
+    }
+    printf("NULL\n");
+}
+
+int main() {
+    struct Node* head = NULL;
+    int choice, data, key;
+
+    while (1) {
+        printf("\n1. Insert\n2. Delete\n3. Display\n4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter data to insert: ");
+                scanf("%d", &data);
+                insertAtBeginning(&head, data);
+                printf("Element inserted successfully.\n");
+                break;
+            case 2:
+                printf("Enter element to delete: ");
+                scanf("%d", &key);
+                deleteNode(&head, key);
+                break;
+            case 3:
+                displayList(head);
+                break;
+            case 4:
+                printf("Exiting the program.\n");
+                exit(0);
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
+
+    return 0;
+}

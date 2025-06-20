@@ -1,0 +1,9 @@
+Enter initial balance: 2022
+Enter deposit amount for Thread 1: 88
+Enter withdrawal amount for Thread 2: 0
+Enter deposit amount for Thread 3: 34
+Enter withdrawal amount for Thread 4: 67
+Deposit: 88, Balance: 2110
+Withdrawal: 67, Balance: 2043
+Deposit: 34, Balance: 2077
+Withdrawal: 0, Balance: 2077

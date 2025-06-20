@@ -1,0 +1,19 @@
+/tmp/dA6XLT9jhB.o
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Enter your choice: 1
+Enter the value to enqueue: 34
+34 enqueued to the queue.
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Enter your choice: 3
+Queue elements are: 34 
+1. Enqueue
+2. Dequeue
+3. Display
+4. Exit
+Enter your choice: 

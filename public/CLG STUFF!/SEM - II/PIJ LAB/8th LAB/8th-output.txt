@@ -1,0 +1,7 @@
+Enter initial balance: 100
+Enter minimum balance: 20
+Enter deposit amount: 10000
+Deposit successful. Current balance: 10100.0
+Enter withdrawal amount: 300
+Withdrawal successful. Current balance: 9800.0
+Enter another withdrawal amount:

@@ -1,0 +1,5 @@
+Enter Aadhar number:
+765432109876
+Aadhar Number: 765432109876
+Name: RUKESH
+Department: HR

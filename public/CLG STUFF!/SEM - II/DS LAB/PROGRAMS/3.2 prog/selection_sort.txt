@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+void selectionSort(int array[], int size) {
+    int i, j, minIndex, temp;
+    for (i = 0; i < size - 1; i++) {
+        minIndex = i;
+        for (j = i + 1; j < size; j++) {
+            if (array[j] < array[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // Swap the found minimum element with the first element
+        temp = array[minIndex];
+        array[minIndex] = array[i];
+        array[i] = temp;
+    }
+}
+
+int main() {
+    int size, i;
+
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &size);
+
+    int array[size];
+
+    printf("Enter %d integers:\n", size);
+    for (i = 0; i < size; i++) {
+        scanf("%d", &array[i]);
+    }
+
+    printf("Array before sorting: \n");
+    for (i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+
+    selectionSort(array, size);
+
+    printf("\nArray after sorting: \n");
+    for (i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+
+    return 0;
+}

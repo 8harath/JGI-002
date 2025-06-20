@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ProfessionalTaxCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the salary amount: ");
+        double salary = scanner.nextDouble();
+
+        double professionalTax = calculateProfessionalTax(salary);
+
+        System.out.println("Professional Tax: $" + professionalTax);
+
+        scanner.close();
+    }
+public static double calculateProfessionalTax(double salary) {
+    if (salary <= 10000) return 0;
+    if (salary <= 25000) return 100;
+    if (salary <= 50000) return 200;
+    if (salary <= 75000) return 300;
+    if (salary <= 100000) return 450;
+    return 650;
+}
+}

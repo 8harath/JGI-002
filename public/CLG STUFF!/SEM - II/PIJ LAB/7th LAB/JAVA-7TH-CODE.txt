@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+class Person {
+    protected String aadharNumber;
+    protected String name;
+
+    public Person(String aadharNumber, String name) {
+        this.aadharNumber = aadharNumber;
+        this.name = name;
+    }
+
+    public String getAadharNumber() {
+        return aadharNumber;
+    }
+
+    public void printDetails() {
+        System.out.println("Aadhar Number: " + aadharNumber);
+        System.out.println("Name: " + name);
+    }
+}
+
+class Student extends Person {
+    private String course;
+
+    public Student(String aadharNumber, String name, String course) {
+        super(aadharNumber, name);
+        this.course = course;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Course: " + course);
+    }
+}
+
+class Employee extends Person {
+    private String department;
+
+    public Employee(String aadharNumber, String name, String department) {
+        super(aadharNumber, name);
+        this.department = department;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Department: " + department);
+    }
+}
+
+public class JAINUniversity {
+    public static void main(String[] args) {
+        Person[] people = {
+            new Student("123456789012", "BHARATH", "Computer Science"),
+            new Employee("987654321098", "YOGESH", "IT"),
+            new Student("456789012345", "AMULYA", "Electrical Engineering"),
+            new Employee("765432109876", "RUKESH", "HR")
+        };
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Aadhar number:");
+        String inputAadharNumber = scanner.nextLine();
+
+        Person person = getPersonByAadhar(people, inputAadharNumber);
+        if (person != null) {
+            person.printDetails();
+        } else {
+            System.out.println("No person found with Aadhar number " + inputAadharNumber);
+        }
+
+        scanner.close();
+    }
+
+    public static Person getPersonByAadhar(Person[] people, String aadharNumber) {
+        for (Person person : people) {
+            if (person.getAadharNumber().equals(aadharNumber)) {
+                return person;
+            }
+        }
+        return null; // Person not found
+    }
+}

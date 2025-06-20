@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+class menudriven
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+       System.out.println("User enter your choice 1 for Reversing number,2 for sum of digits,3 for prime number in range,4 for exit");
+        int choice=sc.nextInt();
+        switch(choice)
+        {
+            case 1:
+            {
+                int num,digit,rev=0;
+         System.out.println("Enter number to be reversed");
+                num=sc.nextInt();
+                while(num!=0)
+                {
+                    digit=num%10;
+                    rev=rev*10+digit;
+                    num=num/10;
+                }
+                System.out.println("reverse of number is \t"+rev);
+                break;
+            }
+            case 2:
+            {
+                int n,d,sum=0;
+         System.out.println("Enter number to find the sum of its digits");
+                n=sc.nextInt();
+                while(n!=0)
+                {
+                    d=n%10;
+                    sum=sum+d;
+                    n=n/10;
+                }
+                System.out.println("Sum of digits is:"+sum);
+                break;
+            }
+            case 3:
+            {
+                int sr,er,counter=0;
+                System.out.println("enter the starting point of the range");
+                sr=sc.nextInt();
+                System.out.println("enter the ending point of the range");
+                er=sc.nextInt();
+                for(int i=sr;i<=er;i++)
+                {
+                    for(int j=2;j<i;j++)
+                    {
+                        if(i%j==0)
+                            counter=counter+1;
+                    }
+                    if(counter==0)
+                        System.out.print(i+"\t");
+                    counter=0;
+                }
+                break;
+            }
+            case 4:
+            {
+                System.out.println("Exiting...");
+                break;
+            }
+            
+        }
+    }
+}

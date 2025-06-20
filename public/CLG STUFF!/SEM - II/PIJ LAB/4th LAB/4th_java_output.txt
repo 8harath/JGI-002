@@ -1,0 +1,20 @@
+Enter N Numbers
+5
+Enter One by one2
+3
+4
+5
+6
+1. Sum of even numbers
+2. Largest number
+3. Smallest number
+Enter your choice
+1
+Sum of even numbers: 12
+Enter your choice
+2
+Largest number: 6
+Enter your choice
+3
+Smallest number: 2
+Enter your choice
