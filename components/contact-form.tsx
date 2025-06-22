@@ -2,14 +2,15 @@
 
 import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, FormDescription } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-import { CheckCircle, Loader2 } from "lucide-react"
+import { CheckCircle, Loader2, Send, RefreshCcw } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -68,7 +69,7 @@ export function ContactForm() {
             Fill out this form to contribute materials or ask questions. We'll get back to you soon!
           </CardDescription>
         </CardHeader>
-        <CardContent className="bg-accent/10 rounded-b-xl p-4 md:p-8">
+        <CardContent className="bg-accent/10 rounded-b-xl p-4 md:p-8 animate-fade-in">
           {isSuccess ? (
             <div className="flex flex-col items-center justify-center py-8 animate-fade-in">
               <CheckCircle className="h-16 w-16 text-accent mb-4" />
@@ -76,13 +77,13 @@ export function ContactForm() {
               <p className="text-center text-muted-foreground mb-4">
                 Thank you for your message.<br />We'll get back to you soon.
               </p>
-              <button onClick={() => setIsSuccess(false)} className="keyboard-button mt-2">
-                Send Another Message
-              </button>
+              <Button variant="outline" onClick={() => setIsSuccess(false)} className="mt-2 flex items-center gap-2">
+                <RefreshCcw className="h-4 w-4 mr-1" /> Send Another Message
+              </Button>
             </div>
           ) : (
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 animate-fade-in">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <FormField
                     control={form.control}
@@ -92,11 +93,12 @@ export function ContactForm() {
                         <FormLabel className="text-lg font-bold text-foreground">Name</FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Your name"
-                            className="retro-focus border-2 border-foreground bg-card/80"
+                            placeholder="Enter your name"
+                            className="retro-focus border-2 border-foreground bg-card/80 focus:bg-accent/20 transition-colors"
                             {...field}
                           />
                         </FormControl>
+                        <FormDescription>Your full name as per records.</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -109,11 +111,12 @@ export function ContactForm() {
                         <FormLabel className="text-lg font-bold text-foreground">USN</FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="e.g., 1JA21BCA001"
-                            className="retro-focus border-2 border-foreground bg-card/80"
+                            placeholder="e.g. 1JA21BCA001"
+                            className="retro-focus border-2 border-foreground bg-card/80 focus:bg-accent/20 transition-colors"
                             {...field}
                           />
                         </FormControl>
+                        <FormDescription>Your University Serial Number.</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -126,8 +129,8 @@ export function ContactForm() {
                         <FormLabel className="text-lg font-bold text-foreground">Specialization</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger className="retro-focus border-2 border-foreground bg-card/80">
-                              <SelectValue placeholder="Select specialization" />
+                            <SelectTrigger className="retro-focus border-2 border-foreground bg-card/80 focus:bg-accent/20 transition-colors">
+                              <SelectValue placeholder="Choose specialization" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent className="border-2 border-foreground bg-card">
@@ -142,6 +145,7 @@ export function ContactForm() {
                             <SelectItem value="BCA-MACT">BCA-MACT</SelectItem>
                           </SelectContent>
                         </Select>
+                        <FormDescription>Select your current specialization.</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -155,11 +159,12 @@ export function ContactForm() {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="Your email"
-                            className="retro-focus border-2 border-foreground bg-card/80"
+                            placeholder="your@email.com"
+                            className="retro-focus border-2 border-foreground bg-card/80 focus:bg-accent/20 transition-colors"
                             {...field}
                           />
                         </FormControl>
+                        <FormDescription>We'll never share your email.</FormDescription>
                         <FormMessage />
                       </FormItem>
                     )}
@@ -173,11 +178,12 @@ export function ContactForm() {
                       <FormLabel className="text-lg font-bold text-foreground">Message</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Your message or contribution details"
-                          className="min-h-[120px] retro-focus border-2 border-foreground bg-card/80"
+                          placeholder="Type your message or contribution details here..."
+                          className="min-h-[120px] retro-focus border-2 border-foreground bg-card/80 focus:bg-accent/20 transition-colors"
                           {...field}
                         />
                       </FormControl>
+                      <FormDescription>Describe your query or the material you want to contribute.</FormDescription>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -187,16 +193,21 @@ export function ContactForm() {
                     {error}
                   </div>
                 )}
-                <button type="submit" className="w-full keyboard-button text-lg py-3 mt-2" disabled={isSubmitting}>
+                {isSubmitting && (
+                  <div className="w-full h-1 bg-gradient-to-r from-primary via-accent to-secondary animate-pulse mb-2 rounded-full transition-all" />
+                )}
+                <Button type="submit" className="w-full keyboard-button text-lg py-3 mt-2 flex items-center justify-center gap-2" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-5 w-5 inline animate-spin" />
                       Sending...
                     </>
                   ) : (
-                    "Send Message"
+                    <>
+                      <Send className="h-5 w-5" /> Send Message
+                    </>
                   )}
-                </button>
+                </Button>
               </form>
             </Form>
           )}
