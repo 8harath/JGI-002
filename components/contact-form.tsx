@@ -42,16 +42,20 @@ export function ContactForm() {
     setError(null)
 
     try {
-      // In a real implementation, we would use EmailJS here
-      // For this demo, we'll simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-
-      setIsSuccess(true)
-      form.reset()
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+      setIsSuccess(true);
+      form.reset();
     } catch (err) {
-      setError("An error occurred while sending your message. Please try again.")
+      setError("An error occurred while sending your message. Please try again.");
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 

@@ -169,3 +169,15 @@ Project Link: [https://github.com/8harath/JGI-002](https://github.com/8harath/JG
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Vite Documentation](https://vitejs.dev/guide/)
+
+## Contact Form EmailJS Setup
+
+To enable the contact form to send emails, create a `.env.local` file in your project root with the following content:
+
+```
+EMAILJS_SERVICE_ID=service_6yd60g2
+EMAILJS_TEMPLATE_ID=template_1118eta
+EMAILJS_USER_ID=qx2jxijBdwq8Vvg0C
+```
+
+These credentials are required for the backend to send emails using EmailJS.
