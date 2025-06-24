@@ -92,3 +92,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide default dialog close button for contributors modal */
+.hide-default-dialog-close [data-radix-dialog-close] {
+  display: none !important;
+}

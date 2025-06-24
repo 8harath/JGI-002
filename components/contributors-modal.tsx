@@ -14,8 +14,8 @@ interface ContributorsModalProps {
 export function ContributorsModal({ isOpen, onClose }: ContributorsModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-[95vw] md:max-w-4xl max-h-[90vh] overflow-y-auto bg-card border-2 border-foreground p-4 md:p-6">
-        <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground w-8 h-8 rounded-full border-2 border-foreground flex items-center justify-center hover:bg-primary/90 transition-colors">
+      <DialogContent hideClose className="max-w-[95vw] md:max-w-4xl max-h-[90vh] overflow-y-auto bg-card border-2 border-foreground p-4 md:p-6">
+        <div className="absolute top-4 left-4 z-50 bg-primary text-primary-foreground w-8 h-8 rounded-full border-2 border-foreground flex items-center justify-center hover:bg-primary/90 transition-colors">
           <button onClick={onClose} aria-label="Close modal">
             <X size={18} />
           </button>

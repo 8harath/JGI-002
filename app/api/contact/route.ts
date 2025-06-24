@@ -31,12 +31,21 @@ export async function POST(req: NextRequest) {
       }),
     });
 
+    let data = null;
+    try {
+      data = await response.json();
+    } catch (jsonErr) {
+      // If response is not JSON, ignore
+    }
+
     if (!response.ok) {
-      return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
+      console.error('EmailJS response error:', data || response.statusText);
+      return NextResponse.json({ error: data || response.statusText || 'Failed to send email' }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+    console.error('EmailJS fetch error:', error);
+    return NextResponse.json({ error: 'Internal server error', details: error instanceof Error ? error.message : String(error) }, { status: 500 });
   }
 } 
