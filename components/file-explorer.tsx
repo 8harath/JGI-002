@@ -44,8 +44,26 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
   const [selectedFolder, setSelectedFolder] = useState(folders[0].name)
   const [selectedFile, setSelectedFile] = useState<string | null>(null)
 
-  // For demonstration, we'll show files only in the Notes folder
-  const hasFiles = selectedFolder === "Notes"
+  // Custom logic for FCA TLEP
+  const isFcaTlep =
+    selectedFolder === "TLEP" &&
+    subject.name === "Fundamentals of Computer Applications" &&
+    subject.semesterId === 1;
+
+  const tlepFiles = [
+    {
+      name: "FCA-TLEP.pdf",
+      path: "/Resources/Semister%20-%201/FCA/TLEP/FCA-TLEP.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+  ];
+
+  const filesToShow = isFcaTlep
+    ? tlepFiles
+    : selectedFolder === "Notes"
+    ? mockFiles
+    : [];
 
   return (
     <div>
@@ -69,7 +87,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
                 <h3 className="text-lg md:text-xl font-bold text-foreground mb-1 md:mb-2">{folder.name}</h3>
                 <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">{folder.description}</p>
 
-                {hasFiles && folder.name === "Notes" ? (
+                {filesToShow.length > 0 ? (
                   <div>
                     <div className="border-2 border-accent rounded-lg overflow-hidden">
                       <div className="bg-card px-3 md:px-4 py-2 md:py-3 border-b-2 border-accent">
@@ -80,7 +98,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
                         </div>
                       </div>
                       <div className="divide-y divide-accent/30">
-                        {mockFiles.map((file, index) => (
+                        {filesToShow.map((file, index) => (
                           <div
                             key={file.name}
                             className="grid grid-cols-12 px-3 md:px-4 py-2 md:py-3 hover:bg-accent/10 cursor-pointer transition-colors animate-fade-in"
