@@ -118,9 +118,23 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     },
   ];
 
+  const isFomNotes =
+    selectedFolder === "Notes" &&
+    subject.name === "Fundamentals of Mathematics";
+  
+  const fomNotesFiles = [
+    { name: "Module-1.pdf", path: "/Resources/Semister%20-%201/FOM/Module-1.pdf", size: "-", type: "pdf" },
+    { name: "Permutation_&_Combination.pdf", path: "/Resources/Semister%20-%201/FOM/Permutation_&_Combination.pdf", size: "-", type: "pdf" },
+    { name: "Set's.pdf", path: "/Resources/Semister%20-%201/FOM/Set's.pdf", size: "-", type: "pdf" },
+    { name: "System-of-Linear-Equation.pdf", path: "/Resources/Semister%20-%201/FOM/System-of-Linear-Equation.pdf", size: "-", type: "pdf" },
+    { name: "Module-3.pdf", path: "/Resources/Semister%20-%201/FOM/Module-3.pdf", size: "-", type: "pdf" },
+  ];
+
   const filesToShow =
     subject.name === "Fundamentals of Computer Application Lab"
       ? labFiles
+      : isFomNotes
+      ? fomNotesFiles
       : isFcaTlep
       ? tlepFiles
       : isFcaPresentations
