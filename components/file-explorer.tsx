@@ -41,7 +41,29 @@ const mockFiles = [
 ]
 
 export function FileExplorer({ folders, subject }: FileExplorerProps) {
-  const [selectedFolder, setSelectedFolder] = useState(folders[0].name)
+  let filteredFolders = folders;
+  let labFiles = [];
+  if (subject.name === "Fundamentals of Computer Application Lab") {
+    filteredFolders = [
+      { name: "Lab Assignments", description: "All lab assignments for this subject." },
+    ];
+    labFiles = [
+      { name: "EXP-1_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-1_FCA.pdf", size: "-", type: "pdf" },
+      { name: "EXP-2_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-2_FCA.pdf", size: "-", type: "pdf" },
+      { name: "EXP-3_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-3_FCA.pdf", size: "-", type: "pdf" },
+      { name: "EXP-4_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-4_FCA.pdf", size: "-", type: "pdf" },
+      { name: "EXP-5_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-5_FCA.pdf", size: "-", type: "pdf" },
+      { name: "Exp-6_FCA .pdf", path: "/Resources/Semister%20-%201/FCA_LAB/Exp-6_FCA%20.pdf", size: "-", type: "pdf" },
+      { name: "EXP-7_FCA.pptx", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-7_FCA.pptx", size: "-", type: "pptx" },
+      { name: "EXP-8_FCA.pptx", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-8_FCA.pptx", size: "-", type: "pptx" },
+      { name: "EXP-9.html", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-9.html", size: "-", type: "html" },
+      { name: "EXP-10.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-10.HTML", size: "-", type: "html" },
+      { name: "EXP-11.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-11.HTML", size: "-", type: "html" },
+      { name: "EXP-12.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-12.HTML", size: "-", type: "html" },
+      { name: "Outputs_html.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/Outputs_html.pdf", size: "-", type: "pdf" },
+    ];
+  }
+  const [selectedFolder, setSelectedFolder] = useState(filteredFolders[0].name)
 
   // Custom logic for FCA TLEP
   const isFcaTlep =
@@ -96,19 +118,22 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     },
   ];
 
-  const filesToShow = isFcaTlep
-    ? tlepFiles
-    : isFcaPresentations
-    ? presentationFiles
-    : selectedFolder === "Notes"
-    ? mockFiles
-    : [];
+  const filesToShow =
+    subject.name === "Fundamentals of Computer Application Lab"
+      ? labFiles
+      : isFcaTlep
+      ? tlepFiles
+      : isFcaPresentations
+      ? presentationFiles
+      : selectedFolder === "Notes"
+      ? mockFiles
+      : [];
 
   return (
     <div>
-      <Tabs defaultValue={folders[0].name} onValueChange={setSelectedFolder}>
+      <Tabs defaultValue={filteredFolders[0].name} onValueChange={setSelectedFolder}>
         <TabsList className="mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
-          {folders.map((folder) => (
+          {filteredFolders.map((folder) => (
             <TabsTrigger
               key={folder.name}
               value={folder.name}
@@ -121,7 +146,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
           <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
         </TabsList>
 
-        {folders.map((folder) => (
+        {filteredFolders.map((folder) => (
           <TabsContent key={folder.name} value={folder.name}>
             <Card className="retro-card">
               <CardContent className="p-4 md:p-6">
