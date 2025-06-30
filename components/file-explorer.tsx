@@ -146,6 +146,15 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     { name: "Activity-1.pdf", path: "/Resources/Semister%20-%201/FOM/Activity-1.pdf", size: "-", type: "pdf" },
   ];
 
+  const isFcaPyp =
+    selectedFolder === "Previous Year Papers" &&
+    subject.name === "Fundamentals of Computer Applications";
+  
+  const fcaPypFiles = [
+    { name: "Previous-Yr-paper (1).jpg", path: "/Resources/Semister%20-%201/FCA/PYP/Previous-Yr-paper%20(1).jpg", size: "-", type: "jpg" },
+    { name: "Previous-Yr-paper (2).jpg", path: "/Resources/Semister%20-%201/FCA/PYP/Previous-Yr-paper%20(2).jpg", size: "-", type: "jpg" },
+  ];
+
   const filesToShow =
     subject.name === "Fundamentals of Computer Application Lab"
       ? labFiles
@@ -155,6 +164,8 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
       ? fomTlepFiles
       : isFomActivity1
       ? fomActivity1Files
+      : isFcaPyp
+      ? fcaPypFiles
       : isFcaTlep
       ? tlepFiles
       : isFcaPresentations
