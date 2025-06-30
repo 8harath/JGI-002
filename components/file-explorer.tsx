@@ -21,9 +21,9 @@ interface FileExplorerProps {
 // Mock files for demonstration
 const mockFiles = [
   {
-    name: "Lecture_1_Introduction.pdf",
-    path: "/assets/documents/sample.pdf",
-    size: "1.2 MB",
+    name: "FCA-TLEP.pdf",
+    path: "/Resources/Semister%20-%201/FCA/TLEP/FCA-TLEP.pdf",
+    size: "~1 MB",
     type: "pdf",
   },
   {
@@ -42,7 +42,6 @@ const mockFiles = [
 
 export function FileExplorer({ folders, subject }: FileExplorerProps) {
   const [selectedFolder, setSelectedFolder] = useState(folders[0].name)
-  const [selectedFile, setSelectedFile] = useState<string | null>(null)
 
   // Custom logic for FCA TLEP
   const isFcaTlep =
@@ -59,8 +58,48 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     },
   ];
 
+  const isFcaPresentations =
+    selectedFolder === "Presentations" &&
+    subject.name === "Fundamentals of Computer Applications" &&
+    subject.semesterId === 1;
+
+  const presentationFiles = [
+    {
+      name: "FCA-MODULE-1.pdf",
+      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-1.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+    {
+      name: "FCA-MODULE-2.pdf",
+      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-2.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+    {
+      name: "FCA-MODULE-3.pdf",
+      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-3.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+    {
+      name: "FCA-MODULE-4.pdf",
+      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-4.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+    {
+      name: "FCA-MODULE-5.pdf",
+      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-5.pdf",
+      size: "~1 MB",
+      type: "pdf",
+    },
+  ];
+
   const filesToShow = isFcaTlep
     ? tlepFiles
+    : isFcaPresentations
+    ? presentationFiles
     : selectedFolder === "Notes"
     ? mockFiles
     : [];
@@ -103,7 +142,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
                             key={file.name}
                             className="grid grid-cols-12 px-3 md:px-4 py-2 md:py-3 hover:bg-accent/10 cursor-pointer transition-colors animate-fade-in"
                             style={{ animationDelay: `${index * 0.1}s` }}
-                            onClick={() => setSelectedFile(file.path)}
+                            onClick={() => window.open(file.path, '_blank')}
                           >
                             <div className="col-span-6 flex items-center gap-1 md:gap-2">
                               <FileIcon className="h-3 w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
@@ -119,12 +158,6 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
                         ))}
                       </div>
                     </div>
-
-                    {selectedFile && (
-                      <div className="mt-4 md:mt-6">
-                        <FilePreview filePath={selectedFile} onClose={() => setSelectedFile(null)} />
-                      </div>
-                    )}
                   </div>
                 ) : (
                   <div className="text-center py-8 md:py-12 border-2 border-dashed border-accent rounded-lg bg-card">

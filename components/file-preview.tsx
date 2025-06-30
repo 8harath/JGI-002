@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Download, X } from "lucide-react"
 import { Document, Page, pdfjs } from "react-pdf"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 
 interface FilePreviewProps {
   filePath: string
@@ -17,8 +17,21 @@ export function FilePreview({ filePath, onClose }: FilePreviewProps) {
   const [pageNumber, setPageNumber] = useState(1)
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
+  const [containerWidth, setContainerWidth] = useState<number | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   const isPdf = filePath.toLowerCase().endsWith(".pdf")
+
+  useEffect(() => {
+    function updateWidth() {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth)
+      }
+    }
+    updateWidth()
+    window.addEventListener("resize", updateWidth)
+    return () => window.removeEventListener("resize", updateWidth)
+  }, [])
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages)
@@ -45,9 +58,9 @@ export function FilePreview({ filePath, onClose }: FilePreviewProps) {
             </button>
           </div>
         </div>
-        <div className="border-2 border-accent rounded-md p-4 min-h-[400px] flex items-center justify-center">
+        <div ref={containerRef} className="border-2 border-accent rounded-md p-4 min-h-[400px] overflow-auto" style={{ maxHeight: '80vh' }}>
           {isPdf ? (
-            <div className="w-full flex flex-col items-center">
+            <div className="w-full flex flex-col">
               {loading && <div className="animate-pulse text-muted-foreground">Loading PDF...</div>}
               {error && <div className="text-red-500">{error}</div>}
               <Document
@@ -57,7 +70,7 @@ export function FilePreview({ filePath, onClose }: FilePreviewProps) {
                 loading=""
                 error=""
               >
-                <Page pageNumber={pageNumber} width={600} />
+                <Page pageNumber={pageNumber} width={containerWidth || undefined} />
               </Document>
               {numPages && numPages > 1 && (
                 <div className="flex gap-2 mt-4">
