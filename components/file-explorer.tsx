@@ -112,7 +112,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
             <TabsTrigger
               key={folder.name}
               value={folder.name}
-              className="mb-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px]"
+              className="mb-2 border-t-2 border-t-accent data-[state=active]:border-t-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px]"
             >
               {folder.name}
             </TabsTrigger>
