@@ -130,11 +130,21 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     { name: "Module-3.pdf", path: "/Resources/Semister%20-%201/FOM/Module-3.pdf", size: "-", type: "pdf" },
   ];
 
+  const isFomTlep =
+    selectedFolder === "TLEP" &&
+    subject.name === "Fundamentals of Mathematics";
+  
+  const fomTlepFiles = [
+    { name: "TLEP_23BCA1C03_FOM.pdf", path: "/Resources/Semister%20-%201/FOM/TLEP_23BCA1C03_FOM.pdf", size: "-", type: "pdf" },
+  ];
+
   const filesToShow =
     subject.name === "Fundamentals of Computer Application Lab"
       ? labFiles
       : isFomNotes
       ? fomNotesFiles
+      : isFomTlep
+      ? fomTlepFiles
       : isFcaTlep
       ? tlepFiles
       : isFcaPresentations
