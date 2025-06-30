@@ -107,16 +107,18 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
   return (
     <div>
       <Tabs defaultValue={folders[0].name} onValueChange={setSelectedFolder}>
-        <TabsList className="mb-4 md:mb-6 flex flex-wrap bg-background overflow-x-auto pb-1 scrollbar-hide">
+        <TabsList className="mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
           {folders.map((folder) => (
             <TabsTrigger
               key={folder.name}
               value={folder.name}
-              className="mb-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap"
+              className="mb-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px]"
             >
               {folder.name}
             </TabsTrigger>
           ))}
+          {/* Gradient overlay for right edge, only on mobile */}
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
         </TabsList>
 
         {folders.map((folder) => (
