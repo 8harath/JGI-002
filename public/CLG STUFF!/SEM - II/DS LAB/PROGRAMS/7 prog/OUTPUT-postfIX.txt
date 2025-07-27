@@ -1,3 +1,0 @@
-Enter the expression : ((A+B)+(C-D))
-
-A B + C D - + 
