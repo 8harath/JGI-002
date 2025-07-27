@@ -9,9 +9,11 @@ export default function AIPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <Link href="/semester/4" className="back-button mb-4">
-          <ArrowLeft size={16} />
-          Back to Semester 4
+        <Link
+          href="/semester/4"
+          className="text-accent hover:text-primary flex items-center gap-1 mb-4 font-medium transition-colors"
+        >
+          <ArrowLeft size={18} /> Back to Semester 4
         </Link>
         <div className="flex items-center gap-3 mb-2">
           <div className="bg-primary p-3 border-2 border-foreground">
