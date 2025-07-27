@@ -5,16 +5,4 @@ export const contributors = [
     contributions: ["All the materials"],
     github: "8harath",
   },
-  {
-    name: "U Can be One",
-    specialization: "NA",
-    contributions: ["NA"],
-    github: "github",
-  },
-  {
-    name: "U Can be One",
-    specialization: "NA",
-    contributions: ["NA"],
-    github: "github",
-  },
 ]
