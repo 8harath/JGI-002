@@ -221,6 +221,7 @@ export const subjects = [
     name: "Introduction to Data Analytics Lab",
     slug: "introduction-to-data-analytics-lab",
     description: "Practical data analytics techniques",
+    isLab: true,
   },
   {
     id: 406,
@@ -228,6 +229,7 @@ export const subjects = [
     name: "Programming in Python Lab",
     slug: "programming-in-python-lab",
     description: "Practical implementation of Python programming",
+    isLab: true,
   },
   {
     id: 407,
