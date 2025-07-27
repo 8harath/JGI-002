@@ -1,4 +1,47 @@
 export const resources = [
+  // Semester 1 - Fundamentals of Computer Applications
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA Module 1 Presentation",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%201.pdf",
+    description: "Fundamentals of Computer Applications Module 1 presentation."
+  },
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA Module 2 Presentation",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%202.pdf",
+    description: "Fundamentals of Computer Applications Module 2 presentation."
+  },
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA Module 3 Presentation",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-3.pdf",
+    description: "Fundamentals of Computer Applications Module 3 presentation."
+  },
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA Module 4 Presentation",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-4.pdf",
+    description: "Fundamentals of Computer Applications Module 4 presentation."
+  },
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA Module 5 Presentation",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-5.pdf",
+    description: "Fundamentals of Computer Applications Module 5 presentation."
+  },
+  {
+    semester: 1,
+    subject: "fundamentals-of-computer-applications",
+    title: "FCA TLEP Document",
+    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/tlep/FCA-TLEP.docx",
+    description: "Fundamentals of Computer Applications Teaching Learning Evaluation Plan."
+  },
   // Semester 1 - General English
   {
     semester: 1,
@@ -44,4 +87,4 @@ export const resources = [
     description: "Basics of Computer Science."
   },
   // Add more resources as needed
-]; 
+];
