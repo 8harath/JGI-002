@@ -1,90 +1,92 @@
-export const resources = [
-  // Semester 1 - Fundamentals of Computer Applications
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA Module 1 Presentation",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%201.pdf",
-    description: "Fundamentals of Computer Applications Module 1 presentation."
-  },
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA Module 2 Presentation",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%202.pdf",
-    description: "Fundamentals of Computer Applications Module 2 presentation."
-  },
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA Module 3 Presentation",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-3.pdf",
-    description: "Fundamentals of Computer Applications Module 3 presentation."
-  },
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA Module 4 Presentation",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-4.pdf",
-    description: "Fundamentals of Computer Applications Module 4 presentation."
-  },
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA Module 5 Presentation",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-5.pdf",
-    description: "Fundamentals of Computer Applications Module 5 presentation."
-  },
-  {
-    semester: 1,
-    subject: "fundamentals-of-computer-applications",
-    title: "FCA TLEP Document",
-    file: "/Resources/1/Fundamentals%20of%20Computer%20Applications/tlep/FCA-TLEP.docx",
-    description: "Fundamentals of Computer Applications Teaching Learning Evaluation Plan."
-  },
-  // Semester 1 - General English
-  {
-    semester: 1,
-    subject: "general-english",
-    title: "Module 1: General English",
-    file: "/Resources/Semister - 1/General-English/Module 1 GE.pdf",
-    description: "General English Module 1 study material."
-  },
-  {
-    semester: 1,
-    subject: "general-english",
-    title: "Module 2: General English",
-    file: "/Resources/Semister - 1/General-English/Module 2 GE.pdf",
-    description: "General English Module 2 study material."
-  },
-  {
-    semester: 1,
-    subject: "general-english",
-    title: "Module 3: General English",
-    file: "/Resources/Semister - 1/General-English/Module 3 GE.pdf",
-    description: "General English Module 3 study material."
-  },
-  {
-    semester: 1,
-    subject: "general-english",
-    title: "Module 4: General English",
-    file: "/Resources/Semister - 1/General-English/Module 4 GE.pdf",
-    description: "General English Module 4 study material."
-  },
+import { scanAllSemester1Subjects, SubjectFiles, FileInfo } from '@/lib/file-scanner';
+
+export interface Resource {
+  semester: number;
+  subject: string;
+  title: string;
+  file: string;
+  description: string;
+  category: string;
+  size?: number;
+  type?: string;
+  extension?: string;
+}
+
+// Function to generate resources dynamically from file system
+export function generateSemester1Resources(): Resource[] {
+  const resources: Resource[] = [];
   
+  try {
+    const subjectFiles = scanAllSemester1Subjects();
+    
+    const subjectSlugMap: { [key: string]: string } = {
+      'Fundamentals of Computer Applications': 'fundamentals-of-computer-applications',
+      'Fundamentals of Mathematics': 'fundamentals-of-mathematics', 
+      'General English': 'general-english',
+      'Languages - Hindi': 'languages-hindi',
+      'Languages - Kannada': 'languages-kannada',
+      'Languages - Sanskrit': 'languages-sanskrit',
+      'MMHV': 'mmhv',
+      'Programming in C': 'programming-in-c',
+      'Programming in C Lab': 'programming-in-c-lab',
+      'Fundamentals of Computer Application Lab': 'fundamentals-of-computer-application-lab'
+    };
+
+    subjectFiles.forEach((subjectData: SubjectFiles) => {
+      const subjectSlug = subjectSlugMap[subjectData.subject];
+      
+      if (subjectSlug) {
+        Object.entries(subjectData.folders).forEach(([folderName, files]) => {
+          files.forEach((file: FileInfo) => {
+            resources.push({
+              semester: 1,
+              subject: subjectSlug,
+              title: file.name.replace(/\.[^/.]+$/, ""), // Remove extension from title
+              file: file.path,
+              description: `${file.type} file from ${folderName} category`,
+              category: folderName,
+              size: file.size,
+              type: file.type,
+              extension: file.extension
+            });
+          });
+        });
+      }
+    });
+  } catch (error) {
+    console.error('Error generating semester 1 resources:', error);
+  }
+
+  return resources;
+}
+
+// Static resources for other semesters (keeping existing structure)
+export const staticResources: Resource[] = [
+  // Semester 4 resources (keeping as placeholder)
   {
     semester: 4,
     subject: "ai",
     title: "Module 1: Introduction",
     file: "/resources/semester-4/ai/module1.pdf",
-    description: "Introduction to AI concepts."
+    description: "Introduction to AI concepts.",
+    category: "modules"
   },
   {
     semester: 4,
-    subject: "cs",
+    subject: "cs", 
     title: "Module 1: Basics",
     file: "/resources/semester-4/cs/module1.pdf",
-    description: "Basics of Computer Science."
+    description: "Basics of Computer Science.",
+    category: "modules"
   },
-  // Add more resources as needed
+  // Add more static resources for other semesters as needed
 ];
+
+// Combined resources function
+export function getAllResources(): Resource[] {
+  const semester1Resources = generateSemester1Resources();
+  return [...semester1Resources, ...staticResources];
+}
+
+// For backward compatibility, export the resources array
+export const resources = getAllResources();
