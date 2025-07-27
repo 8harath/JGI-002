@@ -154,9 +154,40 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     { name: "Previous-Yr-paper (2).jpg", path: "/Resources/Semister%20-%201/FCA/PYP/Previous-Yr-paper%20(2).jpg", size: "-", type: "jpg" },
   ];
 
+  // Lab subject logic for Programs folder
+  const isLabPrograms = 
+    subject.isLab && selectedFolder === "Programs";
+    
+  const labProgramFiles = subject.name === "Fundamentals of Computer Application Lab" 
+    ? [
+        { name: "EXP-1_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-1_FCA.pdf", size: "-", type: "pdf" },
+        { name: "EXP-2_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-2_FCA.pdf", size: "-", type: "pdf" },
+        { name: "EXP-3_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-3_FCA.pdf", size: "-", type: "pdf" },
+        { name: "EXP-4_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-4_FCA.pdf", size: "-", type: "pdf" },
+        { name: "EXP-5_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-5_FCA.pdf", size: "-", type: "pdf" },
+        { name: "Exp-6_FCA .pdf", path: "/Resources/Semister%20-%201/FCA_LAB/Exp-6_FCA%20.pdf", size: "-", type: "pdf" },
+        { name: "EXP-7_FCA.pptx", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-7_FCA.pptx", size: "-", type: "pptx" },
+        { name: "EXP-8_FCA.pptx", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-8_FCA.pptx", size: "-", type: "pptx" },
+        { name: "EXP-9.html", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-9.html", size: "-", type: "html" },
+        { name: "EXP-10.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-10.HTML", size: "-", type: "html" },
+        { name: "EXP-11.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-11.HTML", size: "-", type: "html" },
+        { name: "EXP-12.HTML", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-12.HTML", size: "-", type: "html" },
+      ]
+    : [];
+
+  // Lab subject logic for Outputs folder  
+  const isLabOutputs = 
+    subject.isLab && selectedFolder === "Outputs";
+    
+  const labOutputFiles = subject.name === "Fundamentals of Computer Application Lab"
+    ? [{ name: "Outputs_html.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/Outputs_html.pdf", size: "-", type: "pdf" }]
+    : [];
+
   const filesToShow =
-    subject.name === "Fundamentals of Computer Application Lab"
-      ? labFiles
+    isLabPrograms
+      ? labProgramFiles
+      : isLabOutputs  
+      ? labOutputFiles
       : isFomNotes
       ? fomNotesFiles
       : isFomTlep
