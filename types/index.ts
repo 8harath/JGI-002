@@ -4,6 +4,7 @@ export interface Subject {
   name: string
   slug: string
   description: string
+  isLab?: boolean
 }
 
 export interface Semester {

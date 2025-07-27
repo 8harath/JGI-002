@@ -48,6 +48,7 @@ export const subjects = [
     name: "Programming in C Lab",
     slug: "programming-in-c-lab",
     description: "Practical implementation of C programming concepts",
+    isLab: true,
   },
   {
     id: 108,
@@ -55,6 +56,7 @@ export const subjects = [
     name: "Fundamentals of Computer Application Lab",
     slug: "fundamentals-of-computer-application-lab",
     description: "Practical computer application skills",
+    isLab: true,
   },
 
   // Semester 2
