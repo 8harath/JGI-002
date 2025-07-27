@@ -115,6 +115,7 @@ export const subjects = [
     name: "Programming in Java Lab",
     slug: "programming-in-java-lab",
     description: "Practical implementation of Java programming concepts",
+    isLab: true,
   },
   {
     id: 209,
@@ -122,6 +123,7 @@ export const subjects = [
     name: "Data Structures Lab",
     slug: "data-structures-lab",
     description: "Practical implementation of data structures",
+    isLab: true,
   },
 
   // Semester 3
