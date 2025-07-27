@@ -37,123 +37,108 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
       try {
         setLoading(true);
         
-        // Fetch files from API
-        const response = await fetch(`/api/files?subject=${subject.slug}&semester=${subject.semesterId}`);
-        
-        if (response.ok) {
-          const data = await response.json();
-          setSubjectFiles(data);
-        } else {
-          // Fallback to mock data if API fails
-          const mockSubjectFiles: {folders: {[key: string]: FileInfo[]}} = {
-            folders: {}
+        // Mock data based on actual files in the directory structure
+        const mockSubjectFiles: {folders: {[key: string]: FileInfo[]}} = {
+          folders: {}
+        };
+
+        // Add actual file data based on what we know exists
+        if (subject.slug === "fundamentals-of-computer-applications") {
+          mockSubjectFiles.folders = {
+            "presentations": [
+              {
+                name: "FCA-MODULE 1.pdf",
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%201.pdf",
+                size: 1048576, // 1MB approximation
+                type: "PDF",
+                extension: ".pdf"
+              },
+              {
+                name: "FCA-MODULE 2.pdf", 
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%202.pdf",
+                size: 1048576,
+                type: "PDF",
+                extension: ".pdf"
+              },
+              {
+                name: "FCA-MODULE-3.pdf",
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-3.pdf", 
+                size: 1048576,
+                type: "PDF",
+                extension: ".pdf"
+              },
+              {
+                name: "FCA-MODULE-4.pdf",
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-4.pdf",
+                size: 1048576,
+                type: "PDF", 
+                extension: ".pdf"
+              },
+              {
+                name: "FCA-MODULE-5.pdf",
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-5.pdf",
+                size: 1048576,
+                type: "PDF",
+                extension: ".pdf"
+              }
+            ],
+            "tlep": [
+              {
+                name: "FCA-TLEP.docx",
+                path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/tlep/FCA-TLEP.docx",
+                size: 524288, // 512KB approximation
+                type: "Word Document", 
+                extension: ".docx"
+              }
+            ],
+            "notes": [],
+            "activity-1": [],
+            "activity-2": [],
+            "previous-year-papers": []
           };
-
-          // Add actual file data based on what we know exists
-          if (subject.slug === "fundamentals-of-computer-applications") {
-            mockSubjectFiles.folders = {
-              "presentations": [
-                {
-                  name: "FCA-MODULE 1.pdf",
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%201.pdf",
-                  size: 1048576, // 1MB approximation
-                  type: "PDF",
-                  extension: ".pdf"
-                },
-                {
-                  name: "FCA-MODULE 2.pdf", 
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%202.pdf",
-                  size: 1048576,
-                  type: "PDF",
-                  extension: ".pdf"
-                },
-                {
-                  name: "FCA-MODULE-3.pdf",
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-3.pdf", 
-                  size: 1048576,
-                  type: "PDF",
-                  extension: ".pdf"
-                },
-                {
-                  name: "FCA-MODULE-4.pdf",
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-4.pdf",
-                  size: 1048576,
-                  type: "PDF", 
-                  extension: ".pdf"
-                },
-                {
-                  name: "FCA-MODULE-5.pdf",
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-5.pdf",
-                  size: 1048576,
-                  type: "PDF",
-                  extension: ".pdf"
-                }
-              ],
-              "tlep": [
-                {
-                  name: "FCA-TLEP.docx",
-                  path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/tlep/FCA-TLEP.docx",
-                  size: 524288, // 512KB approximation
-                  type: "Word Document", 
-                  extension: ".docx"
-                }
-              ],
-              "notes": [],
-              "activity-1": [],
-              "activity-2": [],
-              "previous-year-papers": []
-            };
-          } else if (subject.slug === "programming-in-c") {
-            mockSubjectFiles.folders = {
-              "presentations": [
-                {
-                  name: "MODULE-3.pptx",
-                  path: "/Resources/1/Programming%20in%20C/presentations/MODULE-3.pptx",
-                  size: 2097152, // 2MB approximation
-                  type: "PowerPoint",
-                  extension: ".pptx"
-                },
-                {
-                  name: "MODULE-4.pptx", 
-                  path: "/Resources/1/Programming%20in%20C/presentations/MODULE-4.pptx",
-                  size: 2097152,
-                  type: "PowerPoint",
-                  extension: ".pptx"
-                },
-                {
-                  name: "MODULE-5.pptx",
-                  path: "/Resources/1/Programming%20in%20C/presentations/MODULE-5.pptx",
-                  size: 2097152,
-                  type: "PowerPoint",
-                  extension: ".pptx"
-                }
-              ],
-              "notes": [],
-              "activity-1": [],
-              "activity-2": [],
-              "previous-year-papers": [],
-              "tlep": []
-            };
-          } else {
-            // For other subjects, create empty folder structure
-            folders.forEach(folder => {
-              const folderKey = folder.name.toLowerCase().replace(/\s+/g, '-');
-              mockSubjectFiles.folders[folderKey] = [];
-            });
-          }
-
-          setSubjectFiles(mockSubjectFiles);
+        } else if (subject.slug === "programming-in-c") {
+          mockSubjectFiles.folders = {
+            "presentations": [
+              {
+                name: "MODULE-3.pptx",
+                path: "/Resources/1/Programming%20in%20C/presentations/MODULE-3.pptx",
+                size: 2097152, // 2MB approximation
+                type: "PowerPoint",
+                extension: ".pptx"
+              },
+              {
+                name: "MODULE-4.pptx", 
+                path: "/Resources/1/Programming%20in%20C/presentations/MODULE-4.pptx",
+                size: 2097152,
+                type: "PowerPoint",
+                extension: ".pptx"
+              },
+              {
+                name: "MODULE-5.pptx",
+                path: "/Resources/1/Programming%20in%20C/presentations/MODULE-5.pptx",
+                size: 2097152,
+                type: "PowerPoint",
+                extension: ".pptx"
+              }
+            ],
+            "notes": [],
+            "activity-1": [],
+            "activity-2": [],
+            "previous-year-papers": [],
+            "tlep": []
+          };
+        } else {
+          // For other subjects, create empty folder structure
+          folders.forEach(folder => {
+            const folderKey = folder.name.toLowerCase().replace(/\s+/g, '-');
+            mockSubjectFiles.folders[folderKey] = [];
+          });
         }
+
+        setSubjectFiles(mockSubjectFiles);
       } catch (error) {
         console.error("Error loading files:", error);
-        
-        // Fallback to empty structure
-        const emptyStructure: {folders: {[key: string]: FileInfo[]}} = { folders: {} };
-        folders.forEach(folder => {
-          const folderKey = folder.name.toLowerCase().replace(/\s+/g, '-');
-          emptyStructure.folders[folderKey] = [];
-        });
-        setSubjectFiles(emptyStructure);
+        setSubjectFiles(null);
       } finally {
         setLoading(false);
       }

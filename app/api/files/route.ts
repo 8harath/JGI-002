@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { scanSubjectDirectory, SubjectFiles } from '@/lib/file-scanner';
+import { scanSubjectDirectory } from '@/lib/file-scanner';
+import type { SubjectFiles } from '@/lib/file-utils';
 import path from 'path';
 
 export async function GET(request: NextRequest) {

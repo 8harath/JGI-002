@@ -1,4 +1,5 @@
-import { scanAllSemester1Subjects, SubjectFiles, FileInfo } from '@/lib/file-scanner';
+import { scanAllSemester1Subjects } from '@/lib/file-scanner';
+import type { SubjectFiles, FileInfo } from '@/lib/file-utils';
 
 export interface Resource {
   semester: number;
