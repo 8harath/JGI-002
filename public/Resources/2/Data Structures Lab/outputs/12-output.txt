@@ -1,0 +1,46 @@
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 1
+Enter data to insert into BST: 23
+
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 1
+Enter data to insert into BST: 32
+
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 2
+Inorder traversal: 23 32 
+
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 3
+Preorder traversal: 23 32 
+
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 4
+Postorder traversal: 32 23 
+
+1. Insert node into BST
+2. Inorder traversal
+3. Preorder traversal
+4. Postorder traversal
+0. Exit
+Enter your choice: 

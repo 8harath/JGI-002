@@ -1,0 +1,31 @@
+/tmp/6XSeVZqtW8.o
+
+1. Push element onto stack
+2. Pop element from stack
+3. Enqueue element into queue
+4. Dequeue element from queue
+5. Display stack
+6. Display queue
+0. Exit
+Enter your choice: 1
+Enter element to push onto stack: 2
+
+1. Push element onto stack
+2. Pop element from stack
+3. Enqueue element into queue
+4. Dequeue element from queue
+5. Display stack
+6. Display queue
+0. Exit
+Enter your choice: 5
+Stack: 2 
+
+1. Push element onto stack
+2. Pop element from stack
+3. Enqueue element into queue
+4. Dequeue element from queue
+5. Display stack
+6. Display queue
+0. Exit
+Enter your choice: 0
+Exiting program.

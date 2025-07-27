@@ -1,0 +1,11 @@
+Enter the number of elements in the array: 5
+Enter 5 integers:
+2
+7
+1
+9
+4
+Array before sorting: 
+2 7 1 9 4 
+Array after sorting: 
+1 2 4 7 9 
