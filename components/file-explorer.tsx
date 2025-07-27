@@ -212,126 +212,206 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
 
   return (
     <div>
-      <Tabs defaultValue={folders[0]?.name || ""} onValueChange={setSelectedFolder}>
-        <TabsList className="mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
+      {/* Mobile: Accordion-style folders, Desktop: Tabs */}
+      {isMobile ? (
+        <div className="space-y-3">
           {folders.map((folder) => {
-            const fileCount = getFilesForFolder(folder.name).length;
+            const filesToShow = getFilesForFolder(folder.name);
+            const isExpanded = expandedFolders.includes(folder.name);
+            
             return (
-              <TabsTrigger
-                key={folder.name}
-                value={folder.name}
-                className="mb-2 border-t-2 border-t-accent data-[state=active]:border-t-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px] relative"
-              >
-                {folder.name}
-                {fileCount > 0 && (
-                  <Badge variant="secondary" className="ml-1 text-xs px-1 py-0">
-                    {fileCount}
-                  </Badge>
-                )}
-              </TabsTrigger>
-            );
-          })}
-          {/* Gradient overlay for right edge, only on mobile */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
-        </TabsList>
-
-        {folders.map((folder) => {
-          const filesToShow = getFilesForFolder(folder.name);
-          
-          return (
-            <TabsContent key={folder.name} value={folder.name}>
-              <Card className="retro-card">
-                <CardContent className="p-4 md:p-6">
-                  <div className="flex items-center justify-between mb-3 md:mb-4">
-                    <div>
-                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">{folder.name}</h3>
-                      <p className="text-xs md:text-sm text-muted-foreground">{folder.description}</p>
+              <Card key={folder.name} className="mobile-folder-card">
+                <CardContent className="p-0">
+                  {/* Folder header - touch-friendly */}
+                  <button
+                    onClick={() => toggleFolder(folder.name)}
+                    className="w-full p-4 flex items-center justify-between text-left hover:bg-accent/10 transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <FolderIcon className="h-5 w-5 text-primary flex-shrink-0" />
+                      <div>
+                        <h3 className="font-bold text-sm text-foreground">{folder.name}</h3>
+                        <p className="text-xs text-muted-foreground">{filesToShow.length} files</p>
+                      </div>
                     </div>
-                    {filesToShow.length > 0 && (
-                      <Badge variant="outline" className="ml-2">
-                        {filesToShow.length} file{filesToShow.length !== 1 ? 's' : ''}
-                      </Badge>
-                    )}
-                  </div>
+                    {isExpanded ? 
+                      <ChevronDown className="h-4 w-4 text-muted-foreground" /> :
+                      <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                    }
+                  </button>
 
-                  {filesToShow.length > 0 ? (
-                    <div>
-                      <div className="border-2 border-accent rounded-lg overflow-hidden">
-                        <div className="bg-card px-3 md:px-4 py-2 md:py-3 border-b-2 border-accent">
-                          <div className="grid grid-cols-12 text-xs md:text-sm font-semibold text-foreground">
-                            <div className="col-span-5">Name</div>
-                            <div className="col-span-2">Type</div>
-                            <div className="col-span-2">Size</div>
-                            <div className="col-span-3">Action</div>
-                          </div>
-                        </div>
-                        <div className="divide-y divide-accent/30">
+                  {/* Folder content */}
+                  {isExpanded && (
+                    <div className="border-t border-accent/30 p-4 pt-3">
+                      {filesToShow.length > 0 ? (
+                        <div className="space-y-2">
                           {filesToShow.map((file, index) => (
                             <div
                               key={file.name}
-                              className="grid grid-cols-12 px-3 md:px-4 py-2 md:py-3 hover:bg-accent/10 transition-colors animate-fade-in"
-                              style={{ animationDelay: `${index * 0.1}s` }}
+                              className="flex items-center justify-between p-3 bg-background border border-accent/20 rounded-lg hover:bg-accent/5 transition-colors"
                             >
-                              <div className="col-span-5 flex items-center gap-1 md:gap-2">
+                              <div className="flex items-center gap-2 min-w-0 flex-1">
                                 {getFileTypeIcon(file.type)}
-                                <span className="text-xs md:text-sm font-medium text-foreground truncate">
-                                  {file.name}
-                                </span>
+                                <div className="min-w-0 flex-1">
+                                  <p className="text-sm font-medium text-foreground truncate">
+                                    {file.name}
+                                  </p>
+                                  <p className="text-xs text-muted-foreground">
+                                    {file.type} • {formatFileSize(file.size)}
+                                  </p>
+                                </div>
                               </div>
-                              <div className="col-span-2 flex items-center">
-                                <Badge variant="secondary" className="text-xs">
-                                  {file.type}
-                                </Badge>
-                              </div>
-                              <div className="col-span-2 text-xs md:text-sm text-muted-foreground flex items-center">
-                                {formatFileSize(file.size)}
-                              </div>
-                              <div className="col-span-3 flex items-center">
-                                <button
-                                  onClick={() => window.open(file.path, '_blank')}
-                                  className="flex items-center gap-1 text-xs md:text-sm text-primary hover:text-primary/80 transition-colors font-medium"
-                                >
-                                  <DownloadIcon className="h-3 w-3" />
-                                  Open
-                                </button>
-                              </div>
+                              <button
+                                onClick={() => window.open(file.path, '_blank')}
+                                className="mobile-action-button-small ml-2 flex-shrink-0"
+                              >
+                                <DownloadIcon className="h-4 w-4" />
+                              </button>
                             </div>
                           ))}
                         </div>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="text-center py-8 md:py-12 border-2 border-dashed border-accent rounded-lg bg-card">
-                      <FolderIcon className="h-10 w-10 md:h-16 md:w-16 text-accent mx-auto mb-3 md:mb-4" />
-                      <h4 className="text-base md:text-xl font-bold text-foreground mb-1 md:mb-2">No files available</h4>
-                      <p className="text-xs md:text-sm text-muted-foreground max-w-md mx-auto px-2">
-                        This section is currently empty. If you have relevant study materials, please consider{" "}
-                        <a 
-                          href="https://github.com/8harath/JGI-002" 
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-primary hover:underline font-semibold"
-                        >
-                          contributing them
-                        </a>
-                        {" "}to help fellow students. Your contributions will appear here automatically once uploaded!
-                      </p>
-                      <div className="mt-4">
-                        <Link 
-                          href="/contact" 
-                          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
-                        >
-                          Contact us for help →
-                        </Link>
-                      </div>
+                      ) : (
+                        <div className="text-center py-6">
+                          <FolderIcon className="h-8 w-8 text-accent mx-auto mb-2" />
+                          <p className="text-sm text-muted-foreground">No files yet</p>
+                          <a 
+                            href="https://github.com/8harath/JGI-002" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-primary hover:underline mt-1 inline-block"
+                          >
+                            Help contribute →
+                          </a>
+                        </div>
+                      )}
                     </div>
                   )}
                 </CardContent>
               </Card>
-            </TabsContent>
-          );
-        })}
-      </Tabs>
+            );
+          })}
+        </div>
+      ) : (
+        /* Desktop: Tab-based interface */
+        <Tabs defaultValue={folders[0]?.name || ""} onValueChange={setSelectedFolder}>
+          <TabsList className="mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
+            {folders.map((folder) => {
+              const fileCount = getFilesForFolder(folder.name).length;
+              return (
+                <TabsTrigger
+                  key={folder.name}
+                  value={folder.name}
+                  className="mb-2 border-t-2 border-t-accent data-[state=active]:border-t-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px] relative"
+                >
+                  {folder.name}
+                  {fileCount > 0 && (
+                    <Badge variant="secondary" className="ml-1 text-xs px-1 py-0">
+                      {fileCount}
+                    </Badge>
+                  )}
+                </TabsTrigger>
+              );
+            })}
+          </TabsList>
+
+          {folders.map((folder) => {
+            const filesToShow = getFilesForFolder(folder.name);
+            
+            return (
+              <TabsContent key={folder.name} value={folder.name}>
+                <Card className="retro-card">
+                  <CardContent className="p-4 md:p-6">
+                    <div className="flex items-center justify-between mb-3 md:mb-4">
+                      <div>
+                        <h3 className="text-lg md:text-xl font-bold text-foreground mb-1">{folder.name}</h3>
+                        <p className="text-xs md:text-sm text-muted-foreground">{folder.description}</p>
+                      </div>
+                      {filesToShow.length > 0 && (
+                        <Badge variant="outline" className="ml-2">
+                          {filesToShow.length} file{filesToShow.length !== 1 ? 's' : ''}
+                        </Badge>
+                      )}
+                    </div>
+
+                    {filesToShow.length > 0 ? (
+                      <div>
+                        <div className="border-2 border-accent rounded-lg overflow-hidden">
+                          <div className="bg-card px-3 md:px-4 py-2 md:py-3 border-b-2 border-accent">
+                            <div className="grid grid-cols-12 text-xs md:text-sm font-semibold text-foreground">
+                              <div className="col-span-5">Name</div>
+                              <div className="col-span-2">Type</div>
+                              <div className="col-span-2">Size</div>
+                              <div className="col-span-3">Action</div>
+                            </div>
+                          </div>
+                          <div className="divide-y divide-accent/30">
+                            {filesToShow.map((file, index) => (
+                              <div
+                                key={file.name}
+                                className="grid grid-cols-12 px-3 md:px-4 py-2 md:py-3 hover:bg-accent/10 transition-colors animate-fade-in"
+                                style={{ animationDelay: `${index * 0.1}s` }}
+                              >
+                                <div className="col-span-5 flex items-center gap-1 md:gap-2">
+                                  {getFileTypeIcon(file.type)}
+                                  <span className="text-xs md:text-sm font-medium text-foreground truncate">
+                                    {file.name}
+                                  </span>
+                                </div>
+                                <div className="col-span-2 flex items-center">
+                                  <Badge variant="secondary" className="text-xs">
+                                    {file.type}
+                                  </Badge>
+                                </div>
+                                <div className="col-span-2 text-xs md:text-sm text-muted-foreground flex items-center">
+                                  {formatFileSize(file.size)}
+                                </div>
+                                <div className="col-span-3 flex items-center">
+                                  <button
+                                    onClick={() => window.open(file.path, '_blank')}
+                                    className="flex items-center gap-1 text-xs md:text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+                                  >
+                                    <DownloadIcon className="h-3 w-3" />
+                                    Open
+                                  </button>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="text-center py-8 md:py-12 border-2 border-dashed border-accent rounded-lg bg-card">
+                        <FolderIcon className="h-10 w-10 md:h-16 md:w-16 text-accent mx-auto mb-3 md:mb-4" />
+                        <h4 className="text-base md:text-xl font-bold text-foreground mb-1 md:mb-2">No files available</h4>
+                        <p className="text-xs md:text-sm text-muted-foreground max-w-md mx-auto px-2">
+                          This section is currently empty. If you have relevant study materials, please consider{" "}
+                          <a 
+                            href="https://github.com/8harath/JGI-002" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline font-semibold"
+                          >
+                            contributing them
+                          </a>
+                          {" "}to help fellow students.
+                        </p>
+                        <div className="mt-4">
+                          <Link 
+                            href="/contact" 
+                            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 text-sm font-medium transition-colors"
+                          >
+                            Contact us for help →
+                          </Link>
+                        </div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            );
+          })}
+        </Tabs>
+      )}
     </div>
   )
 }
