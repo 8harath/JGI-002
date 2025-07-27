@@ -168,6 +168,7 @@ export const subjects = [
     name: "DBMS Lab",
     slug: "dbms-lab",
     description: "Practical database management systems",
+    isLab: true,
   },
   {
     id: 307,
@@ -175,6 +176,7 @@ export const subjects = [
     name: "CN Lab",
     slug: "cn-lab",
     description: "Practical computer networking",
+    isLab: true,
   },
   {
     id: 308,
