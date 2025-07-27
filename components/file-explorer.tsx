@@ -72,10 +72,10 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
 
   const tlepFiles = [
     {
-      name: "FCA-TLEP.pdf",
-      path: "/Resources/Semister%20-%201/FCA/TLEP/FCA-TLEP.pdf",
+      name: "FCA-TLEP.docx",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/tlep/FCA-TLEP.docx",
       size: "~1 MB",
-      type: "pdf",
+      type: "docx",
     },
   ];
 
@@ -86,32 +86,32 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
 
   const presentationFiles = [
     {
-      name: "FCA-MODULE-1.pdf",
-      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-1.pdf",
+      name: "FCA-MODULE 1.pdf",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%201.pdf",
       size: "~1 MB",
       type: "pdf",
     },
     {
-      name: "FCA-MODULE-2.pdf",
-      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-2.pdf",
+      name: "FCA-MODULE 2.pdf",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE%202.pdf",
       size: "~1 MB",
       type: "pdf",
     },
     {
       name: "FCA-MODULE-3.pdf",
-      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-3.pdf",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-3.pdf",
       size: "~1 MB",
       type: "pdf",
     },
     {
       name: "FCA-MODULE-4.pdf",
-      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-4.pdf",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-4.pdf",
       size: "~1 MB",
       type: "pdf",
     },
     {
       name: "FCA-MODULE-5.pdf",
-      path: "/Resources/Semister%20-%201/FCA/Presentations/FCA-MODULE-5.pdf",
+      path: "/Resources/1/Fundamentals%20of%20Computer%20Applications/presentations/FCA-MODULE-5.pdf",
       size: "~1 MB",
       type: "pdf",
     },
