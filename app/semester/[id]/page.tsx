@@ -3,7 +3,8 @@ import { notFound } from "next/navigation"
 import { SubjectList } from "@/components/subject-list"
 import { semesters } from "@/data/semesters"
 import { subjects } from "@/data/subjects"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Search as SearchIcon } from "lucide-react"
+import { Search } from "@/components/search"
 
 export function generateStaticParams() {
   return semesters
@@ -24,18 +25,51 @@ export default function SemesterPage({ params }: { params: { id: string } }) {
   const semesterSubjects = subjects.filter((subject) => subject.semesterId === semesterId)
 
   return (
-    <div className="container mx-auto px-4 py-6 md:py-8">
+    <div className="container mx-auto px-4 py-4 md:py-8">
+      {/* Mobile-optimized header */}
       <div className="mb-4 md:mb-6">
-        <Link href="/" className="back-button mb-3 md:mb-4">
-          <ArrowLeft size={16} />
-          Back to Home
+        <Link href="/" className="mobile-back-button mb-3 md:mb-4">
+          <ArrowLeft size={14} />
+          <span className="text-sm font-medium">Back</span>
         </Link>
-        <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-1 md:mb-2">{semester.name}</h1>
-        <p className="text-sm md:text-base text-muted-foreground">{semester.description}</p>
+        
+        <div className="flex items-center justify-between mb-3 md:mb-2">
+          <h1 className="text-xl md:text-3xl font-bold text-foreground">{semester.name}</h1>
+          
+          {/* Quick search access for mobile */}
+          <button
+            className="md:hidden mobile-action-button"
+            onClick={() => {
+              document.dispatchEvent(new KeyboardEvent('keydown', {
+                key: 'k',
+                ctrlKey: true
+              }))
+            }}
+            aria-label="Search subjects"
+          >
+            <SearchIcon size={16} />
+          </button>
+        </div>
+        
+        <p className="text-sm md:text-base text-muted-foreground hidden md:block">
+          {semester.description}
+        </p>
       </div>
 
+      {/* Mobile search bar - contextual */}
+      <div className="md:hidden mb-6">
+        <div className="bg-card border-2 border-foreground p-3 rounded-lg">
+          <Search />
+        </div>
+      </div>
+
+      {/* Subjects section */}
       <div className="mb-6 md:mb-8">
-        <h2 className="section-header">Subjects</h2>
+        <div className="flex items-center justify-between mb-4 md:mb-6">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold uppercase border-b-2 border-accent pb-1 md:pb-2">
+            Subjects ({semesterSubjects.length})
+          </h2>
+        </div>
         <SubjectList subjects={semesterSubjects} semesterId={semesterId} />
       </div>
     </div>

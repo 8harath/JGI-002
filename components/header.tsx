@@ -3,13 +3,15 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Github, Menu, X, Home, Mail } from "lucide-react"
+import { Github, Menu, X, Home, Mail, Search as SearchIcon } from "lucide-react"
 import { Search } from "./search"
 import { KeyboardShortcuts } from "./keyboard-shortcuts"
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts"
+import { useIsMobile } from "@/components/ui/use-mobile"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const isMobile = useIsMobile()
   useKeyboardShortcuts();
 
   const toggleMobileMenu = () => {
@@ -18,15 +20,15 @@ export function Header() {
 
   return (
     <header className="bg-card border-b-2 border-foreground sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-2 md:py-3">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center hover:scale-105 transition-transform">
-            <div className="relative w-14 h-14">
+            <div className="relative w-10 h-10 md:w-14 md:h-14">
               <Image 
                 src="/Logo/android-chrome-512x512.png" 
-                alt="Jain University Logo" 
-                width={56} 
-                height={56} 
+                alt="JU" 
+                width={isMobile ? 40 : 56} 
+                height={isMobile ? 40 : 56} 
                 className="object-contain"
                 priority
               />
@@ -54,49 +56,54 @@ export function Header() {
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden keyboard-button p-2 text-sm"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle mobile menu"
-          >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
+          {/* Mobile Actions - Optimized for one-hand usage */}
+          <div className="md:hidden flex items-center gap-2">
+            {/* Quick Search Button - Priority action */}
+            <button
+              className="mobile-action-button"
+              onClick={() => {
+                document.dispatchEvent(new KeyboardEvent('keydown', {
+                  key: 'k',
+                  ctrlKey: true
+                }))
+              }}
+              aria-label="Quick search"
+            >
+              <SearchIcon size={18} />
+            </button>
+            
+            {/* Simplified Menu Toggle */}
+            <button
+              className="mobile-action-button"
+              onClick={toggleMobileMenu}
+              aria-label="Menu"
+            >
+              {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Streamlined for quick access */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 border-t-2 border-accent/30 mt-3 animate-fade-in">
-            <div className="px-2 mb-4">
-              <Search />
-            </div>
-            <nav className="flex flex-col space-y-3">
+          <div className="md:hidden py-3 border-t border-accent/30 mt-2 animate-fade-in">
+            {/* Essential navigation only */}
+            <nav className="space-y-1">
               <Link
                 href="/"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
+                className="mobile-nav-item"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Home size={18} />
-                <span>Home</span>
+                <Home size={16} />
+                <span className="font-medium">Home</span>
               </Link>
               <Link
                 href="/contact"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
+                className="mobile-nav-item"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Mail size={18} />
-                <span>Contact</span>
+                <Mail size={16} />
+                <span className="font-medium">Contact</span>
               </Link>
-              <a
-                href="https://github.com/8harath/JGI-002"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Github size={18} />
-                <span>GitHub</span>
-              </a>
             </nav>
           </div>
         )}

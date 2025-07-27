@@ -5,8 +5,9 @@ import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
-import { FileIcon, FolderIcon, DownloadIcon } from "lucide-react"
+import { FileIcon, FolderIcon, DownloadIcon, ChevronDown, ChevronRight } from "lucide-react"
 import { formatFileSize } from "@/lib/file-utils"
+import { useIsMobile } from "@/components/ui/use-mobile"
 import type { Subject } from "@/types"
 
 interface Folder {
@@ -31,6 +32,22 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
   const [subjectFiles, setSubjectFiles] = useState<{folders: {[key: string]: FileInfo[]}} | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedFolder, setSelectedFolder] = useState(folders[0]?.name || "");
+  const [expandedFolders, setExpandedFolders] = useState<string[]>([]);
+  const isMobile = useIsMobile()
+
+  // Mobile: Use accordion-style instead of tabs
+  const toggleFolder = (folderName: string) => {
+    if (expandedFolders.includes(folderName)) {
+      setExpandedFolders(expandedFolders.filter(f => f !== folderName))
+    } else {
+      // On mobile, collapse others when opening one (accordion behavior)
+      if (isMobile) {
+        setExpandedFolders([folderName])
+      } else {
+        setExpandedFolders([...expandedFolders, folderName])
+      }
+    }
+  }
 
   useEffect(() => {
     const loadFiles = async () => {
