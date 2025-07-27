@@ -2,6 +2,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { FileExplorer } from "@/components/file-explorer"
 import { subjects } from "@/data/subjects"
+import { getResourceFolders, getResourceFolderDisplayName } from "@/lib/resource-folders"
 
 export function generateStaticParams() {
   const daSubjects = subjects.filter((subject) => subject.semesterId === 4)
@@ -23,14 +24,41 @@ export default function DASubjectPage({
     notFound()
   }
 
-  const folders = [
-    { name: "TLEP", description: "Teaching Learning Evaluation Plans" },
-    { name: "Notes", description: "Lecture notes and study materials" },
-    { name: "Presentations", description: "PPT slides and visual content" },
-    { name: "Activity 1", description: "First activity/assignment materials" },
-    { name: "Activity 2", description: "Second activity/assignment materials" },
-    { name: "Previous Year Papers", description: "Exam papers and solutions" },
-  ]
+  const folders = getResourceFolders(subject).map(folderName => {
+    const displayName = getResourceFolderDisplayName(folderName)
+    let description = ""
+    
+    switch (folderName) {
+      case "tlep":
+        description = "Teaching Learning Evaluation Plans"
+        break
+      case "notes":
+        description = "Lecture notes and study materials"
+        break
+      case "presentations":
+        description = "PPT slides and visual content"
+        break
+      case "activity-1":
+        description = "First activity/assignment materials"
+        break
+      case "activity-2":
+        description = "Second activity/assignment materials"
+        break
+      case "previous-year-papers":
+        description = "Exam papers and solutions"
+        break
+      case "programs":
+        description = "Lab programs and source code"
+        break
+      case "outputs":
+        description = "Program outputs and results"
+        break
+      default:
+        description = `${displayName} materials`
+    }
+    
+    return { name: displayName, description }
+  })
 
   return (
     <div className="container mx-auto px-4 py-8">
