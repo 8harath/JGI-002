@@ -43,10 +43,9 @@ const mockFiles = [
 export function FileExplorer({ folders, subject }: FileExplorerProps) {
   let filteredFolders = folders;
   let labFiles = [];
-  if (subject.name === "Fundamentals of Computer Application Lab") {
-    filteredFolders = [
-      { name: "Lab Assignments", description: "All lab assignments for this subject." },
-    ];
+  
+  // For lab subjects, show different files for Programs folder
+  if (subject.isLab && subject.name === "Fundamentals of Computer Application Lab") {
     labFiles = [
       { name: "EXP-1_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-1_FCA.pdf", size: "-", type: "pdf" },
       { name: "EXP-2_FCA.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/EXP-2_FCA.pdf", size: "-", type: "pdf" },
