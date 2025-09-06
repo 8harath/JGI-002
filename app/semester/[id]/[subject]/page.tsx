@@ -49,17 +49,18 @@ export default function SubjectPage({
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-6">
-        <Link href={`/semester/${semesterId}`} className="back-button mb-4">
-          <ArrowLeft size={16} />
+    <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8">
+      <div className="mb-4 sm:mb-6">
+        <Link href={`/semester/${semesterId}`} className="back-button mb-3 sm:mb-4">
+          <ArrowLeft size={14} className="sm:hidden" />
+          <ArrowLeft size={16} className="hidden sm:block" />
           Back to {semester.name}
         </Link>
-        <h1 className="text-3xl font-bold text-foreground mb-2">{subject.name}</h1>
-        <p className="text-muted-foreground">{subject.description}</p>
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-1 sm:mb-2 leading-tight">{subject.name}</h1>
+        <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">{subject.description}</p>
       </div>
 
-      <div className="mb-8">
+      <div className="mb-6 sm:mb-8">
         <h2 className="section-header">Materials</h2>
         <FileExplorer folders={folders} subject={subject} />
       </div>

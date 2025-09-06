@@ -18,10 +18,10 @@ export function Header() {
 
   return (
     <header className="bg-card border-b-2 border-foreground sticky top-0 z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center hover:scale-105 transition-transform">
-            <div className="relative w-14 h-14">
+            <div className="relative w-10 h-10 sm:w-14 sm:h-14">
               <Image 
                 src="/Logo/android-chrome-512x512.png" 
                 alt="Jain University Logo" 
@@ -31,8 +31,8 @@ export function Header() {
                 priority
               />
             </div>
-            <div className="ml-3">
-              <h1 className="text-lg sm:text-xl font-bold gradient-text">Jain University Resource Archive</h1>
+            <div className="ml-2 sm:ml-3">
+              <h1 className="text-sm sm:text-lg md:text-xl font-bold gradient-text leading-tight">Jain University Resource Archive</h1>
               <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Organized, accessible, open-source</p>
             </div>
           </Link>
@@ -74,32 +74,32 @@ export function Header() {
             <div className="px-2 mb-4">
               <Search />
             </div>
-            <nav className="flex flex-col space-y-3">
+            <nav className="flex flex-col space-y-2">
               <Link
                 href="/"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors p-3 border-l-2 border-accent hover:bg-accent/10 rounded-r-lg"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Home size={18} />
-                <span>Home</span>
+                <Home size={20} />
+                <span className="font-medium">Home</span>
               </Link>
               <Link
                 href="/contact"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors p-3 border-l-2 border-accent hover:bg-accent/10 rounded-r-lg"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Mail size={18} />
-                <span>Contact</span>
+                <Mail size={20} />
+                <span className="font-medium">Contact</span>
               </Link>
               <a
                 href="https://github.com/8harath/JGI-002"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-foreground hover:text-primary transition-colors p-2 border-l-2 border-accent"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors p-3 border-l-2 border-accent hover:bg-accent/10 rounded-r-lg"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Github size={18} />
-                <span>GitHub</span>
+                <Github size={20} />
+                <span className="font-medium">GitHub</span>
               </a>
             </nav>
           </div>

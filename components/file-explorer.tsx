@@ -177,65 +177,65 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
   return (
     <div>
       <Tabs defaultValue={filteredFolders[0].name} onValueChange={setSelectedFolder}>
-        <TabsList className="mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
+        <TabsList className="mb-3 sm:mb-4 md:mb-6 flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible pb-1 scrollbar-hide snap-x snap-mandatory md:snap-none relative bg-background">
           {filteredFolders.map((folder) => (
             <TabsTrigger
               key={folder.name}
               value={folder.name}
-              className="mb-2 border-t-2 border-t-accent data-[state=active]:border-t-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs md:text-sm whitespace-nowrap mx-1 snap-center min-w-[110px]"
+              className="mb-1 sm:mb-2 border-t-2 border-t-accent data-[state=active]:border-t-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground border-2 border-foreground text-xs sm:text-xs md:text-sm whitespace-nowrap mx-0.5 sm:mx-1 snap-center min-w-[100px] sm:min-w-[110px] px-2 sm:px-3 py-1.5 sm:py-2"
             >
               {folder.name}
             </TabsTrigger>
           ))}
           {/* Gradient overlay for right edge, only on mobile */}
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-6 sm:w-8 bg-gradient-to-l from-background to-transparent z-10 md:hidden" />
         </TabsList>
 
         {filteredFolders.map((folder) => (
           <TabsContent key={folder.name} value={folder.name}>
             <Card className="retro-card">
-              <CardContent className="p-4 md:p-6">
-                <h3 className="text-lg md:text-xl font-bold text-foreground mb-1 md:mb-2">{folder.name}</h3>
-                <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">{folder.description}</p>
+              <CardContent className="p-3 sm:p-4 md:p-6">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-1 sm:mb-1 md:mb-2">{folder.name}</h3>
+                <p className="text-xs sm:text-xs md:text-sm text-muted-foreground mb-2 sm:mb-3 md:mb-4">{folder.description}</p>
 
                 {filesToShow.length > 0 ? (
                   <div>
                     <div className="border-2 border-accent rounded-lg overflow-hidden">
-                      <div className="bg-card px-3 md:px-4 py-2 md:py-3 border-b-2 border-accent">
-                        <div className="grid grid-cols-12 text-xs md:text-sm font-semibold text-foreground">
-                          <div className="col-span-6">Name</div>
-                          <div className="col-span-3">Type</div>
-                          <div className="col-span-3">Size</div>
+                      <div className="bg-card px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-3 border-b-2 border-accent">
+                        <div className="grid grid-cols-12 text-xs sm:text-xs md:text-sm font-semibold text-foreground">
+                          <div className="col-span-6 sm:col-span-6">Name</div>
+                          <div className="col-span-3 sm:col-span-3">Type</div>
+                          <div className="col-span-3 sm:col-span-3">Size</div>
                         </div>
                       </div>
                       <div className="divide-y divide-accent/30">
                         {filesToShow.map((file, index) => (
                           <div
                             key={file.name}
-                            className="grid grid-cols-12 px-3 md:px-4 py-2 md:py-3 hover:bg-accent/10 cursor-pointer transition-colors animate-fade-in"
+                            className="grid grid-cols-12 px-2 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-3 hover:bg-accent/10 cursor-pointer transition-colors animate-fade-in"
                             style={{ animationDelay: `${index * 0.1}s` }}
                             onClick={() => window.open(file.path, '_blank')}
                           >
-                            <div className="col-span-6 flex items-center gap-1 md:gap-2">
-                              <FileIcon className="h-3 w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
-                              <span className="text-xs md:text-sm font-medium text-foreground truncate">
+                            <div className="col-span-6 sm:col-span-6 flex items-center gap-1 sm:gap-1 md:gap-2 min-w-0">
+                              <FileIcon className="h-3 w-3 sm:h-3 sm:w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
+                              <span className="text-xs sm:text-xs md:text-sm font-medium text-foreground truncate">
                                 {file.name}
                               </span>
                             </div>
-                            <div className="col-span-3 text-xs md:text-sm text-muted-foreground font-medium">
+                            <div className="col-span-3 sm:col-span-3 text-xs sm:text-xs md:text-sm text-muted-foreground font-medium">
                               {file.type.toUpperCase()}
                             </div>
-                            <div className="col-span-3 text-xs md:text-sm text-muted-foreground">{file.size}</div>
+                            <div className="col-span-3 sm:col-span-3 text-xs sm:text-xs md:text-sm text-muted-foreground">{file.size}</div>
                           </div>
                         ))}
                       </div>
                     </div>
                   </div>
                 ) : (
-                  <div className="text-center py-8 md:py-12 border-2 border-dashed border-accent rounded-lg bg-card">
-                    <FolderIcon className="h-10 w-10 md:h-16 md:w-16 text-accent mx-auto mb-3 md:mb-4" />
-                    <h4 className="text-base md:text-xl font-bold text-foreground mb-1 md:mb-2">No files available</h4>
-                    <p className="text-xs md:text-sm text-muted-foreground max-w-md mx-auto px-2">
+                  <div className="text-center py-6 sm:py-8 md:py-12 border-2 border-dashed border-accent rounded-lg bg-card">
+                    <FolderIcon className="h-8 w-8 sm:h-10 sm:w-10 md:h-16 md:w-16 text-accent mx-auto mb-2 sm:mb-3 md:mb-4" />
+                    <h4 className="text-sm sm:text-base md:text-xl font-bold text-foreground mb-1 sm:mb-1 md:mb-2">No files available</h4>
+                    <p className="text-xs sm:text-xs md:text-sm text-muted-foreground max-w-md mx-auto px-2 leading-relaxed">
                       No files have been uploaded for this section yet. If you have access to materials, please{" "}
                       <a href="https://github.com" className="text-accent hover:underline font-semibold">
                         contribute

@@ -83,12 +83,12 @@
 
   /* Back Button */
   .back-button {
-    @apply font-mono text-center border-2 border-foreground bg-card px-3 py-1.5 text-sm transition-all duration-100 hover:bg-accent/20 active:bg-accent/30 inline-flex items-center gap-1 relative;
-    box-shadow: 0 3px 0 hsl(var(--foreground));
+    @apply font-mono text-center border-2 border-foreground bg-card px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm transition-all duration-100 hover:bg-accent/20 active:bg-accent/30 inline-flex items-center gap-1 relative;
+    box-shadow: 0 2px 0 hsl(var(--foreground));
   }
 
   .back-button:active {
-    transform: translateY(3px);
+    transform: translateY(2px);
     box-shadow: 0 0 0 hsl(var(--foreground));
     transition-duration: 50ms;
   }
@@ -128,7 +128,7 @@
 
   /* Section Header */
   .section-header {
-    @apply text-xl md:text-2xl font-bold uppercase border-b-2 border-accent pb-2 mb-4 md:mb-6;
+    @apply text-lg sm:text-xl md:text-2xl font-bold uppercase border-b-2 border-accent pb-1 sm:pb-2 mb-3 sm:mb-4 md:mb-6;
   }
 
   /* Highlighted Section */
@@ -184,6 +184,29 @@
 
   .loading-text {
     @apply mt-4 text-sm font-medium text-foreground;
+  }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    .container {
+      @apply px-3;
+    }
+    
+    /* Improve touch targets */
+    .keyboard-button {
+      @apply min-h-[44px] min-w-[44px];
+    }
+    
+    /* Better spacing for mobile */
+    .semester-card,
+    .subject-card {
+      @apply min-h-[80px];
+    }
+    
+    /* Improve text readability on mobile */
+    body {
+      @apply text-sm;
+    }
   }
 }
 

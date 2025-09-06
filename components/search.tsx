@@ -72,15 +72,15 @@ export function Search({ className }: SearchProps) {
       <Button
         variant="outline"
         className={cn(
-          "relative h-10 w-full max-w-sm lg:max-w-md xl:max-w-lg p-0 justify-start px-4 py-2 border-2 border-foreground hover:border-primary transition-all duration-200 hover:shadow-md bg-card/50 backdrop-blur-sm",
+          "relative h-9 sm:h-10 w-full max-w-sm lg:max-w-md xl:max-w-lg p-0 justify-start px-3 sm:px-4 py-2 border-2 border-foreground hover:border-primary transition-all duration-200 hover:shadow-md bg-card/50 backdrop-blur-sm",
           className
         )}
         onClick={() => dispatch({ type: "SET_OPEN", payload: true })}
       >
-        <SearchIcon className="h-4 w-4 mr-3 text-foreground" />
-        <span className="flex-1 text-left text-muted-foreground">Search resources, subjects, or semesters...</span>
+        <SearchIcon className="h-3 w-3 sm:h-4 sm:w-4 mr-2 sm:mr-3 text-foreground" />
+        <span className="flex-1 text-left text-muted-foreground text-xs sm:text-sm">Search resources, subjects, or semesters...</span>
         <span className="sr-only">Search resources</span>
-        <kbd className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 hidden h-6 select-none items-center gap-1 rounded border border-foreground/20 bg-muted/50 px-2 font-mono text-[10px] font-medium opacity-70 lg:flex">
+        <kbd className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 hidden h-5 sm:h-6 select-none items-center gap-1 rounded border border-foreground/20 bg-muted/50 px-1 sm:px-2 font-mono text-[9px] sm:text-[10px] font-medium opacity-70 lg:flex">
           <span className="text-xs">⌘</span>K
         </kbd>
       </Button>
@@ -89,13 +89,13 @@ export function Search({ className }: SearchProps) {
         onOpenChange={(open) => dispatch({ type: "SET_OPEN", payload: open })}
         className="border-2 border-foreground shadow-2xl"
       >
-        <div className="flex items-center border-b-2 border-foreground px-4 py-3 bg-gradient-to-r from-card to-card/80">
-          <SearchIcon className="mr-3 h-5 w-5 shrink-0 text-foreground" />
+        <div className="flex items-center border-b-2 border-foreground px-3 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-card to-card/80">
+          <SearchIcon className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-foreground" />
           <CommandInput
             placeholder="Search resources, subjects, or semesters..."
             value={state.query}
             onValueChange={performSearch}
-            className="flex h-12 w-full rounded-md bg-transparent py-3 text-base outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus:ring-0"
+            className="flex h-10 sm:h-12 w-full rounded-md bg-transparent py-2 sm:py-3 text-sm sm:text-base outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus:ring-0"
             autoFocus
           />
           <Popover open={filterOpen} onOpenChange={setFilterOpen}>
@@ -103,42 +103,42 @@ export function Search({ className }: SearchProps) {
               <Button
                 variant="ghost"
                 size="sm"
-                className="h-10 px-3 hover:bg-accent/20 border border-foreground/20 rounded-md transition-colors"
+                className="h-8 sm:h-10 px-2 sm:px-3 hover:bg-accent/20 border border-foreground/20 rounded-md transition-colors"
               >
-                <Filter className="h-4 w-4" />
-                <span className="hidden lg:inline-flex ml-2 text-sm font-medium">Filters</span>
+                <Filter className="h-3 w-3 sm:h-4 sm:w-4" />
+                <span className="hidden lg:inline-flex ml-1 sm:ml-2 text-xs sm:text-sm font-medium">Filters</span>
                 {hasActiveFilters && (
-                  <Badge variant="secondary" className="ml-2 rounded-full px-2 py-0.5 text-xs font-medium border border-foreground/20 bg-accent/10 text-accent">
+                  <Badge variant="secondary" className="ml-1 sm:ml-2 rounded-full px-1 sm:px-2 py-0.5 text-[10px] sm:text-xs font-medium border border-foreground/20 bg-accent/10 text-accent">
                     {Object.values(state.filters).filter(Boolean).length}
                   </Badge>
                 )}
-                <ChevronDown className="ml-2 h-4 w-4" />
+                <ChevronDown className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-80 p-0 border-2 border-foreground" align="end">
-              <div className="flex items-center justify-between border-b-2 border-foreground px-4 py-2">
-                <h4 className="font-medium">Filters</h4>
+            <PopoverContent className="w-72 sm:w-80 p-0 border-2 border-foreground" align="end">
+              <div className="flex items-center justify-between border-b-2 border-foreground px-3 sm:px-4 py-2">
+                <h4 className="font-medium text-sm sm:text-base">Filters</h4>
                 {hasActiveFilters && (
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={clearFilters}
-                    className="h-8 px-2 hover:bg-accent/20"
+                    className="h-7 sm:h-8 px-2 hover:bg-accent/20 text-xs sm:text-sm"
                   >
                     Clear
                   </Button>
                 )}
               </div>
-              <div className="p-4 space-y-4">
+              <div className="p-3 sm:p-4 space-y-3 sm:space-y-4">
                 <div className="space-y-2">
-                  <h5 className="text-sm font-medium">Semester</h5>
-                  <div className="flex flex-wrap gap-2">
+                  <h5 className="text-xs sm:text-sm font-medium">Semester</h5>
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
                     {[1, 2, 3, 4, 5, 6].map((sem) => (
                       <Badge
                         key={sem}
                         variant={state.filters.semester === sem ? "default" : "outline"}
                         className={cn(
-                          "cursor-pointer border-2 border-foreground",
+                          "cursor-pointer border-2 border-foreground text-xs sm:text-sm px-2 sm:px-3 py-1",
                           state.filters.semester === sem
                             ? "bg-accent text-accent-foreground hover:bg-accent/90"
                             : "hover:bg-accent/20"
@@ -160,8 +160,8 @@ export function Search({ className }: SearchProps) {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h5 className="text-sm font-medium">Type</h5>
-                  <div className="flex flex-wrap gap-2">
+                  <h5 className="text-xs sm:text-sm font-medium">Type</h5>
+                  <div className="flex flex-wrap gap-1 sm:gap-2">
                     {["Notes", "Books", "Assignments", "Projects"].map((type) => {
                       const Icon = resourceTypeIcons[type as keyof typeof resourceTypeIcons];
                       return (
@@ -169,7 +169,7 @@ export function Search({ className }: SearchProps) {
                           key={type}
                           variant={state.filters.type === type ? "default" : "outline"}
                           className={cn(
-                            "cursor-pointer border-2 border-foreground flex items-center gap-1",
+                            "cursor-pointer border-2 border-foreground flex items-center gap-1 text-xs sm:text-sm px-2 sm:px-3 py-1",
                             state.filters.type === type
                               ? "bg-accent text-accent-foreground hover:bg-accent/90"
                               : "hover:bg-accent/20"
@@ -185,7 +185,7 @@ export function Search({ className }: SearchProps) {
                             performSearch(state.query);
                           }}
                         >
-                          <Icon className="h-3 w-3" />
+                          <Icon className="h-2 w-2 sm:h-3 sm:w-3" />
                           {type}
                         </Badge>
                       );
@@ -196,35 +196,35 @@ export function Search({ className }: SearchProps) {
             </PopoverContent>
           </Popover>
         </div>
-        <CommandList className="max-h-[400px] overflow-y-auto">
-          <CommandEmpty className="py-8 text-center">
-            <div className="flex flex-col items-center gap-3">
-              <SearchIcon className="h-8 w-8 text-foreground/30" />
-              <p className="text-muted-foreground">No results found</p>
-              <p className="text-sm text-muted-foreground/70">Try different keywords or check your filters</p>
+        <CommandList className="max-h-[350px] sm:max-h-[400px] overflow-y-auto">
+          <CommandEmpty className="py-6 sm:py-8 text-center">
+            <div className="flex flex-col items-center gap-2 sm:gap-3">
+              <SearchIcon className="h-6 w-6 sm:h-8 sm:w-8 text-foreground/30" />
+              <p className="text-muted-foreground text-sm sm:text-base">No results found</p>
+              <p className="text-xs sm:text-sm text-muted-foreground/70">Try different keywords or check your filters</p>
               {state.query && (
                 <div className="mt-4">
                   <CommandGroup heading="Search Suggestions">
                     <CommandItem
                       onSelect={() => performSearch("programming")}
-                      className="hover:bg-accent/20 px-4 py-3"
+                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
                     >
-                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm">Try "programming"</span>
+                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                      <span className="text-xs sm:text-sm">Try "programming"</span>
                     </CommandItem>
                     <CommandItem
                       onSelect={() => performSearch("data")}
-                      className="hover:bg-accent/20 px-4 py-3"
+                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
                     >
-                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm">Try "data"</span>
+                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                      <span className="text-xs sm:text-sm">Try "data"</span>
                     </CommandItem>
                     <CommandItem
                       onSelect={() => performSearch("semester")}
-                      className="hover:bg-accent/20 px-4 py-3"
+                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
                     >
-                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm">Try "semester"</span>
+                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                      <span className="text-xs sm:text-sm">Try "semester"</span>
                     </CommandItem>
                   </CommandGroup>
                 </div>
@@ -240,24 +240,24 @@ export function Search({ className }: SearchProps) {
                     <CommandItem
                       key={result.id}
                       onSelect={() => handleSelect(result)}
-                      className="flex flex-col items-start py-4 px-4 hover:bg-accent/20 cursor-pointer transition-colors"
+                      className="flex flex-col items-start py-3 sm:py-4 px-3 sm:px-4 hover:bg-accent/20 cursor-pointer transition-colors"
                     >
-                      <div className="flex items-center gap-3 w-full">
-                        <div className="bg-accent/10 p-2 rounded-lg border border-foreground/20 flex-shrink-0">
-                          <Icon className="h-5 w-5 text-accent" />
+                      <div className="flex items-center gap-2 sm:gap-3 w-full">
+                        <div className="bg-accent/10 p-1.5 sm:p-2 rounded-lg border border-foreground/20 flex-shrink-0">
+                          <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-foreground truncate">{result.title}</div>
-                          <div className="text-sm text-muted-foreground mt-1">
+                          <div className="font-semibold text-foreground truncate text-sm sm:text-base">{result.title}</div>
+                          <div className="text-xs sm:text-sm text-muted-foreground mt-0.5 sm:mt-1">
                             {result.subject} • Semester {result.semester}
                           </div>
                         </div>
-                        <Badge variant="secondary" className="border border-foreground/20 bg-accent/5 text-accent text-xs px-2 py-1">
+                        <Badge variant="secondary" className="border border-foreground/20 bg-accent/5 text-accent text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1">
                           {result.type}
                         </Badge>
                       </div>
                       {result.description && (
-                        <div className="text-sm text-muted-foreground/80 mt-2 ml-11 line-clamp-2">
+                        <div className="text-xs sm:text-sm text-muted-foreground/80 mt-1.5 sm:mt-2 ml-8 sm:ml-11 line-clamp-2">
                           {result.description}
                         </div>
                       )}
@@ -274,10 +274,10 @@ export function Search({ className }: SearchProps) {
                 <CommandItem
                   key={query}
                   onSelect={() => performSearch(query)}
-                  className="flex items-center hover:bg-accent/20 px-4 py-3"
+                  className="flex items-center hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
                 >
-                  <Clock className="mr-3 h-4 w-4 text-muted-foreground" />
-                  <span className="text-sm">{query}</span>
+                  <Clock className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
+                  <span className="text-xs sm:text-sm">{query}</span>
                 </CommandItem>
               ))}
             </CommandGroup>
@@ -288,12 +288,12 @@ export function Search({ className }: SearchProps) {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/1");
               }}
-              className="hover:bg-accent/20 px-4 py-3"
+              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
             >
-              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
               <div className="flex flex-col">
-                <span className="font-medium">Semester 1</span>
-                <span className="text-xs text-muted-foreground">Foundational courses</span>
+                <span className="font-medium text-sm sm:text-base">Semester 1</span>
+                <span className="text-[10px] sm:text-xs text-muted-foreground">Foundational courses</span>
               </div>
             </CommandItem>
             <CommandItem
