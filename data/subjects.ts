@@ -230,4 +230,62 @@ export const subjects = [
     slug: "open-electives-2",
     description: "Entrepreneurship, Stock Market, and other electives",
   },
+
+  // Semester 5
+  {
+    id: 501,
+    semesterId: 5,
+    name: "Cloud Data Analytics",
+    slug: "cloud-data-analytics",
+    description: "Advanced data analytics using cloud platforms",
+  },
+  {
+    id: 502,
+    semesterId: 5,
+    name: "Programming with R",
+    slug: "programming-with-r",
+    description: "Statistical programming with R language",
+  },
+  {
+    id: 503,
+    semesterId: 5,
+    name: "Data Warehouse and Data Management",
+    slug: "data-warehouse-and-data-management",
+    description: "Design and management of data warehouses",
+  },
+  {
+    id: 504,
+    semesterId: 5,
+    name: "Programming with R LAB",
+    slug: "programming-with-r-lab",
+    description: "Practical implementation of R programming concepts",
+  },
+  {
+    id: 505,
+    semesterId: 5,
+    name: "Data Warehouse and Data Management LAB",
+    slug: "data-warehouse-and-data-management-lab",
+    description: "Practical data warehouse implementation",
+  },
+  {
+    id: 506,
+    semesterId: 5,
+    name: "Technical Writing",
+    slug: "technical-writing",
+    description: "Professional technical documentation and communication",
+  },
+  {
+    id: 507,
+    semesterId: 5,
+    name: "Entrepreneurship",
+    slug: "entrepreneurship",
+    description: "Business development and entrepreneurial skills",
+  },
+  {
+    id: 508,
+    semesterId: 5,
+    name: "Capstone Project",
+    slug: "capstone-project",
+    description: "Comprehensive project integrating all learned concepts",
+  },
 ]

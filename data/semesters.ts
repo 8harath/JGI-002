@@ -31,8 +31,8 @@ export const semesters = [
     id: 5,
     name: "Semester 5",
     description: "Advanced specialization courses",
-    isActive: false,
-    subjectCount: 0,
+    isActive: true,
+    subjectCount: 8,
   },
   {
     id: 6,
