@@ -335,20 +335,6 @@ export function Search({ className }: SearchProps) {
     </div>
   );
 }
-    return () => document.removeEventListener("keydown", down);
-  }, [state.isOpen, dispatch]);
-
-  const handleSelect = (result: Resource) => {
-    dispatch({ type: "SET_OPEN", payload: false });
-    router.push(`/semester/${result.semester}?subject=${result.subject}`);
-  };
-
-  const clearFilters = () => {
-    dispatch({ type: "CLEAR_FILTERS" });
-    performSearch(state.query);
-  };
-
-  const getUniqueValues = (resources: Resource[], key: keyof Resource) => {
     return Array.from(new Set(resources.map(r => r[key]))).sort();
   };
 
