@@ -11,8 +11,10 @@ interface SearchState {
     semester: number | null;
     subject: string | null;
     type: string | null;
+    resourceType: string | null;
   };
   history: string[];
+  recentSearches: SearchResult[];
   isOpen: boolean;
 }
 
@@ -23,6 +25,7 @@ type SearchAction =
   | { type: "CLEAR_FILTERS" }
   | { type: "ADD_TO_HISTORY"; payload: string }
   | { type: "CLEAR_HISTORY" }
+  | { type: "SET_RECENT_SEARCHES"; payload: SearchResult[] }
   | { type: "SET_OPEN"; payload: boolean };
 
 const initialState: SearchState = {
@@ -32,8 +35,10 @@ const initialState: SearchState = {
     semester: null,
     subject: null,
     type: null,
+    resourceType: null,
   },
   history: [],
+  recentSearches: [],
   isOpen: false,
 };
 
@@ -57,6 +62,8 @@ function searchReducer(state: SearchState, action: SearchAction): SearchState {
       };
     case "CLEAR_HISTORY":
       return { ...state, history: [] };
+    case "SET_RECENT_SEARCHES":
+      return { ...state, recentSearches: action.payload };
     case "SET_OPEN":
       return { ...state, isOpen: action.payload };
     default:

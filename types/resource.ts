@@ -1,6 +1,7 @@
 export interface Resource {
   id: string;
-  name: string;
+  title: string;
+  name?: string; // Keep name as optional for backward compatibility
   description?: string;
   type: string;
   semester: number;
