@@ -89,8 +89,14 @@ export function Search({ className }: SearchProps) {
 
       {/* Custom Search Modal */}
       {state.isOpen && (
-        <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex items-start justify-center p-3 sm:p-4">
-          <div className="bg-card border-2 border-foreground rounded-lg shadow-2xl w-full max-w-2xl search-modal mt-8 sm:mt-16 overflow-hidden">
+        <div 
+          className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex items-start justify-center p-3 sm:p-4"
+          onClick={() => dispatch({ type: "SET_OPEN", payload: false })}
+        >
+          <div 
+            className="bg-card border-2 border-foreground rounded-lg shadow-2xl w-full max-w-2xl search-modal mt-8 sm:mt-16 overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
             {/* Header */}
             <div className="flex items-center border-b-2 border-foreground px-3 sm:px-4 py-3 sm:py-4 bg-gradient-to-r from-card to-card/80">
               <SearchIcon className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-foreground" />
@@ -233,7 +239,7 @@ export function Search({ className }: SearchProps) {
                       <div
                         key={result.id}
                         onClick={() => handleSelect(result)}
-                        className="flex items-center gap-3 p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
+                        className="flex items-center gap-3 search-item p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
                       >
                         <div className="bg-primary/10 p-2 rounded-lg border border-foreground/20 flex-shrink-0">
                           <Icon className="h-4 w-4 text-primary" />
@@ -271,7 +277,7 @@ export function Search({ className }: SearchProps) {
                           dispatch({ type: "SET_OPEN", payload: false });
                           router.push(`/semester/${semester.id}`);
                         }}
-                        className="flex items-center gap-3 p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
+                        className="flex items-center gap-3 search-item p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
                       >
                         <BookOpen className="h-4 w-4 text-muted-foreground" />
                         <div className="flex flex-col">
