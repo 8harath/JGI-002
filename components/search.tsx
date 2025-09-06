@@ -301,12 +301,12 @@ export function Search({ className }: SearchProps) {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/2");
               }}
-              className="hover:bg-accent/20 px-4 py-3"
+              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
             >
-              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
               <div className="flex flex-col">
-                <span className="font-medium">Semester 2</span>
-                <span className="text-xs text-muted-foreground">Core programming</span>
+                <span className="font-medium text-sm sm:text-base">Semester 2</span>
+                <span className="text-[10px] sm:text-xs text-muted-foreground">Core programming</span>
               </div>
             </CommandItem>
             <CommandItem
@@ -314,12 +314,12 @@ export function Search({ className }: SearchProps) {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/3");
               }}
-              className="hover:bg-accent/20 px-4 py-3"
+              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
             >
-              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
               <div className="flex flex-col">
-                <span className="font-medium">Semester 3</span>
-                <span className="text-xs text-muted-foreground">Networks & databases</span>
+                <span className="font-medium text-sm sm:text-base">Semester 3</span>
+                <span className="text-[10px] sm:text-xs text-muted-foreground">Networks & databases</span>
               </div>
             </CommandItem>
             <CommandItem
@@ -327,12 +327,12 @@ export function Search({ className }: SearchProps) {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/4");
               }}
-              className="hover:bg-accent/20 px-4 py-3"
+              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
             >
-              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
               <div className="flex flex-col">
-                <span className="font-medium">Semester 4</span>
-                <span className="text-xs text-muted-foreground">Specialization tracks</span>
+                <span className="font-medium text-sm sm:text-base">Semester 4</span>
+                <span className="text-[10px] sm:text-xs text-muted-foreground">Specialization tracks</span>
               </div>
             </CommandItem>
             <CommandItem
@@ -340,12 +340,12 @@ export function Search({ className }: SearchProps) {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/5");
               }}
-              className="hover:bg-accent/20 px-4 py-3"
+              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
             >
-              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
               <div className="flex flex-col">
-                <span className="font-medium">Semester 5</span>
-                <span className="text-xs text-muted-foreground">Advanced specialization</span>
+                <span className="font-medium text-sm sm:text-base">Semester 5</span>
+                <span className="text-[10px] sm:text-xs text-muted-foreground">Advanced specialization</span>
               </div>
             </CommandItem>
           </CommandGroup>
