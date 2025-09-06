@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useReducer, useEffect } from "react";
-import { Resource } from "@/types/resource";
+import { Resource } from "@/types";
 import { searchResources, SearchResult } from "./search";
 
 interface SearchState {

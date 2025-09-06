@@ -207,6 +207,25 @@
     body {
       @apply text-sm;
     }
+    
+    /* Mobile search improvements */
+    .search-modal {
+      @apply mt-4 max-h-[85vh];
+    }
+    
+    .search-input {
+      @apply text-base; /* Prevents zoom on iOS */
+    }
+    
+    /* Better mobile touch targets for search */
+    .search-item {
+      @apply min-h-[48px] py-3;
+    }
+    
+    /* Mobile-friendly filter badges */
+    .filter-badge {
+      @apply min-h-[36px] px-3 py-2;
+    }
   }
 }
 

@@ -20,3 +20,13 @@ export interface Contributor {
   contributions: string[]
   github: string
 }
+
+export interface Resource {
+  id: string
+  title: string
+  description?: string
+  type: string
+  semester: number
+  subject: string
+  path: string
+}

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { useSearch } from "@/lib/search-context";
-import { Resource } from "@/types/resource";
+import { Resource } from "@/types";
 
 interface SearchProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -90,7 +90,7 @@ export function Search({ className }: SearchProps) {
       {/* Custom Search Modal */}
       {state.isOpen && (
         <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex items-start justify-center p-3 sm:p-4">
-          <div className="bg-card border-2 border-foreground rounded-lg shadow-2xl w-full max-w-2xl mt-8 sm:mt-16 max-h-[80vh] overflow-hidden">
+          <div className="bg-card border-2 border-foreground rounded-lg shadow-2xl w-full max-w-2xl search-modal mt-8 sm:mt-16 overflow-hidden">
             {/* Header */}
             <div className="flex items-center border-b-2 border-foreground px-3 sm:px-4 py-3 sm:py-4 bg-gradient-to-r from-card to-card/80">
               <SearchIcon className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-foreground" />
@@ -100,7 +100,7 @@ export function Search({ className }: SearchProps) {
                 value={inputValue}
                 onChange={handleInputChange}
                 onKeyDown={handleKeyDown}
-                className="flex-1 h-8 sm:h-10 bg-transparent text-sm sm:text-base outline-none placeholder:text-muted-foreground"
+                className="flex-1 h-8 sm:h-10 bg-transparent search-input text-sm sm:text-base outline-none placeholder:text-muted-foreground"
                 autoFocus
               />
               <Button
@@ -147,7 +147,7 @@ export function Search({ className }: SearchProps) {
                         key={sem}
                         variant={state.filters.semester === sem ? "default" : "outline"}
                         className={cn(
-                          "cursor-pointer border-2 border-foreground text-xs px-2 py-1",
+                          "cursor-pointer border-2 border-foreground filter-badge text-xs",
                           state.filters.semester === sem
                             ? "bg-primary text-primary-foreground hover:bg-primary/90"
                             : "hover:bg-accent/20"
@@ -179,7 +179,7 @@ export function Search({ className }: SearchProps) {
                           key={type}
                           variant={state.filters.type === type ? "default" : "outline"}
                           className={cn(
-                            "cursor-pointer border-2 border-foreground flex items-center gap-1 text-xs px-2 py-1",
+                            "cursor-pointer border-2 border-foreground filter-badge flex items-center gap-1 text-xs",
                             state.filters.type === type
                               ? "bg-primary text-primary-foreground hover:bg-primary/90"
                               : "hover:bg-accent/20"

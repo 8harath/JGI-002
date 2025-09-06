@@ -1,4 +1,4 @@
-import { Resource } from "@/types/resource";
+import { Resource } from "@/types";
 
 export interface SearchResult {
   id: string;
