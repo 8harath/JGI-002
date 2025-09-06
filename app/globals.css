@@ -226,6 +226,16 @@
     .filter-badge {
       @apply min-h-[36px] px-3 py-2;
     }
+    
+    /* Header scroll behavior */
+    .header-scroll-hidden {
+      @apply shadow-lg;
+    }
+  }
+  
+  /* Header scroll animations */
+  .header-transition {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

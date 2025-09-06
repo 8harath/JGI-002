@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Github, Menu, X, Home, Mail } from "lucide-react"
@@ -10,14 +10,66 @@ import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+  
   useKeyboardShortcuts();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const scrollThreshold = window.innerWidth < 768 ? 50 : 100 // Lower threshold for mobile
+      
+      // Show header when scrolling up or at the top
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        setIsHeaderVisible(true)
+      }
+      // Always show header at the very top
+      else if (currentScrollY === 0) {
+        setIsHeaderVisible(true)
+      } 
+      // Hide header when scrolling down (but not if mobile menu is open)
+      else if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold && !mobileMenuOpen) {
+        setIsHeaderVisible(false)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    // Throttle scroll events for better performance
+    let ticking = false
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll()
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+
+    window.addEventListener('scroll', throttledHandleScroll, { passive: true })
+    
+    return () => {
+      window.removeEventListener('scroll', throttledHandleScroll)
+    }
+  }, [lastScrollY, mobileMenuOpen])
+
+  // Always show header when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      setIsHeaderVisible(true)
+    }
+  }, [mobileMenuOpen])
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen)
   }
 
   return (
-    <header className="bg-card border-b-2 border-foreground sticky top-0 z-50 shadow-sm">
+    <header className={`bg-card/95 backdrop-blur-sm border-b-2 border-foreground sticky top-0 z-50 shadow-sm transition-all duration-300 ease-in-out ${
+      isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center hover:scale-105 transition-transform">
