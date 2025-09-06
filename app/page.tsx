@@ -6,10 +6,6 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <div className="container mx-auto px-4 py-8">
         <div className="mb-12 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold gradient-text mb-4 animate-fade-in">
-            Jain University Resource Archive
-          </h1>
-          <p className="text-xl text-muted-foreground animate-slide-up">Organized, accessible, open-source.</p>
           <div className="mt-6">
             <ContributorsButton />
           </div>

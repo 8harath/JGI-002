@@ -17,8 +17,8 @@ export function Header() {
   }
 
   return (
-    <header className="bg-card border-b-2 border-foreground sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3">
+    <header className="bg-card border-b-2 border-foreground sticky top-0 z-50 shadow-sm">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center hover:scale-105 transition-transform">
             <div className="relative w-14 h-14">
@@ -30,6 +30,10 @@ export function Header() {
                 className="object-contain"
                 priority
               />
+            </div>
+            <div className="ml-3">
+              <h1 className="text-lg sm:text-xl font-bold gradient-text">Jain University Resource Archive</h1>
+              <p className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Organized, accessible, open-source</p>
             </div>
           </Link>
 
