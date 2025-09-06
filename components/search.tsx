@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Search as SearchIcon, X, Clock, Filter, ChevronDown, BookOpen, FileText, Book, ClipboardList } from "lucide-react";
+import { Search as SearchIcon, X, Clock, Filter, ChevronDown, BookOpen, FileText, Book, ClipboardList, TrendingUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -72,42 +72,43 @@ export function Search({ className }: SearchProps) {
       <Button
         variant="outline"
         className={cn(
-          "relative h-9 w-9 p-0 xl:h-10 xl:w-60 xl:justify-start xl:px-3 xl:py-2 border-2 border-foreground hover:border-primary transition-colors",
+          "relative h-10 w-full max-w-sm lg:max-w-md xl:max-w-lg p-0 justify-start px-4 py-2 border-2 border-foreground hover:border-primary transition-all duration-200 hover:shadow-md bg-card/50 backdrop-blur-sm",
           className
         )}
         onClick={() => dispatch({ type: "SET_OPEN", payload: true })}
       >
-        <SearchIcon className="h-4 w-4 xl:mr-2" />
-        <span className="hidden xl:inline-flex">Search resources...</span>
+        <SearchIcon className="h-4 w-4 mr-3 text-muted-foreground" />
+        <span className="flex-1 text-left text-muted-foreground">Search resources, subjects, or semesters...</span>
         <span className="sr-only">Search resources</span>
-        <kbd className="pointer-events-none absolute right-1.5 top-2 hidden h-6 select-none items-center gap-1 rounded border-2 border-foreground bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 xl:flex">
+        <kbd className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 hidden h-6 select-none items-center gap-1 rounded border border-foreground/20 bg-muted/50 px-2 font-mono text-[10px] font-medium opacity-70 lg:flex">
           <span className="text-xs">⌘</span>K
         </kbd>
       </Button>
       <CommandDialog 
         open={state.isOpen} 
         onOpenChange={(open) => dispatch({ type: "SET_OPEN", payload: open })}
-        className="border-2 border-foreground"
+        className="border-2 border-foreground shadow-2xl"
       >
-        <div className="flex items-center border-b-2 border-foreground px-3">
-          <SearchIcon className="mr-2 h-4 w-4 shrink-0 opacity-50" />
+        <div className="flex items-center border-b-2 border-foreground px-4 py-3 bg-gradient-to-r from-card to-card/80">
+          <SearchIcon className="mr-3 h-5 w-5 shrink-0 text-primary" />
           <CommandInput
-            placeholder="Search resources..."
+            placeholder="Search resources, subjects, or semesters..."
             value={state.query}
             onValueChange={performSearch}
-            className="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex h-12 w-full rounded-md bg-transparent py-3 text-base outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus:ring-0"
+            autoFocus
           />
           <Popover open={filterOpen} onOpenChange={setFilterOpen}>
             <PopoverTrigger asChild>
               <Button
                 variant="ghost"
                 size="sm"
-                className="h-8 px-2 lg:px-3 hover:bg-accent/20"
+                className="h-10 px-3 hover:bg-accent/20 border border-foreground/20 rounded-md transition-colors"
               >
                 <Filter className="h-4 w-4" />
-                <span className="hidden lg:inline-flex ml-2">Filters</span>
+                <span className="hidden lg:inline-flex ml-2 text-sm font-medium">Filters</span>
                 {hasActiveFilters && (
-                  <Badge variant="secondary" className="ml-2 rounded-sm px-1 font-normal border-2 border-foreground">
+                  <Badge variant="secondary" className="ml-2 rounded-full px-2 py-0.5 text-xs font-medium border border-foreground/20 bg-primary/10 text-primary">
                     {Object.values(state.filters).filter(Boolean).length}
                   </Badge>
                 )}
@@ -195,35 +196,71 @@ export function Search({ className }: SearchProps) {
             </PopoverContent>
           </Popover>
         </div>
-        <CommandList>
-          <CommandEmpty className="py-6 text-center text-muted-foreground">
-            No results found.
+        <CommandList className="max-h-[400px] overflow-y-auto">
+          <CommandEmpty className="py-8 text-center">
+            <div className="flex flex-col items-center gap-3">
+              <SearchIcon className="h-8 w-8 text-muted-foreground/50" />
+              <p className="text-muted-foreground">No results found</p>
+              <p className="text-sm text-muted-foreground/70">Try different keywords or check your filters</p>
+              {state.query && (
+                <div className="mt-4">
+                  <CommandGroup heading="Search Suggestions">
+                    <CommandItem
+                      onSelect={() => performSearch("programming")}
+                      className="hover:bg-accent/20 px-4 py-3"
+                    >
+                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
+                      <span className="text-sm">Try "programming"</span>
+                    </CommandItem>
+                    <CommandItem
+                      onSelect={() => performSearch("data")}
+                      className="hover:bg-accent/20 px-4 py-3"
+                    >
+                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
+                      <span className="text-sm">Try "data"</span>
+                    </CommandItem>
+                    <CommandItem
+                      onSelect={() => performSearch("semester")}
+                      className="hover:bg-accent/20 px-4 py-3"
+                    >
+                      <TrendingUp className="mr-3 h-4 w-4 text-muted-foreground" />
+                      <span className="text-sm">Try "semester"</span>
+                    </CommandItem>
+                  </CommandGroup>
+                </div>
+              )}
+            </div>
           </CommandEmpty>
           {state.results.length > 0 && (
             <>
-              <CommandGroup heading="Search Results">
+              <CommandGroup heading={`Search Results (${state.results.length})`}>
                 {state.results.map((result) => {
                   const Icon = resourceTypeIcons[result.type as keyof typeof resourceTypeIcons];
                   return (
                     <CommandItem
                       key={result.id}
                       onSelect={() => handleSelect(result)}
-                      className="flex flex-col items-start py-3 hover:bg-accent/20"
+                      className="flex flex-col items-start py-4 px-4 hover:bg-accent/20 cursor-pointer transition-colors"
                     >
-                      <div className="flex items-center gap-2">
-                        <div className="bg-primary/10 p-1.5 rounded-md border-2 border-foreground">
-                          <Icon className="h-4 w-4 text-primary" />
+                      <div className="flex items-center gap-3 w-full">
+                        <div className="bg-primary/10 p-2 rounded-lg border border-foreground/20 flex-shrink-0">
+                          <Icon className="h-5 w-5 text-primary" />
                         </div>
-                        <div className="font-medium">{result.title}</div>
-                      </div>
-                      <div className="text-sm text-muted-foreground ml-8">
-                        {result.subject} • Semester {result.semester}
-                      </div>
-                      <div className="mt-1 ml-8 flex gap-2">
-                        <Badge variant="secondary" className="border-2 border-foreground">
+                        <div className="flex-1 min-w-0">
+                          <div className="font-semibold text-foreground truncate">{result.title}</div>
+                          <div className="text-sm text-muted-foreground mt-1">
+                            {result.subject} • Semester {result.semester}
+                          </div>
+                        </div>
+                        <Badge variant="secondary" className="border border-foreground/20 bg-primary/5 text-primary text-xs px-2 py-1">
                           {result.type}
                         </Badge>
                       </div>
+                      {result.description && (
+                        <div className="text-sm text-muted-foreground/80 mt-2 ml-11 line-clamp-2">
+                          {result.description}
+                        </div>
+                      )}
                     </CommandItem>
                   );
                 })}
@@ -237,34 +274,79 @@ export function Search({ className }: SearchProps) {
                 <CommandItem
                   key={query}
                   onSelect={() => performSearch(query)}
-                  className="flex items-center hover:bg-accent/20"
+                  className="flex items-center hover:bg-accent/20 px-4 py-3"
                 >
-                  <Clock className="mr-2 h-4 w-4 text-muted-foreground" />
-                  <span>{query}</span>
+                  <Clock className="mr-3 h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm">{query}</span>
                 </CommandItem>
               ))}
             </CommandGroup>
           )}
-          <CommandGroup heading="Quick Links">
+          <CommandGroup heading="Quick Access">
             <CommandItem
               onSelect={() => {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/1");
               }}
-              className="hover:bg-accent/20"
+              className="hover:bg-accent/20 px-4 py-3"
             >
-              <BookOpen className="mr-2 h-4 w-4 text-muted-foreground" />
-              Semester 1 Resources
+              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <div className="flex flex-col">
+                <span className="font-medium">Semester 1</span>
+                <span className="text-xs text-muted-foreground">Foundational courses</span>
+              </div>
             </CommandItem>
             <CommandItem
               onSelect={() => {
                 dispatch({ type: "SET_OPEN", payload: false });
                 router.push("/semester/2");
               }}
-              className="hover:bg-accent/20"
+              className="hover:bg-accent/20 px-4 py-3"
             >
-              <BookOpen className="mr-2 h-4 w-4 text-muted-foreground" />
-              Semester 2 Resources
+              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <div className="flex flex-col">
+                <span className="font-medium">Semester 2</span>
+                <span className="text-xs text-muted-foreground">Core programming</span>
+              </div>
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                dispatch({ type: "SET_OPEN", payload: false });
+                router.push("/semester/3");
+              }}
+              className="hover:bg-accent/20 px-4 py-3"
+            >
+              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <div className="flex flex-col">
+                <span className="font-medium">Semester 3</span>
+                <span className="text-xs text-muted-foreground">Networks & databases</span>
+              </div>
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                dispatch({ type: "SET_OPEN", payload: false });
+                router.push("/semester/4");
+              }}
+              className="hover:bg-accent/20 px-4 py-3"
+            >
+              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <div className="flex flex-col">
+                <span className="font-medium">Semester 4</span>
+                <span className="text-xs text-muted-foreground">Specialization tracks</span>
+              </div>
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                dispatch({ type: "SET_OPEN", payload: false });
+                router.push("/semester/5");
+              }}
+              className="hover:bg-accent/20 px-4 py-3"
+            >
+              <BookOpen className="mr-3 h-4 w-4 text-muted-foreground" />
+              <div className="flex flex-col">
+                <span className="font-medium">Semester 5</span>
+                <span className="text-xs text-muted-foreground">Advanced specialization</span>
+              </div>
             </CommandItem>
           </CommandGroup>
         </CommandList>
