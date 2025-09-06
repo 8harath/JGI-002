@@ -1,0 +1,9 @@
+Philosopher_ID,Name,Country,Birth_Year,Influence_Score
+1,Socrates,Greece,-470,95
+2,Plato,Greece,-428,98
+3,Aristotle,Greece,-384,97
+4,René Descartes,France,1596,92
+5,Immanuel Kant,Germany,1724,96
+6,Friedrich Nietzsche,Germany,1844,94
+7,Jean-Paul Sartre,France,1905,90
+8,Simone de Beauvoir,France,1908,89

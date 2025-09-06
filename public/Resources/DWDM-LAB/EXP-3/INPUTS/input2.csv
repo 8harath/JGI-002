@@ -1,0 +1,9 @@
+coin_id,name,symbol,launch_year,price_usd,volume_24h
+1,Bitcoin,BTC,2009,29500,180000000
+2,Ethereum,ETH,2015,1850,80000000
+3,Solana,SOL,2020,25,5000000
+4,Cardano,ADA,2017,0.3,2000000
+5,Dogecoin,DOGE,2013,0.07,1000000
+6,Polygon,MATIC,2017,0.7,3000000
+7,Avalanche,AVAX,2020,12,6000000
+8,Ripple,XRP,2012,0.5,30000000

@@ -170,7 +170,7 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     subject.name === "Data Warehouse and Data Management LAB";
   
   const dwTlepFiles = [
-    { name: "DWDM-LAB-TLEP.pdf", path: "/Resources/Semester-5/DWDM-LAB/TLEP/DWDM-LAB-TLEP.pdf", size: "-", type: "pdf" },
+    { name: "DWDM-LAB-TLEP.pdf", path: "/Resources/DWDM-LAB/DWDM-LAB-TLEP.pdf", size: "-", type: "pdf" },
   ];
 
   const isDwOutputs =
