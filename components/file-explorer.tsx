@@ -63,6 +63,15 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
       { name: "Outputs_html.pdf", path: "/Resources/Semister%20-%201/FCA_LAB/Outputs_html.pdf", size: "-", type: "pdf" },
     ];
   }
+  
+  // Custom logic for Data Warehouse and Data Management LAB
+  if (subject.name === "Data Warehouse and Data Management LAB") {
+    filteredFolders = [
+      { name: "TLEP", description: "Teaching Learning Evaluation Plans" },
+      { name: "Outputs", description: "Lab experiment outputs and results" },
+      { name: "Program Files", description: "Source code and program files" },
+    ];
+  }
   const [selectedFolder, setSelectedFolder] = useState(filteredFolders[0].name)
 
   // Custom logic for FCA TLEP
@@ -155,9 +164,46 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     { name: "Previous-Yr-paper (2).jpg", path: "/Resources/Semister%20-%201/FCA/PYP/Previous-Yr-paper%20(2).jpg", size: "-", type: "jpg" },
   ];
 
+  // Custom logic for Data Warehouse and Data Management LAB
+  const isDwTlep =
+    selectedFolder === "TLEP" &&
+    subject.name === "Data Warehouse and Data Management LAB";
+  
+  const dwTlepFiles = [
+    { name: "DWDM-LAB-TLEP.pdf", path: "/Resources/Semester-5/DWDM-LAB/TLEP/DWDM-LAB-TLEP.pdf", size: "-", type: "pdf" },
+  ];
+
+  const isDwOutputs =
+    selectedFolder === "Outputs" &&
+    subject.name === "Data Warehouse and Data Management LAB";
+  
+  const dwOutputsFiles = [
+    { name: "Exp-1", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-1/", size: "Folder", type: "folder" },
+    { name: "Exp-2", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-2/", size: "Folder", type: "folder" },
+    { name: "Exp-3", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-3/", size: "Folder", type: "folder" },
+    { name: "Exp-4", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-4/", size: "Folder", type: "folder" },
+  ];
+
+  const isDwProgramFiles =
+    selectedFolder === "Program Files" &&
+    subject.name === "Data Warehouse and Data Management LAB";
+  
+  const dwProgramFiles = [
+    { name: "Exp-1", path: "/Resources/Semester-5/DWDM-LAB/Program-Files/Exp-1/", size: "Folder", type: "folder" },
+    { name: "Exp-2", path: "/Resources/Semester-5/DWDM-LAB/Program-Files/Exp-2/", size: "Folder", type: "folder" },
+    { name: "Exp-3", path: "/Resources/Semester-5/DWDM-LAB/Program-Files/Exp-3/", size: "Folder", type: "folder" },
+    { name: "Exp-4", path: "/Resources/Semester-5/DWDM-LAB/Program-Files/Exp-4/", size: "Folder", type: "folder" },
+  ];
+
   const filesToShow =
     subject.name === "Fundamentals of Computer Application Lab"
       ? labFiles
+      : isDwTlep
+      ? dwTlepFiles
+      : isDwOutputs
+      ? dwOutputsFiles
+      : isDwProgramFiles
+      ? dwProgramFiles
       : isFomNotes
       ? fomNotesFiles
       : isFomTlep
@@ -217,7 +263,11 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
                             onClick={() => window.open(file.path, '_blank')}
                           >
                             <div className="col-span-6 sm:col-span-6 flex items-center gap-1 sm:gap-1 md:gap-2 min-w-0">
-                              <FileIcon className="h-3 w-3 sm:h-3 sm:w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
+                              {file.type === "folder" ? (
+                                <FolderIcon className="h-3 w-3 sm:h-3 sm:w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
+                              ) : (
+                                <FileIcon className="h-3 w-3 sm:h-3 sm:w-3 md:h-4 md:w-4 text-accent flex-shrink-0" />
+                              )}
                               <span className="text-xs sm:text-xs md:text-sm font-medium text-foreground truncate">
                                 {file.name}
                               </span>
