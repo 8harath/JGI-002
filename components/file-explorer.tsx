@@ -178,10 +178,10 @@ export function FileExplorer({ folders, subject }: FileExplorerProps) {
     subject.name === "Data Warehouse and Data Management LAB";
   
   const dwOutputsFiles = [
-    { name: "Exp-1", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-1/", size: "Folder", type: "folder" },
-    { name: "Exp-2", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-2/", size: "Folder", type: "folder" },
-    { name: "Exp-3", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-3/", size: "Folder", type: "folder" },
-    { name: "Exp-4", path: "/Resources/Semester-5/DWDM-LAB/Outputs/Exp-4/", size: "Folder", type: "folder" },
+    { name: "Exp-1", path: "/Resources/DWDM-LAB/EXP-1/", size: "Folder", type: "folder" },
+    { name: "Exp-2", path: "/Resources/DWDM-LAB/EXP-2/", size: "Folder", type: "folder" },
+    { name: "Exp-3", path: "/Resources/DWDM-LAB/EXP-3/", size: "Folder", type: "folder" },
+    { name: "Exp-4", path: "/Resources/DWDM-LAB/EXP-4/", size: "Folder", type: "folder" },
   ];
 
   const isDwProgramFiles =
