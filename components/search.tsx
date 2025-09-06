@@ -4,20 +4,6 @@ import * as React from "react";
 import { Search as SearchIcon, X, Clock, Filter, ChevronDown, BookOpen, FileText, Book, ClipboardList, TrendingUp } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import {
-  CommandDialog,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { useSearch } from "@/lib/search-context";
@@ -38,6 +24,7 @@ export function Search({ className }: SearchProps) {
   const router = useRouter();
   const { state, dispatch, performSearch } = useSearch();
   const [filterOpen, setFilterOpen] = React.useState(false);
+  const [inputValue, setInputValue] = React.useState("");
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -51,6 +38,12 @@ export function Search({ className }: SearchProps) {
     return () => document.removeEventListener("keydown", down);
   }, [state.isOpen, dispatch]);
 
+  React.useEffect(() => {
+    if (state.isOpen) {
+      setInputValue(state.query);
+    }
+  }, [state.isOpen, state.query]);
+
   const handleSelect = (result: Resource) => {
     dispatch({ type: "SET_OPEN", payload: false });
     router.push(`/semester/${result.semester}?subject=${result.subject}`);
@@ -58,17 +51,26 @@ export function Search({ className }: SearchProps) {
 
   const clearFilters = () => {
     dispatch({ type: "CLEAR_FILTERS" });
-    performSearch(state.query);
-  };
-
-  const getUniqueValues = (resources: Resource[], key: keyof Resource) => {
-    return Array.from(new Set(resources.map(r => r[key]))).sort();
+    performSearch(inputValue);
   };
 
   const hasActiveFilters = Object.values(state.filters).some(Boolean);
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setInputValue(value);
+    performSearch(value);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Escape") {
+      dispatch({ type: "SET_OPEN", payload: false });
+    }
+  };
+
   return (
     <>
+      {/* Search Button */}
       <Button
         variant="outline"
         className={cn(
@@ -84,63 +86,70 @@ export function Search({ className }: SearchProps) {
           <span className="text-xs">⌘</span>K
         </kbd>
       </Button>
-      <CommandDialog 
-        open={state.isOpen} 
-        onOpenChange={(open) => dispatch({ type: "SET_OPEN", payload: open })}
-        className="border-2 border-foreground shadow-2xl"
-      >
-        <div className="flex items-center border-b-2 border-foreground px-3 sm:px-4 py-2 sm:py-3 bg-gradient-to-r from-card to-card/80">
-          <SearchIcon className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-foreground" />
-          <CommandInput
-            placeholder="Search resources, subjects, or semesters..."
-            value={state.query}
-            onValueChange={performSearch}
-            className="flex h-10 sm:h-12 w-full rounded-md bg-transparent py-2 sm:py-3 text-sm sm:text-base outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus:ring-0"
-            autoFocus
-          />
-          <Popover open={filterOpen} onOpenChange={setFilterOpen}>
-            <PopoverTrigger asChild>
+
+      {/* Custom Search Modal */}
+      {state.isOpen && (
+        <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm flex items-start justify-center p-3 sm:p-4">
+          <div className="bg-card border-2 border-foreground rounded-lg shadow-2xl w-full max-w-2xl mt-8 sm:mt-16 max-h-[80vh] overflow-hidden">
+            {/* Header */}
+            <div className="flex items-center border-b-2 border-foreground px-3 sm:px-4 py-3 sm:py-4 bg-gradient-to-r from-card to-card/80">
+              <SearchIcon className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-foreground" />
+              <input
+                type="text"
+                placeholder="Search resources, subjects, or semesters..."
+                value={inputValue}
+                onChange={handleInputChange}
+                onKeyDown={handleKeyDown}
+                className="flex-1 h-8 sm:h-10 bg-transparent text-sm sm:text-base outline-none placeholder:text-muted-foreground"
+                autoFocus
+              />
               <Button
                 variant="ghost"
                 size="sm"
-                className="h-8 sm:h-10 px-2 sm:px-3 hover:bg-accent/20 border border-foreground/20 rounded-md transition-colors"
+                onClick={() => dispatch({ type: "SET_OPEN", payload: false })}
+                className="h-8 w-8 sm:h-10 sm:w-10 p-0 hover:bg-accent/20"
               >
-                <Filter className="h-3 w-3 sm:h-4 sm:w-4" />
-                <span className="hidden lg:inline-flex ml-1 sm:ml-2 text-xs sm:text-sm font-medium">Filters</span>
-                {hasActiveFilters && (
-                  <Badge variant="secondary" className="ml-1 sm:ml-2 rounded-full px-1 sm:px-2 py-0.5 text-[10px] sm:text-xs font-medium border border-foreground/20 bg-accent/10 text-accent">
-                    {Object.values(state.filters).filter(Boolean).length}
-                  </Badge>
-                )}
-                <ChevronDown className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4" />
+                <X className="h-4 w-4" />
               </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-72 sm:w-80 p-0 border-2 border-foreground" align="end">
-              <div className="flex items-center justify-between border-b-2 border-foreground px-3 sm:px-4 py-2">
-                <h4 className="font-medium text-sm sm:text-base">Filters</h4>
+            </div>
+
+            {/* Filters */}
+            <div className="border-b border-foreground/20 px-3 sm:px-4 py-2 sm:py-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <Filter className="h-4 w-4 text-muted-foreground" />
+                  <span className="text-sm font-medium">Filters</span>
+                  {hasActiveFilters && (
+                    <Badge variant="secondary" className="rounded-full px-2 py-0.5 text-xs font-medium border border-foreground/20 bg-accent/10 text-accent">
+                      {Object.values(state.filters).filter(Boolean).length}
+                    </Badge>
+                  )}
+                </div>
                 {hasActiveFilters && (
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={clearFilters}
-                    className="h-7 sm:h-8 px-2 hover:bg-accent/20 text-xs sm:text-sm"
+                    className="h-7 px-2 hover:bg-accent/20 text-xs"
                   >
                     Clear
                   </Button>
                 )}
               </div>
-              <div className="p-3 sm:p-4 space-y-3 sm:space-y-4">
-                <div className="space-y-2">
-                  <h5 className="text-xs sm:text-sm font-medium">Semester</h5>
-                  <div className="flex flex-wrap gap-1 sm:gap-2">
+              
+              {/* Filter Options */}
+              <div className="mt-3 space-y-3">
+                <div>
+                  <h5 className="text-xs font-medium mb-2">Semester</h5>
+                  <div className="flex flex-wrap gap-1">
                     {[1, 2, 3, 4, 5, 6].map((sem) => (
                       <Badge
                         key={sem}
                         variant={state.filters.semester === sem ? "default" : "outline"}
                         className={cn(
-                          "cursor-pointer border-2 border-foreground text-xs sm:text-sm px-2 sm:px-3 py-1",
+                          "cursor-pointer border-2 border-foreground text-xs px-2 py-1",
                           state.filters.semester === sem
-                            ? "bg-accent text-accent-foreground hover:bg-accent/90"
+                            ? "bg-primary text-primary-foreground hover:bg-primary/90"
                             : "hover:bg-accent/20"
                         )}
                         onClick={() => {
@@ -151,7 +160,7 @@ export function Search({ className }: SearchProps) {
                               value: state.filters.semester === sem ? null : sem,
                             },
                           });
-                          performSearch(state.query);
+                          performSearch(inputValue);
                         }}
                       >
                         Semester {sem}
@@ -159,9 +168,10 @@ export function Search({ className }: SearchProps) {
                     ))}
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <h5 className="text-xs sm:text-sm font-medium">Type</h5>
-                  <div className="flex flex-wrap gap-1 sm:gap-2">
+                
+                <div>
+                  <h5 className="text-xs font-medium mb-2">Type</h5>
+                  <div className="flex flex-wrap gap-1">
                     {["Notes", "Books", "Assignments", "Projects"].map((type) => {
                       const Icon = resourceTypeIcons[type as keyof typeof resourceTypeIcons];
                       return (
@@ -169,9 +179,9 @@ export function Search({ className }: SearchProps) {
                           key={type}
                           variant={state.filters.type === type ? "default" : "outline"}
                           className={cn(
-                            "cursor-pointer border-2 border-foreground flex items-center gap-1 text-xs sm:text-sm px-2 sm:px-3 py-1",
+                            "cursor-pointer border-2 border-foreground flex items-center gap-1 text-xs px-2 py-1",
                             state.filters.type === type
-                              ? "bg-accent text-accent-foreground hover:bg-accent/90"
+                              ? "bg-primary text-primary-foreground hover:bg-primary/90"
                               : "hover:bg-accent/20"
                           )}
                           onClick={() => {
@@ -182,10 +192,10 @@ export function Search({ className }: SearchProps) {
                                 value: state.filters.type === type ? null : type,
                               },
                             });
-                            performSearch(state.query);
+                            performSearch(inputValue);
                           }}
                         >
-                          <Icon className="h-2 w-2 sm:h-3 sm:w-3" />
+                          <Icon className="h-3 w-3" />
                           {type}
                         </Badge>
                       );
@@ -193,164 +203,90 @@ export function Search({ className }: SearchProps) {
                   </div>
                 </div>
               </div>
-            </PopoverContent>
-          </Popover>
-        </div>
-        <CommandList className="max-h-[350px] sm:max-h-[400px] overflow-y-auto">
-          <CommandEmpty className="py-6 sm:py-8 text-center">
-            <div className="flex flex-col items-center gap-2 sm:gap-3">
-              <SearchIcon className="h-6 w-6 sm:h-8 sm:w-8 text-foreground/30" />
-              <p className="text-muted-foreground text-sm sm:text-base">No results found</p>
-              <p className="text-xs sm:text-sm text-muted-foreground/70">Try different keywords or check your filters</p>
-              {state.query && (
-                <div className="mt-4">
-                  <CommandGroup heading="Search Suggestions">
-                    <CommandItem
-                      onSelect={() => performSearch("programming")}
-                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-                    >
-                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                      <span className="text-xs sm:text-sm">Try "programming"</span>
-                    </CommandItem>
-                    <CommandItem
-                      onSelect={() => performSearch("data")}
-                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-                    >
-                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                      <span className="text-xs sm:text-sm">Try "data"</span>
-                    </CommandItem>
-                    <CommandItem
-                      onSelect={() => performSearch("semester")}
-                      className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-                    >
-                      <TrendingUp className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                      <span className="text-xs sm:text-sm">Try "semester"</span>
-                    </CommandItem>
-                  </CommandGroup>
-                </div>
-              )}
             </div>
-          </CommandEmpty>
-          {state.results.length > 0 && (
-            <>
-              <CommandGroup heading={`Search Results (${state.results.length})`}>
-                {state.results.map((result) => {
-                  const Icon = resourceTypeIcons[result.type as keyof typeof resourceTypeIcons];
-                  return (
-                    <CommandItem
-                      key={result.id}
-                      onSelect={() => handleSelect(result)}
-                      className="flex flex-col items-start py-3 sm:py-4 px-3 sm:px-4 hover:bg-accent/20 cursor-pointer transition-colors"
-                    >
-                      <div className="flex items-center gap-2 sm:gap-3 w-full">
-                        <div className="bg-accent/10 p-1.5 sm:p-2 rounded-lg border border-foreground/20 flex-shrink-0">
-                          <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
+
+            {/* Results */}
+            <div className="max-h-[300px] sm:max-h-[350px] overflow-y-auto">
+              {state.results.length === 0 && !inputValue ? (
+                <div className="py-8 text-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <SearchIcon className="h-8 w-8 text-foreground/30" />
+                    <p className="text-muted-foreground text-sm">Start typing to search...</p>
+                  </div>
+                </div>
+              ) : state.results.length === 0 && inputValue ? (
+                <div className="py-8 text-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <SearchIcon className="h-8 w-8 text-foreground/30" />
+                    <p className="text-muted-foreground text-sm">No results found</p>
+                    <p className="text-xs text-muted-foreground/70">Try different keywords or check your filters</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="p-2">
+                  <div className="text-xs font-medium text-muted-foreground mb-2 px-2">
+                    Search Results ({state.results.length})
+                  </div>
+                  {state.results.map((result) => {
+                    const Icon = resourceTypeIcons[result.type as keyof typeof resourceTypeIcons];
+                    return (
+                      <div
+                        key={result.id}
+                        onClick={() => handleSelect(result)}
+                        className="flex items-center gap-3 p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
+                      >
+                        <div className="bg-primary/10 p-2 rounded-lg border border-foreground/20 flex-shrink-0">
+                          <Icon className="h-4 w-4 text-primary" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="font-semibold text-foreground truncate text-sm sm:text-base">{result.title}</div>
-                          <div className="text-xs sm:text-sm text-muted-foreground mt-0.5 sm:mt-1">
+                          <div className="font-semibold text-foreground truncate text-sm">{result.title}</div>
+                          <div className="text-xs text-muted-foreground mt-1">
                             {result.subject} • Semester {result.semester}
                           </div>
                         </div>
-                        <Badge variant="secondary" className="border border-foreground/20 bg-accent/5 text-accent text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1">
+                        <Badge variant="secondary" className="border border-foreground/20 bg-accent/5 text-accent text-xs px-2 py-1">
                           {result.type}
                         </Badge>
                       </div>
-                      {result.description && (
-                        <div className="text-xs sm:text-sm text-muted-foreground/80 mt-1.5 sm:mt-2 ml-8 sm:ml-11 line-clamp-2">
-                          {result.description}
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* Quick Access */}
+              {!inputValue && (
+                <div className="border-t border-foreground/20 p-2">
+                  <div className="text-xs font-medium text-muted-foreground mb-2 px-2">Quick Access</div>
+                  <div className="space-y-1">
+                    {[
+                      { id: 1, name: "Semester 1", desc: "Foundational courses" },
+                      { id: 2, name: "Semester 2", desc: "Core programming" },
+                      { id: 3, name: "Semester 3", desc: "Networks & databases" },
+                      { id: 4, name: "Semester 4", desc: "Specialization tracks" },
+                      { id: 5, name: "Semester 5", desc: "Advanced specialization" },
+                    ].map((semester) => (
+                      <div
+                        key={semester.id}
+                        onClick={() => {
+                          dispatch({ type: "SET_OPEN", payload: false });
+                          router.push(`/semester/${semester.id}`);
+                        }}
+                        className="flex items-center gap-3 p-3 hover:bg-accent/10 cursor-pointer transition-colors rounded-lg"
+                      >
+                        <BookOpen className="h-4 w-4 text-muted-foreground" />
+                        <div className="flex flex-col">
+                          <span className="font-medium text-sm">{semester.name}</span>
+                          <span className="text-xs text-muted-foreground">{semester.desc}</span>
                         </div>
-                      )}
-                    </CommandItem>
-                  );
-                })}
-              </CommandGroup>
-              <CommandSeparator />
-            </>
-          )}
-          {state.history.length > 0 && (
-            <CommandGroup heading="Recent Searches">
-              {state.history.map((query) => (
-                <CommandItem
-                  key={query}
-                  onSelect={() => performSearch(query)}
-                  className="flex items-center hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-                >
-                  <Clock className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-                  <span className="text-xs sm:text-sm">{query}</span>
-                </CommandItem>
-              ))}
-            </CommandGroup>
-          )}
-          <CommandGroup heading="Quick Access">
-            <CommandItem
-              onSelect={() => {
-                dispatch({ type: "SET_OPEN", payload: false });
-                router.push("/semester/1");
-              }}
-              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-            >
-              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-              <div className="flex flex-col">
-                <span className="font-medium text-sm sm:text-base">Semester 1</span>
-                <span className="text-[10px] sm:text-xs text-muted-foreground">Foundational courses</span>
-              </div>
-            </CommandItem>
-            <CommandItem
-              onSelect={() => {
-                dispatch({ type: "SET_OPEN", payload: false });
-                router.push("/semester/2");
-              }}
-              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-            >
-              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-              <div className="flex flex-col">
-                <span className="font-medium text-sm sm:text-base">Semester 2</span>
-                <span className="text-[10px] sm:text-xs text-muted-foreground">Core programming</span>
-              </div>
-            </CommandItem>
-            <CommandItem
-              onSelect={() => {
-                dispatch({ type: "SET_OPEN", payload: false });
-                router.push("/semester/3");
-              }}
-              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-            >
-              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-              <div className="flex flex-col">
-                <span className="font-medium text-sm sm:text-base">Semester 3</span>
-                <span className="text-[10px] sm:text-xs text-muted-foreground">Networks & databases</span>
-              </div>
-            </CommandItem>
-            <CommandItem
-              onSelect={() => {
-                dispatch({ type: "SET_OPEN", payload: false });
-                router.push("/semester/4");
-              }}
-              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-            >
-              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-              <div className="flex flex-col">
-                <span className="font-medium text-sm sm:text-base">Semester 4</span>
-                <span className="text-[10px] sm:text-xs text-muted-foreground">Specialization tracks</span>
-              </div>
-            </CommandItem>
-            <CommandItem
-              onSelect={() => {
-                dispatch({ type: "SET_OPEN", payload: false });
-                router.push("/semester/5");
-              }}
-              className="hover:bg-accent/20 px-3 sm:px-4 py-2 sm:py-3"
-            >
-              <BookOpen className="mr-2 sm:mr-3 h-3 w-3 sm:h-4 sm:w-4 text-muted-foreground" />
-              <div className="flex flex-col">
-                <span className="font-medium text-sm sm:text-base">Semester 5</span>
-                <span className="text-[10px] sm:text-xs text-muted-foreground">Advanced specialization</span>
-              </div>
-            </CommandItem>
-          </CommandGroup>
-        </CommandList>
-      </CommandDialog>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 } 
