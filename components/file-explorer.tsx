@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FileIcon, FolderIcon, Loader2 } from "lucide-react"
+import { PDFViewer } from "@/components/pdf-viewer"
 import type { Subject } from "@/types"
 
 interface FileItem {
@@ -30,6 +31,19 @@ export function FileExplorer({ subject }: FileExplorerProps) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selectedFolder, setSelectedFolder] = useState<string>("")
+  const [pdfViewerOpen, setPdfViewerOpen] = useState(false)
+  const [selectedPdf, setSelectedPdf] = useState<{ url: string; name: string } | null>(null)
+
+  const handleFileClick = (file: FileItem) => {
+    // Check if file is a PDF
+    if (file.type.toUpperCase() === 'PDF' || file.name.toLowerCase().endsWith('.pdf')) {
+      setSelectedPdf({ url: file.path, name: file.name })
+      setPdfViewerOpen(true)
+    } else {
+      // For non-PDF files, open in new tab
+      window.open(file.path, '_blank')
+    }
+  }
 
   useEffect(() => {
     async function fetchFiles() {
@@ -155,7 +169,7 @@ export function FileExplorer({ subject }: FileExplorerProps) {
                             key={`${file.name}-${index}`}
                             className="grid grid-cols-12 px-3 sm:px-4 py-2 sm:py-3 hover:bg-accent/10 cursor-pointer transition-colors animate-fade-in"
                             style={{ animationDelay: `${index * 0.05}s` }}
-                            onClick={() => window.open(file.path, '_blank')}
+                            onClick={() => handleFileClick(file)}
                           >
                             <div className="col-span-6 flex items-center gap-2 min-w-0">
                               <FileIcon className="h-3 w-3 sm:h-4 sm:w-4 text-accent flex-shrink-0" />
@@ -186,6 +200,19 @@ export function FileExplorer({ subject }: FileExplorerProps) {
           </TabsContent>
         ))}
       </Tabs>
+
+      {/* PDF Viewer Modal */}
+      {selectedPdf && (
+        <PDFViewer
+          isOpen={pdfViewerOpen}
+          onClose={() => {
+            setPdfViewerOpen(false)
+            setSelectedPdf(null)
+          }}
+          pdfUrl={selectedPdf.url}
+          fileName={selectedPdf.name}
+        />
+      )}
     </div>
   )
 }
