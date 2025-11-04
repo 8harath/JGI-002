@@ -4,7 +4,7 @@ export const semesters = [
     name: "Semester 1",
     description: "Foundational courses for BCA students",
     isActive: true,
-    subjectCount: 8,
+    subjectCount: 3,
   },
   {
     id: 2,
@@ -25,14 +25,14 @@ export const semesters = [
     name: "Semester 4",
     description: "Specialization tracks begin",
     isActive: true,
-    subjectCount: 7,
+    subjectCount: 3,
   },
   {
     id: 5,
     name: "Semester 5",
     description: "Advanced specialization courses",
-    isActive: true,
-    subjectCount: 8,
+    isActive: false,
+    subjectCount: 0,
   },
   {
     id: 6,
