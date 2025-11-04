@@ -39,15 +39,6 @@ export default function SubjectPage({
     notFound()
   }
 
-  const folders = [
-    { name: "TLEP", description: "Teaching Learning Evaluation Plans" },
-    { name: "Notes", description: "Lecture notes and study materials" },
-    { name: "Presentations", description: "PPT slides and visual content" },
-    { name: "Activity 1", description: "First activity/assignment materials" },
-    { name: "Activity 2", description: "Second activity/assignment materials" },
-    { name: "Previous Year Papers", description: "Exam papers and solutions" },
-  ]
-
   return (
     <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8">
       <div className="mb-4 sm:mb-6">
@@ -62,7 +53,7 @@ export default function SubjectPage({
 
       <div className="mb-6 sm:mb-8">
         <h2 className="section-header">Materials</h2>
-        <FileExplorer folders={folders} subject={subject} />
+        <FileExplorer subject={subject} />
       </div>
     </div>
   )

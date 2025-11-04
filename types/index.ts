@@ -28,5 +28,6 @@ export interface Resource {
   type: string
   semester: number
   subject: string
+  subjectSlug?: string
   path: string
 }
