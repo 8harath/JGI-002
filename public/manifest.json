@@ -1,0 +1,4980 @@
+{
+  "1-fundamentals-of-computer-applications": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "FCA-TLEP.pdf",
+          "path": "/Resources/Semister - 1/FCA/TLEP/FCA-TLEP.pdf",
+          "size": "433.24 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "FCA-MODULE-1.pdf",
+          "path": "/Resources/Semister - 1/FCA/Presentations/FCA-MODULE-1.pdf",
+          "size": "2 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "FCA-MODULE-2.pdf",
+          "path": "/Resources/Semister - 1/FCA/Presentations/FCA-MODULE-2.pdf",
+          "size": "1.57 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "FCA-MODULE-3.pdf",
+          "path": "/Resources/Semister - 1/FCA/Presentations/FCA-MODULE-3.pdf",
+          "size": "3.91 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "FCA-MODULE-4.pdf",
+          "path": "/Resources/Semister - 1/FCA/Presentations/FCA-MODULE-4.pdf",
+          "size": "2.72 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "FCA-MODULE-5.pdf",
+          "path": "/Resources/Semister - 1/FCA/Presentations/FCA-MODULE-5.pdf",
+          "size": "3.25 MB",
+          "type": "PDF",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "Previous-Yr-paper (1).jpg",
+          "path": "/Resources/Semister - 1/FCA/PYP/Previous-Yr-paper (1).jpg",
+          "size": "107.65 KB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "Previous-Yr-paper (2).jpg",
+          "path": "/Resources/Semister - 1/FCA/PYP/Previous-Yr-paper (2).jpg",
+          "size": "97.83 KB",
+          "type": "JPG",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "1-fundamentals-of-computer-application-lab": [
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "EXP-7_FCA.pptx",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-7_FCA.pptx",
+          "size": "182.08 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "EXP-8_FCA.pptx",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-8_FCA.pptx",
+          "size": "763.61 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "EXP-1_FCA.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-1_FCA.pdf",
+          "size": "328.5 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-10.HTML",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-10.HTML",
+          "size": "604 B",
+          "type": "HTML",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-11.HTML",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-11.HTML",
+          "size": "402 B",
+          "type": "HTML",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-12.HTML",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-12.HTML",
+          "size": "504 B",
+          "type": "HTML",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-2_FCA.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-2_FCA.pdf",
+          "size": "1.1 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-3_FCA.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-3_FCA.pdf",
+          "size": "2.04 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-4_FCA.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-4_FCA.pdf",
+          "size": "1.14 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-5_FCA.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-5_FCA.pdf",
+          "size": "536.52 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Exp-6_FCA .pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/Exp-6_FCA .pdf",
+          "size": "431.04 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EXP-9.html",
+          "path": "/Resources/Semister - 1/FCA_LAB/EXP-9.html",
+          "size": "1016 B",
+          "type": "HTML",
+          "category": "Others"
+        },
+        {
+          "name": "Outputs_html.pdf",
+          "path": "/Resources/Semister - 1/FCA_LAB/Outputs_html.pdf",
+          "size": "87.39 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "1-fundamentals-of-mathematics": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "TLEP_23BCA1C03_FOM.pdf",
+          "path": "/Resources/Semister - 1/FOM/TLEP_23BCA1C03_FOM.pdf",
+          "size": "226.58 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "Module-1.pdf",
+          "path": "/Resources/Semister - 1/FOM/Module-1.pdf",
+          "size": "9.1 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module-3.pdf",
+          "path": "/Resources/Semister - 1/FOM/Module-3.pdf",
+          "size": "6.3 MB",
+          "type": "PDF",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "Activity-1.pdf",
+          "path": "/Resources/Semister - 1/FOM/Activity-1.pdf",
+          "size": "2.54 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Permutation_&_Combination.pdf",
+          "path": "/Resources/Semister - 1/FOM/Permutation_&_Combination.pdf",
+          "size": "6.21 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Set's.pdf",
+          "path": "/Resources/Semister - 1/FOM/Set's.pdf",
+          "size": "2.34 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "System-of-Linear-Equation.pdf",
+          "path": "/Resources/Semister - 1/FOM/System-of-Linear-Equation.pdf",
+          "size": "9.48 MB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "1-general-english": [],
+  "1-languages": [],
+  "1-mmhv": [],
+  "1-programming-in-c": [],
+  "1-programming-in-c-lab": [],
+  "2-digital-design": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "dd_tlep.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/TLEP/dd_tlep.pdf",
+          "size": "174.51 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "DD-004-04082024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-4/DD-004-04082024.pdf",
+          "size": "165.93 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-006-04012024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-6/DD-006-04012024.pdf",
+          "size": "194.95 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-04-04012024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-4/DD-04-04012024.pdf",
+          "size": "443.37 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-07-04042024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-7/DD-07-04042024.pdf",
+          "size": "4.35 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-08-04022024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-8/DD-08-04022024.pdf",
+          "size": "383.55 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-1.1-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-1/DD-1.1-04142024.jpg",
+          "size": "3.7 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-1.2-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-1/DD-1.2-04142024.jpg",
+          "size": "3.37 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-1.2-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/DD-1.2-04142024.jpg",
+          "size": "2.86 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-2-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-2/DD-2-04142024.jpg",
+          "size": "3.23 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-2-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/DD-2-04142024.jpg",
+          "size": "3.23 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-2.1-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-2/DD-2.1-04142024.jpg",
+          "size": "2.53 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-2.1-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/DD-2.1-04142024.jpg",
+          "size": "2.53 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-3-04082024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-3/DD-3-04082024.pdf",
+          "size": "227.96 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DD-5.1-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-5/DD-5.1-04142024.jpg",
+          "size": "3.4 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-5.2-04142024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-5/DD-5.2-04142024.jpg",
+          "size": "2.68 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD-8.3-04082024.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-8/DD-8.3-04082024.jpg",
+          "size": "277.51 KB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "DD.jpg",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-4/DD.jpg",
+          "size": "245.74 KB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-3/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-4/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-5/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-6/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-7/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-8/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/ACT-9/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/ACTIVITY_S/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DD/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-data-structures": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "tlepp.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/TLEP/tlepp.pdf",
+          "size": "132.47 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "Copy of unit-1 02.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of unit-1 02.pdf",
+          "size": "846.85 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Copy of unit-2 02.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of unit-2 02.pdf",
+          "size": "1002.79 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Copy of unit-3 02.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of unit-3 02.pdf",
+          "size": "940.29 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "module 1.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/module 1.pdf",
+          "size": "1.34 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 2 _Searching algorithms.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Module 2 _Searching algorithms.pptx",
+          "size": "2.67 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 2 Sorting Techniques.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Module 2 Sorting Techniques.pptx",
+          "size": "2.77 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 4_Linked List.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Module 4_Linked List.pptx",
+          "size": "3.33 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 5 Trees.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Module 5 Trees.pptx",
+          "size": "4.43 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "DSA_M01_C02_PPT_Basics of Data Structure.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/DSA_M01_C02_PPT_Basics of Data Structure.pptx",
+          "size": "1.95 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Queues.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Queues.pptx",
+          "size": "1.33 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Queues.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/_._/Queues.pptx",
+          "size": "0 B",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Stacks.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Stacks.pptx",
+          "size": "4.45 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Stacks.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/_._/Stacks.pptx",
+          "size": "0 B",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "TREES.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/TREES.pptx",
+          "size": "532.95 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "TREES.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/_._/TREES.pptx",
+          "size": "0 B",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "1.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/1.pdf",
+          "size": "556.61 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "2.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/2.pdf",
+          "size": "616.66 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "3.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/3.pdf",
+          "size": "884.67 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "4.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/4.pdf",
+          "size": "623.57 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AVA-5124.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/AVA-5124.pdf",
+          "size": "389.66 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "BHA-DS-2302024.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/BHA-DS-2302024.pdf",
+          "size": "753.16 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_C Data Structures Pointers and File Systems (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_C Data Structures Pointers and File Systems (1).pdf",
+          "size": "68.81 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Database Foundations Data Structures (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Database Foundations Data Structures (1).pdf",
+          "size": "66.88 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Java Data Structures (2).pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Java Data Structures (2).pdf",
+          "size": "67.43 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Programming Foundations Algorithms 2018 (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Programming Foundations Algorithms 2018 (1).pdf",
+          "size": "69.78 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Programming Foundations Data Structures.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Programming Foundations Data Structures.pdf",
+          "size": "69.44 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Python Data Structures  Stacks Queues and Deques 2018.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Python Data Structures  Stacks Queues and Deques 2018.pdf",
+          "size": "69.4 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Python Data Structures  Trees.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Python Data Structures  Trees.pdf",
+          "size": "68.45 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Python Data Structures and Algorithms (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Python Data Structures and Algorithms (1).pdf",
+          "size": "69.48 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CertificateOfCompletion_Python Data Structures Power of Linked Lists for Technical Interviews.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/CertificateOfCompletion_Python Data Structures Power of Linked Lists for Technical Interviews.pdf",
+          "size": "69.03 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Copy of 37BAA7C4-5C7D-4242-A76F-DB1B8E64C11A.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of 37BAA7C4-5C7D-4242-A76F-DB1B8E64C11A.pdf",
+          "size": "928.64 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Copy of 7FDFF2F9-5B16-4C71-A734-7FE416C7F4F0.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of 7FDFF2F9-5B16-4C71-A734-7FE416C7F4F0.pdf",
+          "size": "1.81 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Copy of AFB8C38B-1AE9-41D4-92C0-750DE11BBD2D.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of AFB8C38B-1AE9-41D4-92C0-750DE11BBD2D.pdf",
+          "size": "1.35 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Copy of link list 02.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Copy of link list 02.pdf",
+          "size": "436.39 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/Activity - 1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/ASSIGNMENTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/JAIN MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/_._/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "Types Of Time Complexity.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS/MODULES/ADDITION STUFF/Types Of Time Complexity.pdf",
+          "size": "204.62 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-data-structures-lab": [
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "Lab Infix to postfix conversion.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DETAILED/Lab Infix to postfix conversion.pptx",
+          "size": "551.28 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Lab Linked List operations.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DETAILED/Lab Linked List operations.pptx",
+          "size": "275.92 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Lab Session 8_Circular Queue.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DETAILED/Lab Session 8_Circular Queue.pptx",
+          "size": "732.88 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Lab Trees.pptx",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DETAILED/Lab Trees.pptx",
+          "size": "224.44 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Lab",
+      "description": "Laboratory manuals and practical exercises",
+      "files": [
+        {
+          "name": "Copy of DS LAB.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/Copy of DS LAB.pdf",
+          "size": "1.12 MB",
+          "type": "PDF",
+          "category": "Lab"
+        },
+        {
+          "name": "DS_lab_q.pdf",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DS_lab_q.pdf",
+          "size": "9.22 KB",
+          "type": "PDF",
+          "category": "Lab"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "11-output.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/11 prog/11-output.txt",
+          "size": "643 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "12-output.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/12 prog/12-output.txt",
+          "size": "911 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "BINARY.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/2.2 prog/BINARY.txt",
+          "size": "990 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "bubble_sort.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.1 prog/bubble_sort.txt",
+          "size": "739 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "CIRCULAR-QUEUE.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/10 prog/CIRCULAR-QUEUE.txt",
+          "size": "2.69 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "DELETION.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/1.2 prog/DELETION.txt",
+          "size": "812 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/DETAILED/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/1.1 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/1.2 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/10 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/11 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/12 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/2.1 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/2.2 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.1 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.2 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.1 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.2 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/5 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/6 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/7 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/8 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/9 prog/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "insertion_sort.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.1 prog/insertion_sort.txt",
+          "size": "880 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "INSERTION.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/1.1 prog/INSERTION.txt",
+          "size": "691 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "LINEAR.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/2.1 prog/LINEAR.txt",
+          "size": "809 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "output_bubble.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.1 prog/output_bubble.txt",
+          "size": "113 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "output_insertion.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.1 prog/output_insertion.txt",
+          "size": "149 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "output_quick.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.2 prog/output_quick.txt",
+          "size": "149 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "output_selection.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.2 prog/output_selection.txt",
+          "size": "149 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "OUTPUT-postfIX.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/7 prog/OUTPUT-postfIX.txt",
+          "size": "54 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "OUTPUT.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/10 prog/OUTPUT.txt",
+          "size": "419 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "OUTPUT.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/9 prog/OUTPUT.txt",
+          "size": "416 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "POSTFIX.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/7 prog/POSTFIX.txt",
+          "size": "1.1 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "prefix.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/6 prog/prefix.txt",
+          "size": "1.45 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "queue_output.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/8 prog/queue_output.txt",
+          "size": "301 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "queue_prog.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/8 prog/queue_prog.txt",
+          "size": "2.74 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "quick_sort.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/4.2 prog/quick_sort.txt",
+          "size": "1.18 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "selection_sort.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/3.2 prog/selection_sort.txt",
+          "size": "1.01 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "SLL-OPERATIONS.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/9 prog/SLL-OPERATIONS.txt",
+          "size": "2.03 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "stack.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/5 prog/stack.txt",
+          "size": "1.2 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "STACK&Q-SLL.txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/11 prog/STACK&Q-SLL.txt",
+          "size": "4.22 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "TREE(BST).txt",
+          "path": "/CLG STUFF!/SEM - II/DS LAB/PROGRAMS/12 prog/TREE(BST).txt",
+          "size": "2.68 KB",
+          "type": "TXT",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-general-english-2": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "LinkedIn Learning Certificate.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 2/CERTIFICATION'S/LinkedIn Learning Certificate.pdf",
+          "size": "66.65 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Question Papers",
+      "description": "Previous year question papers and exams",
+      "files": [
+        {
+          "name": "AVA-QUESTIONS.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/AVA-QUESTIONS.pdf",
+          "size": "70.37 KB",
+          "type": "PDF",
+          "category": "Question Papers"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "_I am not that woman_ - Poem Analysis.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 3/_I am not that woman_ - Poem Analysis.pdf",
+          "size": "309.3 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Active-Passive.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Active-Passive.pdf",
+          "size": "40.95 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "bangle_seller.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 1/bangle_seller.pdf",
+          "size": "128.38 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 2/CERTIFICATION'S/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/R&R/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 3/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 4/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "Document from B H Λ R Λ T H (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 2/CERTIFICATION'S/Document from B H Λ R Λ T H (1).pdf",
+          "size": "66.45 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Document from B H Λ R Λ T H.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 1/Document from B H Λ R Λ T H.pdf",
+          "size": "1.88 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Document from B H Λ R Λ T H.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/Activity - 2/CERTIFICATION'S/Document from B H Λ R Λ T H.pdf",
+          "size": "66.74 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ENGLISH-BLUEBOOK.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/ENGLISH-BLUEBOOK.pdf",
+          "size": "136.16 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Facing Sheet General English II.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/R&R/Facing Sheet General English II.pdf",
+          "size": "47.66 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Forms of Verb.docx",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Forms of Verb.docx",
+          "size": "15.43 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "GE Sem II  (Edited)_merged.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/GE Sem II  (Edited)_merged.pdf",
+          "size": "3.11 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "General English II IA.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/ASSIGNMENTS/R&R/General English II IA.pdf",
+          "size": "92.79 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "How-Do-I-Love-Thee-Let-Me-Count-the-Ways-Sonnets-From-the-Portugese-43-LitChart.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/How-Do-I-Love-Thee-Let-Me-Count-the-Ways-Sonnets-From-the-Portugese-43-LitChart.pdf",
+          "size": "300.42 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "I am not that Woman by Kishwar Naheed - Poem Analysis.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 3/I am not that Woman by Kishwar Naheed - Poem Analysis.pdf",
+          "size": "1.71 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "The Bangle Sellers.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 1/The Bangle Sellers.pdf",
+          "size": "114.74 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "The-Flea-LitChart.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/The-Flea-LitChart.pdf",
+          "size": "368.37 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "The-Landlady-LitChart.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/The-Landlady-LitChart.pdf",
+          "size": "264.53 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "The-Yellow-Wallpaper-LitChart.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/The-Yellow-Wallpaper-LitChart.pdf",
+          "size": "313.92 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "TheBangleSellersbySarojiniNaidu.docx",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Additional Stuff 1/CH 1/TheBangleSellersbySarojiniNaidu.docx",
+          "size": "15.44 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "Throw Away Society.pdf",
+          "path": "/CLG STUFF!/SEM - II/GENERAL ENGLISH/MODULES/Throw Away Society.pdf",
+          "size": "355.41 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-languages-2": [
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/ASSIGNMENTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "Manadane 2.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/Manadane 2.pdf",
+          "size": "54.51 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Manadane.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/Manadane.pdf",
+          "size": "553.24 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "War & peace .pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/War & peace .pdf",
+          "size": "96.9 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "War & peace 2.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/War & peace 2.pdf",
+          "size": "119.03 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಒಂದು ಪ್ರೀತಿಯ ಕಥೆ.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಒಂದು ಪ್ರೀತಿಯ ಕಥೆ.pdf",
+          "size": "109.49 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಒಂದು ಪ್ರೀತಿಯ ಕಥೆ.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/ಒಂದು ಪ್ರೀತಿಯ ಕಥೆ.pdf",
+          "size": "72.97 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ದಿಕ್ಕು.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ದಿಕ್ಕು.pdf",
+          "size": "83.96 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ದಿಕ್ಕು.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/ದಿಕ್ಕು.pdf",
+          "size": "48.55 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಪ್ರಶ್ನೆ.docx.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಪ್ರಶ್ನೆ.docx.pdf",
+          "size": "174.25 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಪ್ರಶ್ನೆ.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಪ್ರಶ್ನೆ.pdf",
+          "size": "89.16 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಬೆಂಕಿ - ಬೆಡಗು.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಬೆಂಕಿ - ಬೆಡಗು.pdf",
+          "size": "251.11 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಬೆಂಕಿ - ಬೆಡಗು.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (Kannada)/ಬೆಂಕಿ - ಬೆಡಗು.pdf",
+          "size": "134.01 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಮನದನ್ನೆ-1.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಮನದನ್ನೆ-1.pdf",
+          "size": "109.42 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "ಮನದನ್ನೆ.pdf",
+          "path": "/CLG STUFF!/SEM - II/KANNADA/MODULES/Summary (English)/ಮನದನ್ನೆ.pdf",
+          "size": "82.22 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-mmhv-2": [
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "03272024-MMHV.pptx",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/SCRIPT/03272024-MMHV.pptx",
+          "size": "3.96 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide1.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide1.JPG",
+          "size": "81.13 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide10.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide10.JPG",
+          "size": "39.54 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide11.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide11.JPG",
+          "size": "76.03 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide12.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide12.JPG",
+          "size": "44.59 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide13.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide13.JPG",
+          "size": "58.49 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide14.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide14.JPG",
+          "size": "103.36 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide15.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide15.JPG",
+          "size": "86.26 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide16.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide16.JPG",
+          "size": "85.55 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide17.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide17.JPG",
+          "size": "98.74 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide18.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide18.JPG",
+          "size": "66.84 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide19.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide19.JPG",
+          "size": "60.67 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide2.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide2.JPG",
+          "size": "79.7 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide20.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide20.JPG",
+          "size": "79.79 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide21.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide21.JPG",
+          "size": "56.16 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide22.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide22.JPG",
+          "size": "42.64 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide23.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide23.JPG",
+          "size": "38.83 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide24.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide24.JPG",
+          "size": "30.31 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide25.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide25.JPG",
+          "size": "45.51 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide26.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide26.JPG",
+          "size": "60.16 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide27.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide27.JPG",
+          "size": "45.7 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide28.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide28.JPG",
+          "size": "40.07 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide29.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide29.JPG",
+          "size": "27.89 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide3.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide3.JPG",
+          "size": "202.12 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide30.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide30.JPG",
+          "size": "88.01 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide4.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide4.JPG",
+          "size": "57.34 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide5.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide5.JPG",
+          "size": "67.24 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide6.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide6.JPG",
+          "size": "98.65 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide7.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide7.JPG",
+          "size": "50.46 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide8.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide8.JPG",
+          "size": "150.69 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        },
+        {
+          "name": "Slide9.JPG",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/Slide9.JPG",
+          "size": "37.04 KB",
+          "type": "JPG",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "2 - MMHV Textbook 2023-24 (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/MMHV/MODULES/2 - MMHV Textbook 2023-24 (1).pdf",
+          "size": "788.15 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "2 - Yoga Textbook 2023-24 (1).pdf",
+          "path": "/CLG STUFF!/SEM - II/MMHV/MODULES/2 - Yoga Textbook 2023-24 (1).pdf",
+          "size": "2.46 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "BCA - D - Internal Assessment for MMHV.docx.pdf",
+          "path": "/CLG STUFF!/SEM - II/MMHV/MODULES/BCA - D - Internal Assessment for MMHV.docx.pdf",
+          "size": "455.83 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/AUDIO/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/03312024-MMHV-IMAGES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/IMAGES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/SCRIPT/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/MMHV/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "MMHV-033124.mp3",
+          "path": "/CLG STUFF!/SEM - II/MMHV/ASSIGNMENTS/DOCUMNTRY/AUDIO/MMHV-033124.mp3",
+          "size": "8.59 MB",
+          "type": "MP3",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-operating-system": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "OS_TLEP.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/TLEP/OS_TLEP.pdf",
+          "size": "900.1 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "Module - 2.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/Module - 2.1.pdf",
+          "size": "529.3 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 4-2.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/Module 4-2.pdf",
+          "size": "822.52 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 4.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/Module 4.pdf",
+          "size": "837.8 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module-3.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/Module-3.1.pdf",
+          "size": "366.34 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module-3.2.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/Module-3.2.pdf",
+          "size": "1.4 MB",
+          "type": "PDF",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "3.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/3.pptx.pdf",
+          "size": "814.26 KB",
+          "type": "PDF",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "1.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/1.1.pdf",
+          "size": "551.18 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/1.pdf",
+          "size": "2.42 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "2.2.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/2.2.pdf",
+          "size": "283.22 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "2.3.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/2.3.pdf",
+          "size": "324.27 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "2.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/2.pdf",
+          "size": "1.77 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "4-1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/4-1.pdf",
+          "size": "488.77 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "4.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/4.pdf",
+          "size": "1.62 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "5.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/5.1.pdf",
+          "size": "1.06 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "5.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/5.pdf",
+          "size": "897.08 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AProcess management.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/AProcess management.pdf",
+          "size": "529.3 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AVA-5224.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/AVA-5224.pdf",
+          "size": "399.45 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Copy of OS Activity-1 format.docx",
+          "path": "/CLG STUFF!/SEM - II/OS/ASSIGNMENTS/Copy of OS Activity-1 format.docx",
+          "size": "50.65 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/ASSIGNMENTS/Class assignments/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/ASSIGNMENTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/JAIN MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/_._/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/OS/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_084636.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_084636.jpg",
+          "size": "3.15 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_084644.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_084644.jpg",
+          "size": "4.84 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_084700.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_084700.jpg",
+          "size": "3.37 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_091730.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_091730.jpg",
+          "size": "2.93 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_091754.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_091754.jpg",
+          "size": "3.26 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_091813.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_091813.jpg",
+          "size": "3.24 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_091855.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_091855.jpg",
+          "size": "2.83 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_20240424_092001.jpg",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/IMG_20240424_092001.jpg",
+          "size": "4.93 MB",
+          "type": "JPG",
+          "category": "Others"
+        },
+        {
+          "name": "OS PROBLEMS SET 2.docx.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS PROBLEMS SET 2.docx.pdf",
+          "size": "47.87 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "OS PROBLEMS.docx.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS PROBLEMS.docx.pdf",
+          "size": "97 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "OS-1.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS-1.pdf",
+          "size": "465.87 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "OS-3.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS-3.pdf",
+          "size": "472.25 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "OS-4.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS-4.pdf",
+          "size": "5.91 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "OS-5.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/OS-5.pdf",
+          "size": "722.23 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PDF document.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/PDF document.pdf",
+          "size": "1.88 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PREP-OS.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/EXAMINATION/PREP-OS.pdf",
+          "size": "134.3 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PREP-OS.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/PREP-OS.pdf",
+          "size": "134.3 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "problems.pdf",
+          "path": "/CLG STUFF!/SEM - II/OS/MODULES/ADDITIONAL STUFF/problems.pdf",
+          "size": "69.32 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-programming-in-java": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "JAVA PROGRAMMING_TLEP_2023_2024_final.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/TLEP/JAVA PROGRAMMING_TLEP_2023_2024_final.pdf",
+          "size": "805.38 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "All 5 module.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/Reference stuff!/All 5 module.pdf",
+          "size": "1.54 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Copy of Unit_I_Introduction.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/Copy of Unit_I_Introduction.pdf",
+          "size": "8.71 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Copy of Unit_V_JDBC.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/Copy of Unit_V_JDBC.pdf",
+          "size": "4.85 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "module 2 ppt.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/_._/module 2 ppt.pdf",
+          "size": "2 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE 3 NOTES.doc",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/MODULE 3 NOTES.doc",
+          "size": "58.5 KB",
+          "type": "DOC",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE 4 - AWT - SWING.doc",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/MODULE 4 - AWT - SWING.doc",
+          "size": "267 KB",
+          "type": "DOC",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "ACCESS SPECIFIERS AND STATIC.pptx",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/ACCESS SPECIFIERS AND STATIC.pptx",
+          "size": "3.22 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "array of objects.pptx",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/array of objects.pptx",
+          "size": "1.64 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "CLASS1.ppt",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/CLASS1.ppt",
+          "size": "983.5 KB",
+          "type": "PPT",
+          "category": "Presentations"
+        },
+        {
+          "name": "class2.ppt",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/class2.ppt",
+          "size": "1.13 MB",
+          "type": "PPT",
+          "category": "Presentations"
+        },
+        {
+          "name": "class3.ppt",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/class3.ppt",
+          "size": "1004.5 KB",
+          "type": "PPT",
+          "category": "Presentations"
+        },
+        {
+          "name": "CLASSES AND OBJECTS.pptx",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/CLASSES AND OBJECTS.pptx",
+          "size": "3.58 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "this keyword.pptm",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/this keyword.pptm",
+          "size": "90.38 KB",
+          "type": "PPTM",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "1.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/1.1.pdf",
+          "size": "4.86 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "1.2.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/1.2.pdf",
+          "size": "3.41 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "3.1.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/3.1.pdf",
+          "size": "2.64 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "3.2.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/3.2.pdf",
+          "size": "2.06 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "4.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/4.pdf",
+          "size": "2.69 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "complete reference book.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/Reference stuff!/complete reference book.pdf",
+          "size": "6.38 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/ASSIGNEMENT_S/CERTIFICATION/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/ASSIGNEMENT_S/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/ASSIGNEMENT_S/R&R/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/_._/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/Reference stuff!/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "format.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/ASSIGNEMENT_S/R&R/format.pdf",
+          "size": "411.03 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA mudule-2.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/SHARED BY SANTALAKSHMI/JAVA mudule-2.pdf",
+          "size": "644.62 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Nested class inner class.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/Nested class inner class.pdf",
+          "size": "54.64 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-1.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-1.pdf",
+          "size": "798.37 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-2.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-2.pdf",
+          "size": "555.58 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-3.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-3.pdf",
+          "size": "758.89 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-4.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-4.pdf",
+          "size": "615.25 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-5.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-5.pdf",
+          "size": "722.23 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PIJ-PREP-42424.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/JAIN modules/PIJ-PREP-42424.pdf",
+          "size": "140.21 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "RoP.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/ASSIGNEMENT_S/R&R/RoP.pdf",
+          "size": "111.76 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "static keyword.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/static keyword.pdf",
+          "size": "247.67 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "this keyword.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/this keyword.pdf",
+          "size": "165.28 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "thread.docx",
+          "path": "/CLG STUFF!/SEM - II/PIJ/MODULES/External Modules/thread.docx",
+          "size": "12.17 KB",
+          "type": "DOCX",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "2-programming-in-java-lab": [
+    {
+      "name": "Lab",
+      "description": "Laboratory manuals and practical exercises",
+      "files": [
+        {
+          "name": "PIJ_lab_q.pdf",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/PIJ_lab_q.pdf",
+          "size": "60.63 KB",
+          "type": "PDF",
+          "category": "Lab"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "4th_java_output.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/4th LAB/4th_java_output.txt",
+          "size": "261 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "5th_program_PIJ.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/5th LAB/5th_program_PIJ.txt",
+          "size": "819 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "6th_program_dif.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/6th LAB/6th_program_dif.txt",
+          "size": "2.89 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "8th-output.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/8th LAB/8th-output.txt",
+          "size": "240 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/10th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/1st LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/2nd LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/3rd LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/4th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/5th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/6th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/7th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/8th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/9th LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "java_1_dif.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/1st LAB/java_1_dif.txt",
+          "size": "976 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "java_1_sim.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/1st LAB/java_1_sim.txt",
+          "size": "726 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "java_2_sim.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/2nd LAB/java_2_sim.txt",
+          "size": "2.05 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA_3rd_prog.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/3rd LAB/JAVA_3rd_prog.txt",
+          "size": "713 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA_4th_prog.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/4th LAB/JAVA_4th_prog.txt",
+          "size": "2 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-10TH-CODE.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/10th LAB/JAVA-10TH-CODE.txt",
+          "size": "1.8 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-10TH-OUTPUT.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/10th LAB/JAVA-10TH-OUTPUT.txt",
+          "size": "191 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-7TH-CODE.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/7th LAB/JAVA-7TH-CODE.txt",
+          "size": "2.3 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-7TH-OUTPUT.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/7th LAB/JAVA-7TH-OUTPUT.txt",
+          "size": "93 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-8th-prog.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/8th LAB/JAVA-8th-prog.txt",
+          "size": "2.7 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-9th-code.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/9th LAB/JAVA-9th-code.txt",
+          "size": "1.88 KB",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "JAVA-9TH-OUTPUT.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/9th LAB/JAVA-9TH-OUTPUT.txt",
+          "size": "307 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "OUTPUT_5TH_PROG.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/5th LAB/OUTPUT_5TH_PROG.txt",
+          "size": "25 B",
+          "type": "TXT",
+          "category": "Others"
+        },
+        {
+          "name": "output_6th_pij.txt",
+          "path": "/CLG STUFF!/SEM - II/PIJ LAB/6th LAB/output_6th_pij.txt",
+          "size": "167 B",
+          "type": "TXT",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-computer-networks": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "CN-TLEP.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/TLEP/CN-TLEP.pdf",
+          "size": "354.5 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "CN Module 2.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/CN Module 2.pdf",
+          "size": "1.13 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "module 4 cn new.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/module 4 cn new.pptx",
+          "size": "2.07 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE 5-application layer.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/MODULE 5-application layer.pptx",
+          "size": "2.99 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE_4 NETWORK LAYER.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/MODULE_4 NETWORK LAYER.pptx",
+          "size": "299.81 KB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/MODULE-1.pdf",
+          "size": "676.77 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/MODULE-2.pdf",
+          "size": "470.6 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-3.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/MODULE-3.pdf",
+          "size": "625.62 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-4.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/MODULE-4.pdf",
+          "size": "553.46 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-4transport layer.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/MODULE-4transport layer.pptx",
+          "size": "3.1 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE-5.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/MODULE-5.pdf",
+          "size": "471.29 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE1 (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/MODULE1 (1).pdf",
+          "size": "3.91 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "MODULE1.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/MODULE1.pdf",
+          "size": "3.91 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "unitn4 network layer notes jain.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/unitn4 network layer notes jain.pptx",
+          "size": "7.87 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "Congesstion control.ppt",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Congesstion control.ppt",
+          "size": "633 KB",
+          "type": "PPT",
+          "category": "Presentations"
+        },
+        {
+          "name": "Data Link Layer -I.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Data Link Layer -I.pptx",
+          "size": "3.44 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Data Link Layer-II.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Data Link Layer-II.pptx",
+          "size": "3.31 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Network Topologies new.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Network Topologies new.pptx",
+          "size": "4.13 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "NetworkAlgorithms.ppt",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/NetworkAlgorithms.ppt",
+          "size": "422 KB",
+          "type": "PPT",
+          "category": "Presentations"
+        },
+        {
+          "name": "TRANSMISSION MEDIA.pptx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/TRANSMISSION MEDIA.pptx",
+          "size": "1.78 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "description": "Study notes and summaries",
+      "files": [
+        {
+          "name": "CN_Notes.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/CN_Notes.pdf",
+          "size": "133.34 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "Notes_3.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Notes_3.pdf",
+          "size": "338.36 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "Notes_5.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Notes_5.pdf",
+          "size": "305.73 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "Notes1.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Notes1.pdf",
+          "size": "506.71 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "Notes4.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Notes4.pdf",
+          "size": "117.29 KB",
+          "type": "PDF",
+          "category": "Notes"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "architecture (1).docx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/architecture (1).docx",
+          "size": "70.93 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "architecture.docx",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/architecture.docx",
+          "size": "70.93 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "CN-ACT-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/Assignment-1/CN-ACT-1.pdf",
+          "size": "924.92 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CN-CERTI.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/Certificates/CN-CERTI.pdf",
+          "size": "291.59 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CN-IMPOoo.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Lifeline/CN-IMPOoo.pdf",
+          "size": "54.72 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "CN-TB.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/TB/CN-TB.pdf",
+          "size": "8.61 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "COMPUTER NETWORKING.md",
+          "path": "/CLG STUFF!/SEM - III/CN/TLEP/COMPUTER NETWORKING.md",
+          "size": "2.8 KB",
+          "type": "MD",
+          "category": "Others"
+        },
+        {
+          "name": "Data&Signals.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Data&Signals.pdf",
+          "size": "7.93 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/Assignment-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/Assignment-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/Certificates/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Activities/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Faculty Uploads/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/TB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "imp.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/imp.pdf",
+          "size": "75.67 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "IMPOO.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Lifeline/IMPOO.pdf",
+          "size": "2.33 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PhysicalLayer_data Signals.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/PhysicalLayer_data Signals.pdf",
+          "size": "7.93 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Signals-Modulation.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/Modules/Entropy/Signals-Modulation.pdf",
+          "size": "482.6 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "The_Rational_Optimist_How_Prosperity_Evo.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN/TB/The_Rational_Optimist_How_Prosperity_Evo.pdf",
+          "size": "1.55 MB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-cn-lab": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "CN-LAB-TLEP.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/TLEP/CN-LAB-TLEP.pdf",
+          "size": "482.34 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Manual/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/EXP'S/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/OUTPUTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "OUTPUTS-CN.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/OUTPUTS/OUTPUTS-CN.pdf",
+          "size": "1022.63 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PROGRAM-PART-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/EXP'S/PROGRAM-PART-1.pdf",
+          "size": "170.22 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PROGRAM-PART-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/CN - LAB/Programs/EXP'S/PROGRAM-PART-2.pdf",
+          "size": "123.67 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-database-management-systems": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "DBMS-TLEP",
+          "path": "/CLG STUFF!/SEM - III/DBMS/TLEP/DBMS-TLEP",
+          "size": "239.06 KB",
+          "type": "FILE",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "BCA 3rd SEM RDBMS UNIT 2 NOTES (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/BCA 3rd SEM RDBMS UNIT 2 NOTES (1).pdf",
+          "size": "2.43 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 2 for students.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/Module 2 for students.pptx",
+          "size": "1.91 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "module 3,4,5 for students.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/module 3,4,5 for students.pptx",
+          "size": "1.81 MB",
+          "type": "PPTX",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS MODULE-1 (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS MODULE-1 (1).pdf",
+          "size": "1.6 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS MODULE-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS MODULE-1.pdf",
+          "size": "1.6 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS MODULE-2 SQL (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS MODULE-2 SQL (1).pdf",
+          "size": "4.67 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS MODULE-2 SQL.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS MODULE-2 SQL.pdf",
+          "size": "4.67 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS_MODULE_1 (1).docx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS_MODULE_1 (1).docx",
+          "size": "524.96 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS_MODULE_1.docx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/RDBMS_MODULE_1.docx",
+          "size": "524.96 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        },
+        {
+          "name": "RDBMS_MODULE_1.docx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/RDBMS_MODULE_1.docx",
+          "size": "630.64 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "ARCHITECTURE OF DBMS.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/ARCHITECTURE OF DBMS.pptx",
+          "size": "824.63 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "DBMS-ACT-1.2.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-1/DBMS-ACT-1.2.pptx",
+          "size": "3.13 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "DBMS-ATC-2-PPT.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/PRESENTATION/DBMS-ATC-2-PPT.pdf",
+          "size": "455.82 KB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "normal form-4nf and boycee codd.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/normal form-4nf and boycee codd.pptx",
+          "size": "89.08 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "Normalization-part2.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/Normalization-part2.pptx",
+          "size": "713.16 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "SESSION 1 updated.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/SESSION 1 updated.pptx",
+          "size": "350.43 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "SESSION 2 updated.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/SESSION 2 updated.pptx",
+          "size": "635.29 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "SESSION 3 architecture.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/SESSION 3 architecture.pptx",
+          "size": "265.63 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "SESSION 4 entity relationship model.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/SESSION 4 entity relationship model.pptx",
+          "size": "700.38 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "TRIGGERS for students.pptx",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/TRIGGERS for students.pptx",
+          "size": "408.61 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "description": "Study notes and summaries",
+      "files": [
+        {
+          "name": "1.Notes1-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/1.Notes1-2.pdf",
+          "size": "835.06 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "3.Note_3.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/3.Note_3.pdf",
+          "size": "131.83 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "4.Note_4.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/4.Note_4.pdf",
+          "size": "127.63 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "5.Note_5.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/5.Note_5.pdf",
+          "size": "108.84 KB",
+          "type": "PDF",
+          "category": "Notes"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "All definations.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Lifeline/All definations.pdf",
+          "size": "121.5 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMS imp .pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Lifeline/DBMS imp .pdf",
+          "size": "739.91 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMS-9924.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-1/DBMS-9924.pdf",
+          "size": "609.45 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMS-ACTIVITY-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/DOCUMENT/DBMS-ACTIVITY-2.pdf",
+          "size": "2.08 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMS-QUERYYY.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Lifeline/DBMS-QUERYYY.pdf",
+          "size": "44.16 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMSSS.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Lifeline/DBMSSS.pdf",
+          "size": "155.56 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/DOCUMENT/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/PRESENTATION/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/PROJECT/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Certifications/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Entropy/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Faculty Uploads/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Modules/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "online_voting_system.zip",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Assignment-2/PROJECT/online_voting_system.zip",
+          "size": "10.96 MB",
+          "type": "ZIP",
+          "category": "Others"
+        },
+        {
+          "name": "SQL-CERTIFICATE.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS/Activities/Certifications/SQL-CERTIFICATE.pdf",
+          "size": "324.06 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-dbms-lab": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "DBMS LAB-TLEP-2024.docx",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/TLEP/DBMS LAB-TLEP-2024.docx",
+          "size": "425.31 KB",
+          "type": "DOCX",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Lab",
+      "description": "Laboratory manuals and practical exercises",
+      "files": [
+        {
+          "name": "DBMS lab report.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Manual/DBMS lab report.pdf",
+          "size": "542.74 KB",
+          "type": "PDF",
+          "category": "Lab"
+        },
+        {
+          "name": "dbms_lab.txt",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/dbms_lab.txt",
+          "size": "2.93 KB",
+          "type": "TXT",
+          "category": "Lab"
+        },
+        {
+          "name": "DBMS-LAB-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/DBMS-LAB-1.pdf",
+          "size": "363.17 KB",
+          "type": "PDF",
+          "category": "Lab"
+        },
+        {
+          "name": "DBMS-LAB-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/DBMS-LAB-2.pdf",
+          "size": "143.96 KB",
+          "type": "PDF",
+          "category": "Lab"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "DBMS-12.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/DBMS-12.pdf",
+          "size": "75.41 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMS.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/DBMS.pdf",
+          "size": "68.46 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "DBMSSSS-9.10.11.12.pdf",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/DBMSSSS-9.10.11.12.pdf",
+          "size": "67.81 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Manual/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/OUTPUTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "IMG_1513.MOV",
+          "path": "/CLG STUFF!/SEM - III/DBMS - LAB/Programs/IMG_1513.MOV",
+          "size": "36.69 MB",
+          "type": "MOV",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-environmental-studies": [
+    {
+      "name": "TLEP",
+      "description": "Teaching Learning Enhancement Plans",
+      "files": [
+        {
+          "name": "TLEP-EVS.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/TLEP/TLEP-EVS.pdf",
+          "size": "313.74 KB",
+          "type": "PDF",
+          "category": "TLEP"
+        }
+      ]
+    },
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "EVS MCQ module 1-5.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/EVS MCQ module 1-5.pdf",
+          "size": "459.82 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module1.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module1.pdf",
+          "size": "377.98 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module1.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module1.pdf",
+          "size": "377.46 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module2.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module2.pdf",
+          "size": "1.58 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module2.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module2.pdf",
+          "size": "1.58 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module3.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module3.pdf",
+          "size": "443.63 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module3.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module3.pdf",
+          "size": "443.63 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module4.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module4.pdf",
+          "size": "1.88 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module4.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module4.pdf",
+          "size": "1.88 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module5.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module5.pdf",
+          "size": "95.79 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module5.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module5.pdf",
+          "size": "95.79 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module6.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module6.pdf",
+          "size": "173.62 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module6.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/evs_module6.pdf",
+          "size": "170.98 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "evs_module7.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/evs_module7.pdf",
+          "size": "100.71 KB",
+          "type": "PDF",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Assignment-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Assignment-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Certification/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Entropy/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Faculty Uploads/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "ENVIRONMENTAL STUDIES.md",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/TLEP/ENVIRONMENTAL STUDIES.md",
+          "size": "5.95 KB",
+          "type": "MD",
+          "category": "Others"
+        },
+        {
+          "name": "EVS - MCQ 7& answeers.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/EVS - MCQ 7& answeers.pdf",
+          "size": "336.64 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EVS-ACT-1.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Assignment-1/EVS-ACT-1.pdf",
+          "size": "905.59 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EVS-ACT-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Assignment-1/EVS-ACT-2.pdf",
+          "size": "770.98 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EVS-ACTT-2.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Activities/Assignment-2/EVS-ACTT-2.pdf",
+          "size": "1.44 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EVS-MCQQQ.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/EVS-MCQQQ.pdf",
+          "size": "80.07 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "EVSSS.pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/EVSSS.pdf",
+          "size": "60.58 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "MCQ(All).pdf",
+          "path": "/CLG STUFF!/SEM - III/Environmental Studies/Modules/Lifeline/MCQ(All).pdf",
+          "size": "112.85 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-pcm": [
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "Module 1. Personality Document.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 1. Personality Document.pdf",
+          "size": "825.95 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 1.1 Values.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 1.1 Values.pdf",
+          "size": "785.43 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 2, Attitude.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 2, Attitude.pdf",
+          "size": "1.23 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 2.2 Emotional Intelligence.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 2.2 Emotional Intelligence.pdf",
+          "size": "637.13 KB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 3_chapter_2_Time Management.docx",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 3_chapter_2_Time Management.docx",
+          "size": "342.66 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 4_ chapter 1_Career Development.docx",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 4_ chapter 1_Career Development.docx",
+          "size": "34.74 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module 4_ chapter 2_Career Planning.docx",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module 4_ chapter 2_Career Planning.docx",
+          "size": "91.75 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        },
+        {
+          "name": "Module_3_Chapter_1_Goal Setting and Motivation.docx",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/Module_3_Chapter_1_Goal Setting and Motivation.docx",
+          "size": "849.05 KB",
+          "type": "DOCX",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "JU_BCA_PCM_M01_C02_PPT_Values.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M01_C02_PPT_Values.pdf",
+          "size": "1.51 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M02_C01_PPT_Attitude_V2.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M02_C01_PPT_Attitude_V2.pdf",
+          "size": "2.32 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M02_C02_PPT_Emotional Intelligence_V2.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M02_C02_PPT_Emotional Intelligence_V2.pdf",
+          "size": "1.51 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M03_C01_PPT_Goal Setting and Motivation_V2 (1) (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M03_C01_PPT_Goal Setting and Motivation_V2 (1) (1).pdf",
+          "size": "1.42 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M03_C01_PPT_Goal Setting and Motivation_V2 (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M03_C01_PPT_Goal Setting and Motivation_V2 (1).pdf",
+          "size": "1.42 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M03_C02_PPT_Time Management (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M03_C02_PPT_Time Management (1).pdf",
+          "size": "1.35 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M04_C01_PPT_Career Development (1) (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M04_C01_PPT_Career Development (1) (1).pdf",
+          "size": "1.1 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M04_C01_PPT_Career Development (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M04_C01_PPT_Career Development (1).pdf",
+          "size": "1.1 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M04_C02_PPT_Career Planning (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M04_C02_PPT_Career Planning (1).pdf",
+          "size": "994.03 KB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M05_C01_PPT_ Professional Resume_V2.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M05_C01_PPT_ Professional Resume_V2.pdf",
+          "size": "1.36 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "JU_BCA_PCM_M05_C02_PPT_Preparing for Employment and Internship.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/JU_BCA_PCM_M05_C02_PPT_Preparing for Employment and Internship.pdf",
+          "size": "1.12 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/DOCX FILES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/PPT FILES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/PCM/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "PCMMM (1).pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/Lifeline/PCMMM (1).pdf",
+          "size": "159.42 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PCMMM.pdf",
+          "path": "/CLG STUFF!/SEM - III/PCM/MODULES/Lifeline/PCMMM.pdf",
+          "size": "59.95 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "PERSONALITY AND CAREER MANAGEMENT.md",
+          "path": "/CLG STUFF!/SEM - III/PCM/TLEP/PERSONALITY AND CAREER MANAGEMENT.md",
+          "size": "1.43 KB",
+          "type": "MD",
+          "category": "Others"
+        },
+        {
+          "name": "Personality_and_Career_Management.docx",
+          "path": "/CLG STUFF!/SEM - III/PCM/TLEP/Personality_and_Career_Management.docx",
+          "size": "22.11 KB",
+          "type": "DOCX",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-software-engineering": [
+    {
+      "name": "Modules",
+      "description": "Course modules and units",
+      "files": [
+        {
+          "name": "SE -  module 1.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/SE -  module 1.pdf",
+          "size": "2.44 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "SE -  module 5.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/SE -  module 5.pdf",
+          "size": "2 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "SE - module 2.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/SE - module 2.pdf",
+          "size": "1.51 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "unit 3 SE.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/unit 3 SE.pptx.pdf",
+          "size": "1.04 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "unit4  QA se jain.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/unit4  QA se jain.pptx.pdf",
+          "size": "2.03 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "unit5 QA se jain.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/unit5 QA se jain.pptx.pdf",
+          "size": "2.11 MB",
+          "type": "PDF",
+          "category": "Modules"
+        },
+        {
+          "name": "unit5 se jain.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/unit5 se jain.pptx.pdf",
+          "size": "2.34 MB",
+          "type": "PDF",
+          "category": "Modules"
+        }
+      ]
+    },
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "SE-M1(Session 7).pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/SE-M1(Session 7).pptx.pdf",
+          "size": "452.84 KB",
+          "type": "PDF",
+          "category": "Presentations"
+        },
+        {
+          "name": "uni1 SE.pptx.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/uni1 SE.pptx.pdf",
+          "size": "1.67 MB",
+          "type": "PDF",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Notes",
+      "description": "Study notes and summaries",
+      "files": [
+        {
+          "name": "1-2Notes.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/1-2Notes.pdf",
+          "size": "817.53 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "3.Notes.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/3.Notes.pdf",
+          "size": "595.32 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "4.Notes.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/4.Notes.pdf",
+          "size": "267.29 KB",
+          "type": "PDF",
+          "category": "Notes"
+        },
+        {
+          "name": "5.Note_5.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/5.Note_5.pdf",
+          "size": "108.84 KB",
+          "type": "PDF",
+          "category": "Notes"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Activities/Assignment-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Activities/Assignment-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Activities/Certification/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Activities/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Entropy/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Faculty Uploads/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Modules/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "SE-CERTIFICATE.pdf",
+          "path": "/CLG STUFF!/SEM - III/Software Engineering/Activities/Certification/SE-CERTIFICATE.pdf",
+          "size": "358.31 KB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "3-open-electives": [
+    {
+      "name": "Presentations",
+      "description": "Lecture presentations and slides",
+      "files": [
+        {
+          "name": "AI_SOCIETY_ACT-1.pptx",
+          "path": "/CLG STUFF!/SEM - III/AI/ACTIVITY'S/ACTIVITY-1/AI_SOCIETY_ACT-1.pptx",
+          "size": "1.72 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "AI-M1.pptx",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/PPT FILES/AI-M1.pptx",
+          "size": "458.37 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "AI-M1.pptx",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/AI-M1.pptx",
+          "size": "458.37 KB",
+          "type": "PPTX",
+          "category": "Presentations"
+        },
+        {
+          "name": "AI-M3.pptx",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/PPT FILES/AI-M3.pptx",
+          "size": "7.14 MB",
+          "type": "PPTX",
+          "category": "Presentations"
+        }
+      ]
+    },
+    {
+      "name": "Question Papers",
+      "description": "Previous year question papers and exams",
+      "files": [
+        {
+          "name": "AI-QUESTIONS.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Lifeline/AI-QUESTIONS.pdf",
+          "size": "57.74 KB",
+          "type": "PDF",
+          "category": "Question Papers"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "AI_SOCIETY_G7-SUMMIT.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/AI_SOCIETY_G7-SUMMIT.pdf",
+          "size": "468.57 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AI-M2.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/PPT FILES/AI-M2.pdf",
+          "size": "2.11 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AI-M4.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/PPT FILES/AI-M4.pdf",
+          "size": "631.56 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "AI-SOCIETY-ACT_1.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/ACTIVITY'S/ACTIVITY-1/AI-SOCIETY-ACT_1.pdf",
+          "size": "793.28 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Artificial_Intelligence_and_Its_Impact_on_Society_in____the_Future_ijariie22897.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/Artificial_Intelligence_and_Its_Impact_on_Society_in____the_Future_ijariie22897.pdf",
+          "size": "363.75 KB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/ACTIVITY'S/ACTIVITY -2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/ACTIVITY'S/ACTIVITY-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/ACTIVITY'S/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/PPT FILES/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Lifeline/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM - III/AI/TLEP/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "eedfee77-en.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/eedfee77-en.pdf",
+          "size": "4.83 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "Evolution of Artificial Intelligence.docx",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/Evolution of Artificial Intelligence.docx",
+          "size": "39.34 KB",
+          "type": "DOCX",
+          "category": "Others"
+        },
+        {
+          "name": "global-standards-on-ai-report.pdf",
+          "path": "/CLG STUFF!/SEM - III/AI/MODULES/Faculty Uploads/REPORTS/global-standards-on-ai-report.pdf",
+          "size": "9.56 MB",
+          "type": "PDF",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "4-introduction-to-data-analytics-lab": [
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "1.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/1.png",
+          "size": "119.01 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "1.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/1.png",
+          "size": "118.98 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "10.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/10.png",
+          "size": "103.95 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "11.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/11.png",
+          "size": "30.03 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "12.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/12.png",
+          "size": "33.1 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "13.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/13.png",
+          "size": "62.65 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "14.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/14.png",
+          "size": "63.04 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "2.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/2.png",
+          "size": "45.52 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "2.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/2.png",
+          "size": "45.52 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "3.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/3.png",
+          "size": "72.89 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "3.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/3.png",
+          "size": "73.82 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "4.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/4.png",
+          "size": "57.17 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "4.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/4.png",
+          "size": "58.75 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "5.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/5.png",
+          "size": "56.01 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "5.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/5.png",
+          "size": "94.48 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "6.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/6.png",
+          "size": "80.71 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "6.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/6.png",
+          "size": "67.13 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "7.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/7.png",
+          "size": "44.66 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "8.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/8.png",
+          "size": "62.13 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "9.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/9.png",
+          "size": "61.55 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "BHARATH-IDA-001.pdf",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/Lab-1/BHARATH-IDA-001.pdf",
+          "size": "2.13 MB",
+          "type": "PDF",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/Lab-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-1/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-2/Lab-2_Dataset-2/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120332.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120332.png",
+          "size": "118.98 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120346.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120346.png",
+          "size": "45.52 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120403.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120403.png",
+          "size": "78.07 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120409.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120409.png",
+          "size": "65.56 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120447.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120447.png",
+          "size": "98.28 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120502.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120502.png",
+          "size": "64.4 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120609.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120609.png",
+          "size": "102.48 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120627.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120627.png",
+          "size": "64.37 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120635.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120635.png",
+          "size": "64.73 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120712.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120712.png",
+          "size": "79.2 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120721.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120721.png",
+          "size": "61.22 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120735.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120735.png",
+          "size": "105.35 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120755.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120755.png",
+          "size": "60.94 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120803.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120803.png",
+          "size": "59.98 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120809.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120809.png",
+          "size": "60.13 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120814.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120814.png",
+          "size": "90.36 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120820.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120820.png",
+          "size": "60.49 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120830.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120830.png",
+          "size": "62.99 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120837.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120837.png",
+          "size": "60.68 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120846.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120846.png",
+          "size": "27.31 KB",
+          "type": "PNG",
+          "category": "Others"
+        },
+        {
+          "name": "Screenshot 2025-02-12 120905.png",
+          "path": "/CLG STUFF!/SEM-IV/IDA-LAB/LAB-3/Screenshot 2025-02-12 120905.png",
+          "size": "61.24 KB",
+          "type": "PNG",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "4-network-administration": [
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/NA-LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        }
+      ]
+    }
+  ],
+  "4-programming-in-python-lab": [
+    {
+      "name": "Others",
+      "description": "Other course materials",
+      "files": [
+        {
+          "name": "desktop.ini",
+          "path": "/CLG STUFF!/SEM-IV/PP-LAB/desktop.ini",
+          "size": "246 B",
+          "type": "INI",
+          "category": "Others"
+        }
+      ]
+    }
+  ]
+}

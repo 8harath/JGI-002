@@ -1,5 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSubjectFiles } from "@/lib/file-scanner";
+import fs from "fs";
+import path from "path";
+
+// Read the pre-generated manifest file
+function getManifest() {
+  const manifestPath = path.join(process.cwd(), "public", "manifest.json");
+  try {
+    const manifestData = fs.readFileSync(manifestPath, "utf-8");
+    return JSON.parse(manifestData);
+  } catch (error) {
+    console.error("Error reading manifest:", error);
+    return {};
+  }
+}
 
 export async function GET(request: NextRequest) {
   try {
@@ -23,7 +36,10 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const categories = await getSubjectFiles(semesterId, subjectSlug);
+    // Read from the pre-generated manifest
+    const manifest = getManifest();
+    const key = `${semesterId}-${subjectSlug}`;
+    const categories = manifest[key] || [];
 
     return NextResponse.json({
       success: true,
