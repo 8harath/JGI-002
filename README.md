@@ -1,183 +1,144 @@
-# JGI-002: TypeScript React Project
+# JGI-002 📚
 
-![GitHub repository size](https://img.shields.io/github/repo-size/8harath/JGI-002)
-![GitHub language count](https://img.shields.io/github/languages/count/8harath/JGI-002)
-![GitHub top language](https://img.shields.io/github/languages/top/8harath/JGI-002)
+An open-source academic resource platform for JGI (Jain Group of Institutions) students, providing access to study materials, notes, and resources across different semesters and specializations.
 
-## 📖 Overview
+## 🎯 About
 
-JGI-002 is a modern web application built with TypeScript and React. This project demonstrates best practices for creating scalable, maintainable web applications using current technologies and development patterns.
+This repository contains academic files and resources compiled for students to study, reference, and download. Many of these materials are not readily available for other specializations and batches, making this a valuable centralized resource for the student community.
 
-## 🚀 Features
+**Mission**: To create an accessible, community-driven platform where students can find and share academic resources freely.
 
-- TypeScript for type safety and improved developer experience
-- React for building interactive user interfaces
-- Vite for fast development and optimized production builds
-- ESLint and Prettier for code quality and consistent formatting
-- Responsive design for various device sizes
-- Component-based architecture for reusability and maintainability
+## 🌟 Features
 
-## 🛠️ Technologies Used
+- **Semester-wise Organization**: Resources organized by semesters for easy navigation
+- **Subject Categorization**: Materials categorized by subjects and topics
+- **Easy Access**: Browse and download study materials directly
+- **Community Driven**: Built by students, for students
+- **Open Source**: Free and accessible to everyone
 
-- **Frontend Framework**: React
-- **Language**: TypeScript (96.8%), CSS (3.1%), JavaScript (0.1%)
-- **Build Tool**: Vite
-- **Package Manager**: npm
-- **CSS Preprocessor**: Sass
-- **Code Quality**: ESLint, Prettier
+## 🚀 Tech Stack
 
-## 📋 Prerequisites
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI primitives
+- **Icons**: Lucide React
 
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/) (v8 or higher)
-
-## 🔧 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/8harath/JGI-002.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd JGI-002
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-## 🚀 Usage
-
-### Development Server
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-The application will be available at [http://localhost:3000](http://localhost:3000).
-
-### Build for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
-JGI-002/
-├── public/            # Static assets
-├── src/               # Source code
-│   ├── assets/        # Images, fonts, etc.
-│   ├── components/    # Reusable React components
-│   ├── pages/         # Page components
-│   ├── styles/        # Global styles and themes
-│   ├── types/         # TypeScript type definitions
-│   ├── utils/         # Utility functions
-│   ├── App.tsx        # Main application component
-│   ├── main.tsx       # Application entry point
-│   └── vite-env.d.ts  # Vite environment type definitions
-├── .eslintrc.cjs      # ESLint configuration
-├── .gitignore         # Git ignore rules
-├── index.html         # HTML entry point
-├── package.json       # Project dependencies and scripts
-├── tsconfig.json      # TypeScript configuration
-├── tsconfig.node.json # Node-specific TypeScript configuration
-└── vite.config.ts     # Vite configuration
+├── app/              # Next.js app directory
+├── components/       # React components
+├── data/            # Academic data and resources
+│   ├── semesters.ts
+│   ├── subjects.ts
+│   └── resources.ts
+├── lib/             # Utility functions
+├── public/          # Static assets
+└── styles/          # Global styles
 ```
-
-## 🧪 Testing
-
-Run tests:
-
-```bash
-npm test
-```
-
-## 📝 Code Quality
-
-Check for linting issues:
-
-```bash
-npm run lint
-```
-
-Fix linting issues automatically:
-
-```bash
-npm run lint:fix
-```
-
-Format code with Prettier:
-
-```bash
-npm run format
-```
-
-## 🔄 Continuous Integration/Continuous Deployment
-
-This project is set up with GitHub Actions for CI/CD. Every push to the main branch triggers:
-- Code linting
-- Running tests
-- Building the application
-
-## 🛣️ Roadmap
-
-- [ ] Add unit tests
-- [ ] Implement authentication
-- [ ] Create mobile-responsive views
-- [ ] Add internationalization support
-- [ ] Implement dark mode
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are **welcome and encouraged**! Here's how you can help:
 
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Ways to Contribute
 
-## 📄 License
+1. **Add Resources**: Share your notes, study materials, or helpful resources
+2. **Fix Issues**: Help resolve any existing issues
+3. **Improve Documentation**: Enhance README or add helpful documentation
+4. **Feature Requests**: Suggest new features or improvements
+5. **Code Improvements**: Optimize code, fix bugs, or improve UI/UX
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### How to Contribute
 
-## 📞 Contact
+#### Option 1: Fork and Pull Request
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/your-feature-name`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature/your-feature-name`)
+6. Open a Pull Request
 
-Bharath - [@8harath](https://github.com/8harath)
+#### Option 2: Create an Issue
+- Found a problem or have a suggestion? [Create an issue](https://github.com/8harath/JGI-002/issues/new)
+- Describe your idea, bug report, or feature request
 
-Project Link: [https://github.com/8harath/JGI-002](https://github.com/8harath/JGI-002)
+#### Option 3: Reach Out Directly
+- Contact me directly if you have resources to contribute or questions
+- Email or connect via GitHub: [@8harath](https://github.com/8harath)
+
+## 💻 Getting Started
+
+To run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/8harath/JGI-002.git
+   cd JGI-002
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📝 Adding Resources
+
+If you want to add new academic resources:
+
+1. Add subject information to `data/subjects.ts`
+2. Update semester data in `data/semesters.ts`
+3. Include resource links in `data/resources.ts`
+4. Submit a pull request with your changes
+
+## 🎓 For Students
+
+This platform is designed to help you:
+- Access study materials from different semesters
+- Find resources that may not be available through official channels
+- Learn from shared notes and materials from fellow students
+- Contribute your own materials to help others
+
+## 📜 License
+
+This project is open source and available for educational purposes. Please respect copyright and intellectual property rights when sharing materials.
+
+## ⚠️ Disclaimer
+
+The materials in this repository are shared for educational purposes only. Users should verify the accuracy of content and use it as supplementary study material. The maintainers are not responsible for the accuracy or completeness of the shared resources.
 
 ## 🙏 Acknowledgments
 
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [Vite Documentation](https://vitejs.dev/guide/)
+- Thanks to all contributors who have shared their resources
+- JGI student community for their support and engagement
+- Everyone who helps make education more accessible
 
-## Contact Form EmailJS Setup
+## 📞 Contact
 
-To enable the contact form to send emails, create a `.env.local` file in your project root with the following content:
+For questions, suggestions, or if you'd like to contribute:
 
-```
-EMAILJS_SERVICE_ID=service_6yd60g2
-EMAILJS_TEMPLATE_ID=template_1118eta
-EMAILJS_USER_ID=qx2jxijBdwq8Vvg0C
-```
+- **GitHub**: [@8harath](https://github.com/8harath)
+- **Issues**: [Create an issue](https://github.com/8harath/JGI-002/issues)
 
-These credentials are required for the backend to send emails using EmailJS.
+---
+
+**⭐ Star this repository if you find it helpful!**
+
+**🤝 Contributions make this project better. Let's build this together!**
