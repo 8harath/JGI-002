@@ -76,9 +76,10 @@ const SearchContext = createContext<SearchContextType | undefined>(undefined);
 export function SearchProvider({ children, resources }: { children: React.ReactNode; resources: Resource[] }) {
   const [state, dispatch] = useReducer(searchReducer, initialState);
 
-  const performSearch = (query: string) => {
+  // Memoize performSearch to prevent unnecessary re-renders
+  const performSearch = React.useCallback((query: string) => {
     dispatch({ type: "SET_QUERY", payload: query });
-    
+
     if (!query.trim()) {
       dispatch({ type: "SET_RESULTS", payload: [] });
       return;
@@ -99,11 +100,11 @@ export function SearchProvider({ children, resources }: { children: React.ReactN
 
     const results = searchResources(query, filteredResources);
     dispatch({ type: "SET_RESULTS", payload: results });
-    
+
     if (query.trim()) {
       dispatch({ type: "ADD_TO_HISTORY", payload: query });
     }
-  };
+  }, [resources, state.filters.semester, state.filters.subject, state.filters.type]);
 
   // Load search history from localStorage
   useEffect(() => {
@@ -121,8 +122,14 @@ export function SearchProvider({ children, resources }: { children: React.ReactN
     localStorage.setItem("searchHistory", JSON.stringify(state.history));
   }, [state.history]);
 
+  // Memoize context value to prevent unnecessary re-renders
+  const contextValue = React.useMemo(
+    () => ({ state, dispatch, resources, performSearch }),
+    [state, resources, performSearch]
+  );
+
   return (
-    <SearchContext.Provider value={{ state, dispatch, resources, performSearch }}>
+    <SearchContext.Provider value={contextValue}>
       {children}
     </SearchContext.Provider>
   );

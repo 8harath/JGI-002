@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { useSearch } from "@/lib/search-context";
 import { Resource } from "@/types";
+import { debounce } from "@/lib/utils/debounce";
 
 interface SearchProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -25,6 +26,12 @@ export function Search({ className }: SearchProps) {
   const { state, dispatch, performSearch } = useSearch();
   const [filterOpen, setFilterOpen] = React.useState(false);
   const [inputValue, setInputValue] = React.useState("");
+
+  // Debounced search to improve performance
+  const debouncedSearch = React.useMemo(
+    () => debounce((value: string) => performSearch(value), 300),
+    [performSearch]
+  );
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -59,7 +66,7 @@ export function Search({ className }: SearchProps) {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInputValue(value);
-    performSearch(value);
+    debouncedSearch(value);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {

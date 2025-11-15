@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:r2": "tsx scripts/migrate-to-r2.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "latest",
@@ -64,11 +65,15 @@
     "zod": "latest"
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.705.0",
+    "@types/mime-types": "^2.1.4",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "mime-types": "^2.1.35",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }
